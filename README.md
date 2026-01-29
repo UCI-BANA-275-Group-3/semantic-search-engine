@@ -65,46 +65,66 @@ semantic-search/
 
 ## Pipeline Stages (Mapped to Source)
 
-1) **Manifest building**
+### **Manifest building**
 - Script: `src/00_build_manifest.py`
 - Inputs: `corpus/raw/zotero/metadata/library.json`, `corpus/raw/zotero/storage/**`
 - Output: `corpus/derived/manifest/manifest.jsonl`
 
-2) **Corpus validation**
+Step 1 — Build the manifest (00_build_manifest.py)
+
+Define manifest schema (one record per document/attachment) and required fields (doc_id, title, creators, year, collection, attachment_path, mime, source_json, zotero_key, etc.).
+Parse library.json (Better BibLaTeX JSON) to extract items + collections.
+Resolve each item’s attachment(s) to corpus/raw/zotero/storage/<ATTACHMENT_KEY>/....
+Normalize paths and generate a stable doc_id (e.g., hash of attachment path or item key + attachment key).
+Write manifest.jsonl with one line per resolved attachment; log unresolved items to corpus/logs/.
+
+Step 2 — Validate the corpus (10_validate_corpus.py)
+
+Read the manifest and perform checks:
+Paths exist and are readable
+MIME types are supported (PDF/HTML)
+No duplicate doc_ids
+Minimum doc count ≥ 100
+Produce a summary report (counts, missing files, duplicates) and failure logs in corpus/logs/.
+Exit non‑zero if critical checks fail (missing attachments, too few docs), to gate the rest of the pipeline.
+
+
+
+### **Corpus validation**
 - Script: `src/10_validate_corpus.py`
 - Inputs: manifest + raw storage
 - Outputs: validation logs (location TBD)
 
-3) **Text extraction**
+### **Text extraction**
 - Script: `src/20_extract_text.py`
 - Input: `corpus/derived/manifest/manifest.jsonl`
 - Output: `corpus/derived/text/extracted.jsonl`
 
-4) **Cleaning**
+### **Cleaning**
 - Script: `src/30_clean_text.py`
 - Input: `corpus/derived/text/extracted.jsonl`
 - Output: `corpus/derived/text/cleaned.jsonl`
 
-5) **Chunking**
+### **Chunking**
 - Script: `src/40_chunk_text.py`
 - Input: `corpus/derived/text/cleaned.jsonl`
 - Output: `corpus/derived/chunks/chunks.jsonl`
 
-6) **Embeddings**
+### **Embeddings**
 - Scripts: `src/50_embedding_backends.py`, `src/60_embed_corpus.py`
 - Input: `corpus/derived/chunks/chunks.jsonl`
 - Outputs: `corpus/derived/embeddings/embeddings.npy`, `corpus/derived/embeddings/index.jsonl`
 
-7) **Similarity search**
+### **Similarity search**
 - Script: `src/70_similarity_search.py`
 - Inputs: embeddings artifacts
 - Output: top-K chunks with cosine scores
 
-8) **LLM enhancement (choose ONE)**
+### **LLM enhancement (choose ONE)**
 - Script: `src/80_llm_enhancement.py`
 - Modes: summarize / QA / compare
 
-9) **CLI interface**
+### **CLI interface**
 - Script: `src/90_main.py`
 - Runs retrieval + optional enhancement
 
@@ -113,11 +133,11 @@ semantic-search/
 ## Setup
 
 ### Python
-- Recommended: Python 3.10+
+- Recommended: Python 3.12
 
 ### Install dependencies
 ```bash
-python -m venv .venv
+python3.12 -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
 ```
