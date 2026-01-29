@@ -1,4 +1,5 @@
-# Validate corpus integrity and log missing/duplicate attachments.
+#!/usr/bin/env python3
+# # Validate corpus integrity and log missing/duplicate attachments.
 
 from __future__ import annotations
 

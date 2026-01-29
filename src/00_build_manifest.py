@@ -1,5 +1,5 @@
+#!/usr/bin/env python3
 # Build a manifest.jsonl from Zotero Better BibLaTeX JSON exports.
-# This script is meant to be readable and easy to extend by a team.
 
 from __future__ import annotations
 
