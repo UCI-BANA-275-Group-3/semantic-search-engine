@@ -1,0 +1,4256 @@
+{
+  "config": {
+    "id": "36a3b0b5-bad0-4a04-b79b-441c7cef77db",
+    "label": "BetterBibTeX JSON",
+    "preferences": {},
+    "options": {
+      "Items": true,
+      "Normalize": true,
+      "Preferences": false,
+      "exportFileData": true,
+      "exportNotes": true,
+      "keepUpdated": false,
+      "worker": false,
+      "exportDir": "/Users/alex_rose/Library/CloudStorage/OneDrive-Personal/School PHD UCI/Q5 - W2026/BANA - 275 - NLP/Homework/semantic_search/corpus/zotero_export/Foundations of Strategy I-II",
+      "exportPath": "/Users/alex_rose/Library/CloudStorage/OneDrive-Personal/School PHD UCI/Q5 - W2026/BANA - 275 - NLP/Homework/semantic_search/corpus/zotero_export/Foundations of Strategy I-II/Foundations of Strategy I-II.json"
+    }
+  },
+  "version": {
+    "zotero": "7.0.32",
+    "bbt": "7.0.76"
+  },
+  "collections": {
+    "XS87GTKY": {
+      "key": "XS87GTKY",
+      "parent": "",
+      "name": "Session 1: The Concept of Strategy",
+      "collections": [],
+      "items": [
+        744,
+        745,
+        746,
+        754,
+        760,
+        762
+      ]
+    },
+    "33AJCPDG": {
+      "key": "33AJCPDG",
+      "parent": "",
+      "name": "Session 2: Evolutionary Economics and the Behavioral Theory of the Firm",
+      "collections": [
+        "AMD22VDD"
+      ],
+      "items": [
+        733,
+        734,
+        753,
+        1563
+      ]
+    },
+    "AMD22VDD": {
+      "key": "AMD22VDD",
+      "parent": "33AJCPDG",
+      "name": "Optional",
+      "collections": [],
+      "items": [
+        726,
+        729,
+        730,
+        731,
+        732
+      ]
+    },
+    "S28BGTTC": {
+      "key": "S28BGTTC",
+      "parent": "",
+      "name": "Session 3: Agency Theory",
+      "collections": [
+        "S6PD6KF6"
+      ],
+      "items": [
+        205,
+        594,
+        716,
+        717,
+        718,
+        719,
+        1563
+      ]
+    },
+    "S6PD6KF6": {
+      "key": "S6PD6KF6",
+      "parent": "S28BGTTC",
+      "name": "Optional",
+      "collections": [],
+      "items": [
+        714,
+        715
+      ]
+    },
+    "GNMWWKLH": {
+      "key": "GNMWWKLH",
+      "parent": "",
+      "name": "Session 4: Resource Based View and Dynamic Capabilities",
+      "collections": [
+        "4D4M6CUG"
+      ],
+      "items": [
+        425,
+        426,
+        554,
+        555,
+        556,
+        557
+      ]
+    },
+    "4D4M6CUG": {
+      "key": "4D4M6CUG",
+      "parent": "GNMWWKLH",
+      "name": "Optional",
+      "collections": [],
+      "items": []
+    },
+    "GEFP8789": {
+      "key": "GEFP8789",
+      "parent": "",
+      "name": "Session 5: Corporate Strategy, Diversification, TCE",
+      "collections": [
+        "5SYE3Z7L"
+      ],
+      "items": [
+        665,
+        666,
+        667,
+        668,
+        669,
+        670
+      ]
+    },
+    "5SYE3Z7L": {
+      "key": "5SYE3Z7L",
+      "parent": "GEFP8789",
+      "name": "Optional",
+      "collections": [],
+      "items": [
+        649
+      ]
+    },
+    "8YQKZ28L": {
+      "key": "8YQKZ28L",
+      "parent": "",
+      "name": "Session 6: Competitive strategy",
+      "collections": [
+        "3QPY4VLK"
+      ],
+      "items": [
+        654,
+        655,
+        656,
+        657,
+        658
+      ]
+    },
+    "3QPY4VLK": {
+      "key": "3QPY4VLK",
+      "parent": "8YQKZ28L",
+      "name": "Optional",
+      "collections": [],
+      "items": []
+    },
+    "9ZFLTNKG": {
+      "key": "9ZFLTNKG",
+      "parent": "",
+      "name": "Session 7: Organization Design and Information Processing Theory",
+      "collections": [
+        "9FFJ7F3N"
+      ],
+      "items": [
+        239,
+        637,
+        638,
+        639,
+        640
+      ]
+    },
+    "9FFJ7F3N": {
+      "key": "9FFJ7F3N",
+      "parent": "9ZFLTNKG",
+      "name": "Optional",
+      "collections": [],
+      "items": [
+        636
+      ]
+    },
+    "DFWXSRTQ": {
+      "key": "DFWXSRTQ",
+      "parent": "",
+      "name": "Session 8: Knowledge Based View of the Firm",
+      "collections": [
+        "QZ7GQRJD"
+      ],
+      "items": [
+        631,
+        632,
+        633,
+        634,
+        635
+      ]
+    },
+    "QZ7GQRJD": {
+      "key": "QZ7GQRJD",
+      "parent": "DFWXSRTQ",
+      "name": "Optional",
+      "collections": [],
+      "items": []
+    },
+    "NM2BUZ9Q": {
+      "key": "NM2BUZ9Q",
+      "parent": "",
+      "name": "Session 9: CEOs and TMTs",
+      "collections": [
+        "WG4YAZB2"
+      ],
+      "items": [
+        1148,
+        1149,
+        1150,
+        1151,
+        1152
+      ]
+    },
+    "WG4YAZB2": {
+      "key": "WG4YAZB2",
+      "parent": "NM2BUZ9Q",
+      "name": "Optional",
+      "collections": [],
+      "items": [
+        1147
+      ]
+    },
+    "HFNJW9TV": {
+      "key": "HFNJW9TV",
+      "parent": "",
+      "name": "Session 10: Corporate governance",
+      "collections": [],
+      "items": [
+        207,
+        1146,
+        1277,
+        1278,
+        1345
+      ]
+    }
+  },
+  "items": [
+    {
+      "itemType": "attachment",
+      "title": "2024 Foundation Theories of Srategy - Syllabus Final updated.docx",
+      "tags": [],
+      "relations": {},
+      "dateAdded": "2024-09-28T17:16:22Z",
+      "dateModified": "2024-09-28T17:16:22Z",
+      "uri": "http://zotero.org/users/13706285/items/MFP28VQL",
+      "path": "files/761/2024 Foundation Theories of Srategy - Syllabus Final updated.docx",
+      "select": "zotero://select/library/items/MFP28VQL"
+    },
+    {
+      "version": 18647,
+      "itemType": "journalArticle",
+      "title": "Uncertainty, Evolution, and Economic Theory",
+      "date": "1950-06",
+      "libraryCatalog": "journals.uchicago.edu (Atypon)",
+      "url": "https://www.journals.uchicago.edu/doi/abs/10.1086/256940",
+      "accessDate": "2024-10-07T03:32:21Z",
+      "volume": "58",
+      "publisher": "The University of Chicago Press",
+      "pages": "211-221",
+      "publicationTitle": "Journal of Political Economy",
+      "DOI": "10.1086/256940",
+      "issue": "3",
+      "ISSN": "0022-3808",
+      "creators": [
+        {
+          "firstName": "Armen A.",
+          "lastName": "Alchian",
+          "creatorType": "author"
+        }
+      ],
+      "tags": [],
+      "relations": {},
+      "dateAdded": "2024-10-07T03:32:21Z",
+      "dateModified": "2024-10-07T03:32:21Z",
+      "uri": "http://zotero.org/users/13706285/items/YXMLPHEU",
+      "attachments": [
+        {
+          "itemType": "attachment",
+          "title": "Alchian - 1950 - Uncertainty, Evolution, and Economic Theory.pdf",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2024-10-07T03:38:49Z",
+          "dateModified": "2024-10-07T03:38:49Z",
+          "uri": "http://zotero.org/users/13706285/items/4ZTPYEB9",
+          "path": "files/2986/Alchian - 1950 - Uncertainty, Evolution, and Economic Theory.pdf",
+          "select": "zotero://select/library/items/4ZTPYEB9"
+        }
+      ],
+      "notes": [],
+      "citationKey": "alchian_1950",
+      "itemID": 731,
+      "itemKey": "YXMLPHEU",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/YXMLPHEU"
+    },
+    {
+      "version": 18642,
+      "itemType": "journalArticle",
+      "title": "The Persistence and Transfer of Learning in Industrial Settings",
+      "abstractNote": "The persistence of learning within organizations and the transfer of learning across organizations are examined on data collected from multiple organizations. Results indicate that knowledge acquir...",
+      "date": "1990-02-01",
+      "language": "en",
+      "archiveLocation": "world",
+      "libraryCatalog": "pubsonline.informs.org",
+      "url": "https://pubsonline.informs.org/doi/abs/10.1287/mnsc.36.2.140",
+      "accessDate": "2024-12-12T16:45:23Z",
+      "rights": "© 1990 INFORMS",
+      "publisher": "INFORMS",
+      "publicationTitle": "Management Science",
+      "DOI": "10.1287/mnsc.36.2.140",
+      "creators": [
+        {
+          "firstName": "Linda",
+          "lastName": "Argote",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Sara L.",
+          "lastName": "Beckman",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Dennis",
+          "lastName": "Epple",
+          "creatorType": "author"
+        }
+      ],
+      "tags": [],
+      "relations": {
+        "dc:replaces": [
+          "http://zotero.org/users/13706285/items/GAKLB4CL"
+        ]
+      },
+      "dateAdded": "2024-12-12T16:45:23Z",
+      "dateModified": "2024-12-12T16:46:59Z",
+      "uri": "http://zotero.org/users/13706285/items/G6PSL4D3",
+      "attachments": [
+        {
+          "itemType": "attachment",
+          "title": "Argote et al. - 1990 - The Persistence and Transfer of Learning in Indust.pdf",
+          "url": "https://citeseerx.ist.psu.edu/document?repid=rep1&type=pdf&doi=7c5fa27e374e76c2be6696cd9fe0c4d5f5552110",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2024-12-12T16:46:38Z",
+          "dateModified": "2024-12-12T16:47:03Z",
+          "uri": "http://zotero.org/users/13706285/items/TBWF77GI",
+          "path": "files/2417/Argote et al. - 1990 - The Persistence and Transfer of Learning in Indust.pdf",
+          "select": "zotero://select/library/items/TBWF77GI"
+        },
+        {
+          "itemType": "attachment",
+          "title": "Snapshot",
+          "url": "https://pubsonline.informs.org/doi/epdf/10.1287/mnsc.36.2.140",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2024-12-12T16:45:29Z",
+          "dateModified": "2024-12-12T16:45:29Z",
+          "uri": "http://zotero.org/users/13706285/items/SVKDPTDN",
+          "path": "files/2418/mnsc.36.2.html",
+          "select": "zotero://select/library/items/SVKDPTDN"
+        }
+      ],
+      "notes": [],
+      "citationKey": "argote_etal_1990",
+      "itemID": 634,
+      "itemKey": "G6PSL4D3",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/G6PSL4D3"
+    },
+    {
+      "version": 18724,
+      "itemType": "journalArticle",
+      "title": "Firm Resources and Sustained Competitive Advantage - Jay Barney, 1991",
+      "date": "1991",
+      "url": "https://journals.sagepub.com/doi/10.1177/014920639101700108",
+      "accessDate": "2024-11-03T02:11:10Z",
+      "creators": [
+        {
+          "firstName": "Jay",
+          "lastName": "Barney",
+          "creatorType": "author"
+        }
+      ],
+      "tags": [
+        {
+          "tag": "Optional 👉"
+        }
+      ],
+      "relations": {
+        "dc:replaces": [
+          "http://zotero.org/users/13706285/items/BY5Q6HE8"
+        ]
+      },
+      "dateAdded": "2024-11-03T02:11:10Z",
+      "dateModified": "2026-01-16T03:53:01Z",
+      "uri": "http://zotero.org/users/13706285/items/QLZ6QGGY",
+      "attachments": [
+        {
+          "itemType": "attachment",
+          "title": "Barney - 1991 - Firm Resources and Sustained Competitive Advantage.pdf",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2024-11-03T02:11:35Z",
+          "dateModified": "2024-11-03T02:42:40Z",
+          "uri": "http://zotero.org/users/13706285/items/PMH2J958",
+          "path": "files/2710/Barney - 1991 - Firm Resources and Sustained Competitive Advantage.pdf",
+          "select": "zotero://select/library/items/PMH2J958"
+        },
+        {
+          "itemType": "attachment",
+          "title": "Firm Resources and Sustained Competitive Advantage - Jay Barney, 1991",
+          "url": "https://journals.sagepub.com/doi/10.1177/014920639101700108",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2024-11-03T02:11:20Z",
+          "dateModified": "2024-11-03T02:11:20Z",
+          "uri": "http://zotero.org/users/13706285/items/L2MJJVSA",
+          "path": "files/2714/014920639101700108.html",
+          "select": "zotero://select/library/items/L2MJJVSA"
+        }
+      ],
+      "notes": [],
+      "citationKey": "barney_1991",
+      "itemID": 554,
+      "itemKey": "QLZ6QGGY",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/QLZ6QGGY"
+    },
+    {
+      "version": 18642,
+      "itemType": "journalArticle",
+      "title": "Cognitive Change, Strategic Action, and Organizational Renewal",
+      "abstractNote": "Organizational renewal requires that a firm's top managers make timely adjustments in their mental models following significant changes in the environment. Our initial propositions about the difference between renewal and decline focused on whether similar organizations in similar contexts differ in their ability to recognize significant changes in their environments. Analysis of longitudinal data from a matched pair of U.S. railroads suggested, however, that renewal hinges not so much on noticing new conditions, but on being able to link environmental change to corporate strategy and to modify that linkage over time. In the successful company we studied organizational renewal is a continuous process of first and second order changes in cognitive maps.",
+      "date": "1992",
+      "libraryCatalog": "JSTOR",
+      "url": "https://www.jstor.org/stable/2486350",
+      "accessDate": "2024-12-05T04:23:52Z",
+      "volume": "13",
+      "publisher": "Wiley",
+      "pages": "15-36",
+      "publicationTitle": "Strategic Management Journal",
+      "ISSN": "0143-2095",
+      "creators": [
+        {
+          "firstName": "Pamela S.",
+          "lastName": "Barr",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "J. L.",
+          "lastName": "Stimpert",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Anne S.",
+          "lastName": "Huff",
+          "creatorType": "author"
+        }
+      ],
+      "tags": [],
+      "relations": {},
+      "dateAdded": "2024-12-05T04:23:52Z",
+      "dateModified": "2024-12-05T04:23:52Z",
+      "uri": "http://zotero.org/users/13706285/items/847P7VM7",
+      "attachments": [
+        {
+          "itemType": "attachment",
+          "title": "Barr et al. - 1992 - Cognitive Change, Strategic Action, and Organizati.pdf",
+          "url": "https://www.jstor.org/stable/pdfplus/10.2307/2486350.pdf?acceptTC=true",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2024-12-05T04:23:53Z",
+          "dateModified": "2024-12-05T04:24:17Z",
+          "uri": "http://zotero.org/users/13706285/items/JYKZA8CE",
+          "path": "files/2421/Barr et al. - 1992 - Cognitive Change, Strategic Action, and Organizati.pdf",
+          "select": "zotero://select/library/items/JYKZA8CE"
+        }
+      ],
+      "notes": [],
+      "citationKey": "barr_etal_1992",
+      "itemID": 637,
+      "itemKey": "847P7VM7",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/847P7VM7"
+    },
+    {
+      "version": 9127,
+      "itemType": "book",
+      "title": "Economic Foundations of Strategy",
+      "abstractNote": "\"Economic Foundations of Strategy uniquely contributes to the strategic management discipline by discussing and integrating the most important theoretical approaches in strategic management research. The book articulates the essence of these theories creatively and eloquently. Currently, our field lacks a scholarly book that brings together these theoretical building blocks of strategic management research.  Mahoney′s book is a superb guide for doctoral students and scholars who are entering the discipline of strategic management.  I conjecture that this book will become a must-have guide for seasoned strategy researchers as well... scholars from related disciplines such as industrial organization economics, international business and organization would also want to have a copy of this phenomenal guide… It was a pleasure to read this book.\" -- Yasemin Y. Kor, University of Delaware Economic Foundations of Strategy provides not only the essential basic tenets of strategy, it also shows the inter-relationships of five major theories of the firm: the behavioral theory; transaction costs theory; property rights theory; agency theory; and dynamic resource-based theory.  Even though technological, organizational and institutional change advances breathlessly, the theories of the firm provided in this research book are durable principles that have stood, and the author maintains will continue to stand, the test of time.  Economic Foundations of Strategy emphasizes the complementarities among these five theories of organization, and the potential for integrating these theories in the evolving science of organization.  Applications of these theories to business practice are emphasized throughout the book.   Key Features:   • Provides an integrative approach -Covers economics (e.g., transaction costs, property rights and agency theory); -Covers finance (e.g., real options theory) -Covers organization theory (e.g., the behavioral theory of the firm); and -Covers modern strategic management theory (e.g., dynamic resource-based theory).   • Connects \"Know-why\" and \"Know-how\" -Covers the theoretical material deeply enough to be of use to advanced students -Connects this research to business applications to be of use to those interested in business practice",
+      "date": "2004-07-08",
+      "language": "English",
+      "libraryCatalog": "Amazon",
+      "place": "Thousand Oaks, CA",
+      "publisher": "SAGE Publications, Inc",
+      "ISBN": "978-1-4129-0543-5",
+      "edition": "1st edition",
+      "numPages": "272",
+      "creators": [
+        {
+          "firstName": "Joseph T.",
+          "lastName": "Mahoney",
+          "creatorType": "author"
+        }
+      ],
+      "tags": [],
+      "relations": {},
+      "dateAdded": "2024-12-16T18:15:04Z",
+      "dateModified": "2024-12-16T18:16:46Z",
+      "uri": "http://zotero.org/users/13706285/items/XLBJRIQ9",
+      "attachments": [
+        {
+          "itemType": "attachment",
+          "title": "Amazon.com Link",
+          "url": "https://www.amazon.com/Economic-Foundations-Strategy-Organizational-Science/dp/1412905435",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2024-12-16T18:15:04Z",
+          "dateModified": "2024-12-16T18:15:04Z",
+          "uri": "http://zotero.org/users/13706285/items/Y54I9A9D",
+          "select": "zotero://select/library/items/Y54I9A9D"
+        },
+        {
+          "itemType": "attachment",
+          "title": "Mahoney - 2004 - Economic Foundations of Strategy.pdf",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2024-12-16T18:14:18Z",
+          "dateModified": "2024-12-16T18:16:51Z",
+          "uri": "http://zotero.org/users/13706285/items/KYLRGIJV",
+          "path": "files/2475/Mahoney - 2004 - Economic Foundations of Strategy.pdf",
+          "select": "zotero://select/library/items/KYLRGIJV"
+        }
+      ],
+      "notes": [],
+      "citationKey": "book-EconomicFoundationsStrategy-Mahoney",
+      "itemID": 616,
+      "itemKey": "XLBJRIQ9",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/XLBJRIQ9"
+    },
+    {
+      "version": 6317,
+      "itemType": "book",
+      "title": "The Economic Intstitutions of Capitalism",
+      "abstractNote": "\"An extraordinarily impressive achievement and must reading for all serious students of law, economics, and organization.\" —Paul L. Joskow, Professor of Economics, Massachusetts of TechnologyFrom Simon & Schuster, The Economic Institutions of Capitalism is Oliver E. Williamson's new perspective on the structure of economic life, and one not to miss.",
+      "date": "1985",
+      "language": "en",
+      "libraryCatalog": "Google Books",
+      "extra": "Google-Books-ID: MUPVLuiy9uQC",
+      "publisher": "Simon and Schuster",
+      "ISBN": "978-0-684-86374-0",
+      "numPages": "473",
+      "creators": [
+        {
+          "firstName": "Oliver E.",
+          "lastName": "Williamson",
+          "creatorType": "author"
+        }
+      ],
+      "tags": [
+        {
+          "tag": "Business & Economics / Economics / General",
+          "type": 1
+        },
+        {
+          "tag": "Business & Economics / General",
+          "type": 1
+        },
+        {
+          "tag": "Business & Economics / Economic History",
+          "type": 1
+        },
+        {
+          "tag": "Business & Economics / Free Enterprise & Capitalism",
+          "type": 1
+        },
+        {
+          "tag": "Business & Economics / Infrastructure",
+          "type": 1
+        },
+        {
+          "tag": "Political Science / Political Ideologies / Capitalism",
+          "type": 1
+        }
+      ],
+      "relations": {},
+      "dateAdded": "2024-11-09T02:39:15Z",
+      "dateModified": "2024-11-09T02:39:15Z",
+      "uri": "http://zotero.org/users/13706285/items/EWMQ4G8C",
+      "attachments": [
+        {
+          "itemType": "attachment",
+          "title": "Google Books Link",
+          "url": "https://books.google.com/books?id=MUPVLuiy9uQC",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2024-11-09T02:39:16Z",
+          "dateModified": "2024-11-09T02:39:16Z",
+          "uri": "http://zotero.org/users/13706285/items/YTJ3LA35",
+          "select": "zotero://select/library/items/YTJ3LA35"
+        },
+        {
+          "itemType": "attachment",
+          "title": "Williamson - 1985 - The Economic Intstitutions of Capitalism.pdf",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2024-11-09T02:46:03Z",
+          "dateModified": "2024-11-09T02:46:03Z",
+          "uri": "http://zotero.org/users/13706285/items/A4ZL47PW",
+          "path": "files/2539/Williamson - 1985 - The Economic Intstitutions of Capitalism.pdf",
+          "select": "zotero://select/library/items/A4ZL47PW"
+        }
+      ],
+      "notes": [],
+      "citationKey": "book-EconomicIntstitutionsCapitalism-Williamson",
+      "itemID": 668,
+      "itemKey": "EWMQ4G8C",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/EWMQ4G8C"
+    },
+    {
+      "version": 7487,
+      "itemType": "book",
+      "title": "The Social Psychology of Organizing",
+      "abstractNote": "Have you ever had trouble teaching the various topics of social psychology and fitting them together to form a coherent field? Dr. Stangor felt like he was presenting a laundry list of ideas, research studies, and phenomena, rather than an integrated set of principles and knowledge. He wondered how his students could be expected to remember and understand the many phenomena that social psychologists study? How could they tell what was most important? It was then that he realized a fresh approach to a Social Psychology textbook was needed to structure and integrate student learning; thus, Principles of Social Psychology was born.",
+      "date": "1979-01-01",
+      "language": "English",
+      "libraryCatalog": "Amazon",
+      "place": "New York",
+      "publisher": "McGraw-Hill Humanities/Social Sciences/Languages",
+      "ISBN": "978-0-07-554808-9",
+      "edition": "2nd edition",
+      "numPages": "294",
+      "creators": [
+        {
+          "firstName": "Karl E.",
+          "lastName": "Weick",
+          "creatorType": "author"
+        }
+      ],
+      "tags": [],
+      "relations": {},
+      "dateAdded": "2024-12-05T20:51:32Z",
+      "dateModified": "2024-12-05T20:51:32Z",
+      "uri": "http://zotero.org/users/13706285/items/K9XFBNQ4",
+      "attachments": [
+        {
+          "itemType": "attachment",
+          "title": "Amazon.com Link",
+          "url": "https://www.amazon.com/Social-Psychology-Organizing-Topics/dp/0075548089",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2024-12-05T20:51:32Z",
+          "dateModified": "2024-12-05T20:51:32Z",
+          "uri": "http://zotero.org/users/13706285/items/BAKCLEC6",
+          "select": "zotero://select/library/items/BAKCLEC6"
+        }
+      ],
+      "notes": [],
+      "citationKey": "book-SocialPsychologyOrganizing-Weick",
+      "itemID": 636,
+      "itemKey": "K9XFBNQ4",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/K9XFBNQ4"
+    },
+    {
+      "version": 18643,
+      "itemType": "journalArticle",
+      "title": "Customer Power, Strategic Investment, and the Failure of Leading Firms",
+      "abstractNote": "Why might firms be regarded as astutely managed at one point, yet subsequently lose their positions of industry leadership when faced with technological change? We present a model, grounded in a study of the world disk drive industry, that charts the process through which the demands of a firm's customers shape the allocation of resources in technological innovation-a model that links theories of resource dependence and resource allocation. We show that established firms led the industry in developing technologies of every sort-even radical ones-whenever the technologies addressed existing customers' needs. The same firms failed to develop simpler technologies that initially were only useful in emerging markets, because impetus coalesces behind, and resources are allocated to, programs targeting powerful customers. Projects targeted at technologies for which no customers yet exist languish for lack of impetus and resources. Because the rate of technical progress can exceed the performance demanded in a market, technologies which initially can only be used in emerging markets later can invade mainstream ones, carrying entrant firms to victory over established companies.",
+      "date": "1996",
+      "libraryCatalog": "JSTOR",
+      "url": "https://www.jstor.org/stable/2486845",
+      "accessDate": "2024-11-15T19:25:38Z",
+      "volume": "17",
+      "publisher": "Wiley",
+      "pages": "197-218",
+      "publicationTitle": "Strategic Management Journal",
+      "issue": "3",
+      "ISSN": "0143-2095",
+      "creators": [
+        {
+          "firstName": "Clayton M.",
+          "lastName": "Christensen",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Joseph L.",
+          "lastName": "Bower",
+          "creatorType": "author"
+        }
+      ],
+      "tags": [],
+      "relations": {},
+      "dateAdded": "2024-11-15T19:25:38Z",
+      "dateModified": "2024-11-15T19:25:38Z",
+      "uri": "http://zotero.org/users/13706285/items/7CCNQ2V6",
+      "attachments": [
+        {
+          "itemType": "attachment",
+          "title": "Christensen and Bower - 1996 - Customer Power, Strategic Investment, and the Fail.pdf",
+          "url": "https://www.jstor.org/stable/pdfplus/10.2307/2486845.pdf?acceptTC=true",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2024-11-15T19:25:41Z",
+          "dateModified": "2024-11-15T19:25:57Z",
+          "uri": "http://zotero.org/users/13706285/items/JTCRYFLQ",
+          "path": "files/2580/Christensen and Bower - 1996 - Customer Power, Strategic Investment, and the Fail.pdf",
+          "select": "zotero://select/library/items/JTCRYFLQ"
+        }
+      ],
+      "notes": [],
+      "citationKey": "christensen_bower_1996",
+      "itemID": 656,
+      "itemKey": "7CCNQ2V6",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/7CCNQ2V6"
+    },
+    {
+      "version": 6398,
+      "itemType": "journalArticle",
+      "title": "The Nature of the Firm",
+      "abstractNote": "Click on the article title to read more.",
+      "date": "1937",
+      "language": "en",
+      "libraryCatalog": "onlinelibrary.wiley.com",
+      "url": "https://onlinelibrary.wiley.com/doi/10.1111/j.1468-0335.1937.tb00002.x",
+      "accessDate": "2024-11-09T02:34:15Z",
+      "ISSN": "1468-0335",
+      "creators": [
+        {
+          "firstName": "R. H.",
+          "lastName": "Coase",
+          "creatorType": "author"
+        }
+      ],
+      "tags": [],
+      "relations": {},
+      "dateAdded": "2024-11-09T02:34:15Z",
+      "dateModified": "2024-11-10T14:06:05Z",
+      "uri": "http://zotero.org/users/13706285/items/8AQIHS5N",
+      "attachments": [
+        {
+          "itemType": "attachment",
+          "title": "Coase - 1937 - The Nature of the Firm.pdf",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2024-11-09T02:35:32Z",
+          "dateModified": "2024-11-10T14:06:09Z",
+          "uri": "http://zotero.org/users/13706285/items/FMIC6BKZ",
+          "path": "files/2669/Coase - 1937 - The Nature of the Firm.pdf",
+          "select": "zotero://select/library/items/FMIC6BKZ"
+        }
+      ],
+      "notes": [],
+      "citationKey": "coase_1937",
+      "itemID": 665,
+      "itemKey": "8AQIHS5N",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/8AQIHS5N"
+    },
+    {
+      "version": 18642,
+      "itemType": "journalArticle",
+      "title": "Absorptive Capacity: A New Perspective on Learning and Innovation",
+      "abstractNote": "In this paper, we argue that the ability of a firm to recognize the value of new, external information, assimilate it, and apply it to commercial ends is critical to its innovative capabilities. We label this capability a firm's absorptive capacity and suggest that it is largely a function of the firm's level of prior related knowledge. The discussion focuses first on the cognitive basis for an individual's absorptive capacity including, in particular, prior related knowledge and diversity of background. We then characterize the factors that influence absorptive capacity at the organizational level, how an organization's absorptive capacity differs from that of its individual members, and the role of diversity of expertise within an organization. We argue that the development of absorptive capacity, and, in turn, innovative performance are history- or path-dependent and argue how lack of investment in an area of expertise early on may foreclose the future development of a technical capability in that area. We formulate a model of firm investment in research and development (R&D), in which R&D contributes to a firm's absorptive capacity, and test predictions relating a firm's investment in R&D to the knowledge underlying technical change within an industry. Discussion focuses on the implications of absorptive capacity for the analysis of other related innovative activities, including basic research, the adoption and diffusion of innovations, and decisions to participate in cooperative R&D ventures.",
+      "date": "1990",
+      "shortTitle": "Absorptive Capacity",
+      "libraryCatalog": "JSTOR",
+      "url": "https://www.jstor.org/stable/2393553",
+      "accessDate": "2024-12-12T16:44:08Z",
+      "volume": "35",
+      "publisher": "[Sage Publications, Inc., Johnson Graduate School of Management, Cornell University]",
+      "pages": "128-152",
+      "publicationTitle": "Administrative Science Quarterly",
+      "DOI": "10.2307/2393553",
+      "issue": "1",
+      "ISSN": "0001-8392",
+      "creators": [
+        {
+          "firstName": "Wesley M.",
+          "lastName": "Cohen",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Daniel A.",
+          "lastName": "Levinthal",
+          "creatorType": "author"
+        }
+      ],
+      "tags": [],
+      "relations": {},
+      "dateAdded": "2024-12-12T16:44:08Z",
+      "dateModified": "2024-12-12T16:44:08Z",
+      "uri": "http://zotero.org/users/13706285/items/E9PSP644",
+      "attachments": [
+        {
+          "itemType": "attachment",
+          "title": "Cohen and Levinthal - 1990 - Absorptive Capacity A New Perspective on Learning.pdf",
+          "url": "https://www.jstor.org/stable/pdfplus/10.2307/2393553.pdf?acceptTC=true",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2024-12-12T16:44:09Z",
+          "dateModified": "2024-12-12T16:44:27Z",
+          "uri": "http://zotero.org/users/13706285/items/MRF5E7HX",
+          "path": "files/2419/Cohen and Levinthal - 1990 - Absorptive Capacity A New Perspective on Learning.pdf",
+          "select": "zotero://select/library/items/MRF5E7HX"
+        }
+      ],
+      "notes": [],
+      "citationKey": "cohen_levinthal_1990",
+      "itemID": 635,
+      "itemKey": "E9PSP644",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/E9PSP644"
+    },
+    {
+      "version": 9217,
+      "itemType": "journalArticle",
+      "title": "Meta-analytic reviews of board composition, leadership structure, and financial performance",
+      "abstractNote": "Careful review of extant research addressing the relationships between board composition, board leadership structure, and firm financial performance demonstrates little consistency in results. In general, neither board composition nor board leadership structure has been consistently linked to firm financial performance. In response to these findings, we provide meta-analyses of 54 empirical studies of board composition (159 samples, n = 40,160) and 31 empirical studies of board leadership structure (69 samples, n = 12,915) and their relationships to firm financial performance. These—and moderator analyses relying on firm size, the nature of the financial performance indicator, and various operationalizations of board composition—provide little evidence of systematic governance structure/financial performance relationships. © 1998 John Wiley & Sons, Ltd.",
+      "date": "1998",
+      "language": "en",
+      "libraryCatalog": "Wiley Online Library",
+      "url": "https://onlinelibrary.wiley.com/doi/abs/10.1002/%28SICI%291097-0266%28199803%2919%3A3%3C269%3A%3AAID-SMJ950%3E3.0.CO%3B2-K",
+      "accessDate": "2025-01-28T23:16:34Z",
+      "rights": "Copyright © 1998 John Wiley & Sons, Ltd.",
+      "extra": "_eprint: https://onlinelibrary.wiley.com/doi/pdf/10.1002/%28SICI%291097-0266%28199803%2919%3A3%3C269%3A%3AAID-SMJ950%3E3.0.CO%3B2-K",
+      "volume": "19",
+      "pages": "269-290",
+      "publicationTitle": "Strategic Management Journal",
+      "DOI": "10.1002/(SICI)1097-0266(199803)19:3<269::AID-SMJ950>3.0.CO;2-K",
+      "issue": "3",
+      "ISSN": "1097-0266",
+      "creators": [
+        {
+          "firstName": "Dan R.",
+          "lastName": "Dalton",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Catherine M.",
+          "lastName": "Daily",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Alan E.",
+          "lastName": "Ellstrand",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Jonathan L.",
+          "lastName": "Johnson",
+          "creatorType": "author"
+        }
+      ],
+      "tags": [
+        {
+          "tag": "firm performance",
+          "type": 1
+        },
+        {
+          "tag": "meta-analysis",
+          "type": 1
+        },
+        {
+          "tag": "board composition",
+          "type": 1
+        },
+        {
+          "tag": "board leadership structure",
+          "type": 1
+        }
+      ],
+      "relations": {},
+      "dateAdded": "2025-01-28T23:16:34Z",
+      "dateModified": "2025-01-28T23:16:34Z",
+      "uri": "http://zotero.org/users/13706285/items/3E4TTVVI",
+      "attachments": [
+        {
+          "itemType": "attachment",
+          "title": "Dalton et al. - 1998 - Meta-analytic reviews of board composition, leader.pdf",
+          "url": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1002/%28SICI%291097-0266%28199803%2919%3A3%3C269%3A%3AAID-SMJ950%3E3.0.CO%3B2-K",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2025-01-28T23:16:35Z",
+          "dateModified": "2025-01-28T23:16:44Z",
+          "uri": "http://zotero.org/users/13706285/items/DB5K5S7F",
+          "path": "files/2297/Dalton et al. - 1998 - Meta-analytic reviews of board composition, leader.pdf",
+          "select": "zotero://select/library/items/DB5K5S7F"
+        },
+        {
+          "itemType": "attachment",
+          "title": "Snapshot",
+          "url": "https://onlinelibrary.wiley.com/doi/abs/10.1002/%28SICI%291097-0266%28199803%2919%3A3%3C269%3A%3AAID-SMJ950%3E3.0.CO%3B2-K",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2025-01-28T23:16:40Z",
+          "dateModified": "2025-01-28T23:16:40Z",
+          "uri": "http://zotero.org/users/13706285/items/GCRHR62N",
+          "path": "files/2298/(SICI)1097-0266(199803)193269AID-SMJ9503.0.html",
+          "select": "zotero://select/library/items/GCRHR62N"
+        }
+      ],
+      "notes": [],
+      "citationKey": "dalton_etal_1998",
+      "itemID": 1146,
+      "itemKey": "3E4TTVVI",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/3E4TTVVI"
+    },
+    {
+      "version": 18657,
+      "itemType": "journalArticle",
+      "title": "Agents without Principles? The Spread of the Poison Pill through the Intercorporate Network",
+      "abstractNote": "This study compares the agency theory of the firm with interorganizational theory in examining the factors associated with the adoption of the poison pill-a takeover defense issued by a firm's board of directors that can dramatically increase the cost that a hostile buyer would have to pay to acquire the firm-by a panel of Fortune 500 firms between July 1984 and August 1989. The pill's rapid spread is traced to a combination of ownership structure and other firm-level factors and an interlock network diffusion process. The results support a social structural perspective on the market for corporate control in which the interlock network provides a social context favoring continued managerial dominance. The findings are also more consistent with models of cohesion rather than structural equivalence as the social structural mechanism responsible for diffusion.",
+      "date": "1991",
+      "shortTitle": "Agents without Principles?",
+      "libraryCatalog": "JSTOR",
+      "url": "https://www.jstor.org/stable/2393275",
+      "accessDate": "2025-01-28T23:19:14Z",
+      "volume": "36",
+      "publisher": "[Sage Publications, Inc., Johnson Graduate School of Management, Cornell University]",
+      "pages": "583-613",
+      "publicationTitle": "Administrative Science Quarterly",
+      "DOI": "10.2307/2393275",
+      "issue": "4",
+      "ISSN": "0001-8392",
+      "creators": [
+        {
+          "firstName": "Gerald F.",
+          "lastName": "Davis",
+          "creatorType": "author"
+        }
+      ],
+      "tags": [],
+      "relations": {},
+      "dateAdded": "2025-01-28T23:19:14Z",
+      "dateModified": "2025-01-28T23:19:14Z",
+      "uri": "http://zotero.org/users/13706285/items/TZ7GEDKV",
+      "attachments": [
+        {
+          "itemType": "attachment",
+          "title": "Davis - 1991 - Agents without Principles The Spread of the Poiso.pdf",
+          "url": "https://www.jstor.org/stable/pdfplus/10.2307/2393275.pdf?acceptTC=true",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2025-01-28T23:19:16Z",
+          "dateModified": "2025-01-28T23:19:24Z",
+          "uri": "http://zotero.org/users/13706285/items/L25YCUAY",
+          "path": "files/2295/Davis - 1991 - Agents without Principles The Spread of the Poiso.pdf",
+          "select": "zotero://select/library/items/L25YCUAY"
+        }
+      ],
+      "notes": [],
+      "citationKey": "davis_1991",
+      "itemID": 1345,
+      "itemKey": "TZ7GEDKV",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/TZ7GEDKV"
+    },
+    {
+      "version": 18647,
+      "itemType": "journalArticle",
+      "title": "Sources, Procedures, and Microeconomic Effects of Innovation",
+      "date": "1988",
+      "libraryCatalog": "JSTOR",
+      "url": "https://www.jstor.org/stable/2726526",
+      "accessDate": "2024-10-07T03:33:01Z",
+      "volume": "26",
+      "publisher": "American Economic Association",
+      "pages": "1120-1171",
+      "publicationTitle": "Journal of Economic Literature",
+      "issue": "3",
+      "ISSN": "0022-0515",
+      "creators": [
+        {
+          "firstName": "Giovanni",
+          "lastName": "Dosi",
+          "creatorType": "author"
+        }
+      ],
+      "tags": [],
+      "relations": {},
+      "dateAdded": "2024-10-07T03:33:01Z",
+      "dateModified": "2024-10-07T03:33:01Z",
+      "uri": "http://zotero.org/users/13706285/items/XTG6TBDX",
+      "attachments": [
+        {
+          "itemType": "attachment",
+          "title": "Dosi - 1988 - Sources, Procedures, and Microeconomic Effects of .pdf",
+          "url": "https://www.jstor.org/stable/pdfplus/10.2307/2726526.pdf?acceptTC=true",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2024-10-07T03:33:03Z",
+          "dateModified": "2024-10-07T03:38:26Z",
+          "uri": "http://zotero.org/users/13706285/items/XCB9U2Q3",
+          "path": "files/2988/Dosi - 1988 - Sources, Procedures, and Microeconomic Effects of .pdf",
+          "select": "zotero://select/library/items/XCB9U2Q3"
+        }
+      ],
+      "notes": [],
+      "citationKey": "dosi_1988",
+      "itemID": 730,
+      "itemKey": "XTG6TBDX",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/XTG6TBDX"
+    },
+    {
+      "version": 18643,
+      "itemType": "journalArticle",
+      "title": "The Relational View: Cooperative Strategy and Sources of Interorganizational Competitive Advantage",
+      "abstractNote": "In this article we offer a view that suggests that a firm's critical resources may span firm boundaries and may be embedded in interfirm resources and routines. We argue that an increasingly important unit of analysis for understanding competitive advantage is the relationship between firms and identify four potential sources of interorganizational competitive advantage: (1) relation-specific assets, (2) knowledgesharing routines, (3) complementary resources/capabilities, and (4) effective governance. We examine each of these potential sources of rent in detail, identifying key subprocesses, and also discuss the isolating mechanisms that serve to preserve relational rents. Finally, we discuss how the relational view may offer normative prescriptions for firm-level strategies that contradict the prescriptions offered by those with a resource-based view or industry structure view.",
+      "date": "1998",
+      "shortTitle": "The Relational View",
+      "libraryCatalog": "JSTOR",
+      "url": "https://www.jstor.org/stable/259056",
+      "accessDate": "2024-11-15T19:26:13Z",
+      "volume": "23",
+      "publisher": "Academy of Management",
+      "pages": "660-679",
+      "publicationTitle": "The Academy of Management Review",
+      "DOI": "10.2307/259056",
+      "issue": "4",
+      "ISSN": "0363-7425",
+      "creators": [
+        {
+          "firstName": "Jeffrey H.",
+          "lastName": "Dyer",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Harbir",
+          "lastName": "Singh",
+          "creatorType": "author"
+        }
+      ],
+      "tags": [],
+      "relations": {},
+      "dateAdded": "2024-11-15T19:26:13Z",
+      "dateModified": "2024-11-15T19:26:13Z",
+      "uri": "http://zotero.org/users/13706285/items/2BZ9AKAH",
+      "attachments": [
+        {
+          "itemType": "attachment",
+          "title": "Dyer and Singh - 1998 - The Relational View Cooperative Strategy and Sour.pdf",
+          "url": "https://www.jstor.org/stable/pdfplus/10.2307/259056.pdf?acceptTC=true",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2024-11-15T19:26:19Z",
+          "dateModified": "2024-11-15T19:26:27Z",
+          "uri": "http://zotero.org/users/13706285/items/CXGC92JJ",
+          "path": "files/2579/Dyer and Singh - 1998 - The Relational View Cooperative Strategy and Sour.pdf",
+          "select": "zotero://select/library/items/CXGC92JJ"
+        }
+      ],
+      "notes": [],
+      "citationKey": "dyer_singh_1998",
+      "itemID": 655,
+      "itemKey": "2BZ9AKAH",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/2BZ9AKAH"
+    },
+    {
+      "version": 18646,
+      "itemType": "journalArticle",
+      "title": "Agency Theory: An Assessment and Review",
+      "abstractNote": "Agency theory is an important, yet controversial, theory. This paper reviews agency theory, its contributions to organization theory, and the extant empirical work and develops testable propositions. The conclusions are that agency theory (a) offers unique insight into information systems, outcome uncertainty, incentives, and risk and (b) is an empirically valid perspective, particularly when coupled with complementary perspectives. The principal recommendation is to incorporate an agency perspective in studies of the many problems having a cooperative structure.",
+      "date": "1989",
+      "shortTitle": "Agency Theory",
+      "libraryCatalog": "JSTOR",
+      "url": "https://www.jstor.org/stable/258191",
+      "accessDate": "2024-10-13T03:04:53Z",
+      "volume": "14",
+      "publisher": "Academy of Management",
+      "pages": "57-74",
+      "publicationTitle": "The Academy of Management Review",
+      "DOI": "10.2307/258191",
+      "issue": "1",
+      "ISSN": "0363-7425",
+      "creators": [
+        {
+          "firstName": "Kathleen M.",
+          "lastName": "Eisenhardt",
+          "creatorType": "author"
+        }
+      ],
+      "tags": [],
+      "relations": {},
+      "dateAdded": "2024-10-13T03:04:53Z",
+      "dateModified": "2024-10-13T03:04:53Z",
+      "uri": "http://zotero.org/users/13706285/items/22R9VZGM",
+      "attachments": [
+        {
+          "itemType": "attachment",
+          "title": "Eisenhardt - 1989 - Agency Theory An Assessment and Review.pdf",
+          "url": "https://www.jstor.org/stable/pdfplus/10.2307/258191.pdf?acceptTC=true",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2024-10-13T03:04:55Z",
+          "dateModified": "2024-10-13T03:06:07Z",
+          "uri": "http://zotero.org/users/13706285/items/WZEPTYB3",
+          "path": "files/2870/Eisenhardt - 1989 - Agency Theory An Assessment and Review.pdf",
+          "select": "zotero://select/library/items/WZEPTYB3"
+        }
+      ],
+      "notes": [],
+      "citationKey": "eisenhardt_1989",
+      "itemID": 716,
+      "itemKey": "22R9VZGM",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/22R9VZGM"
+    },
+    {
+      "version": 18726,
+      "itemType": "journalArticle",
+      "title": "Dynamic capabilities: what are they?",
+      "abstractNote": "This paper focuses on dynamic capabilities and, more generally, the resource-based view of the firm. We argue that dynamic capabilities are a set of specific and identifiable processes such as product development, strategic decision making, and alliancing. They are neither vague nor tautological. Although dynamic capabilities are idiosyncratic in their details and path dependent in their emergence, they have significant commonalities across firms (popularly termed ‘best practice’). This suggests that they are more homogeneous, fungible, equifinal, and substitutable than is usually assumed. In moderately dynamic markets, dynamic capabilities resemble the traditional conception of routines. They are detailed, analytic, stable processes with predictable outcomes. In contrast, in high-velocity markets, they are simple, highly experiential and fragile processes with unpredictable outcomes. Finally, well-known learning mechanisms guide the evolution of dynamic capabilities. In moderately dynamic markets, the evolutionary emphasis is on variation. In high-velocity markets, it is on selection. At the level of RBV, we conclude that traditional RBV misidentifies the locus of long-term competitive advantage in dynamic markets, overemphasizes the strategic logic of leverage, and reaches a boundary condition in high-velocity markets. Copyright © 2000 John Wiley & Sons, Ltd.",
+      "date": "2000",
+      "language": "en",
+      "shortTitle": "Dynamic capabilities",
+      "libraryCatalog": "Wiley Online Library",
+      "url": "https://onlinelibrary.wiley.com/doi/abs/10.1002/1097-0266%28200010/11%2921%3A10/11%3C1105%3A%3AAID-SMJ133%3E3.0.CO%3B2-E",
+      "accessDate": "2024-03-09T03:24:48Z",
+      "rights": "Copyright © 2000 John Wiley & Sons, Ltd.",
+      "extra": "_eprint: https://onlinelibrary.wiley.com/doi/pdf/10.1002/1097-0266%28200010/11%2921%3A10/11%3C1105%3A%3AAID-SMJ133%3E3.0.CO%3B2-E",
+      "volume": "21",
+      "pages": "1105-1121",
+      "publicationTitle": "Strategic Management Journal",
+      "DOI": "10.1002/1097-0266(200010/11)21:10/11<1105::AID-SMJ133>3.0.CO;2-E",
+      "issue": "10-11",
+      "ISSN": "1097-0266",
+      "creators": [
+        {
+          "firstName": "Kathleen M.",
+          "lastName": "Eisenhardt",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Jeffrey A.",
+          "lastName": "Martin",
+          "creatorType": "author"
+        }
+      ],
+      "tags": [
+        {
+          "tag": "workflow/unprocessed📥"
+        },
+        {
+          "tag": "organizational learning"
+        },
+        {
+          "tag": "resource-based view",
+          "type": 1
+        },
+        {
+          "tag": "resources",
+          "type": 1
+        },
+        {
+          "tag": "dynamic capabilities",
+          "type": 1
+        },
+        {
+          "tag": "competitive advantage",
+          "type": 1
+        },
+        {
+          "tag": "dynamic markets",
+          "type": 1
+        },
+        {
+          "tag": "high-velocity markets",
+          "type": 1
+        },
+        {
+          "tag": "organization theory",
+          "type": 1
+        },
+        {
+          "tag": "organizational change",
+          "type": 1
+        }
+      ],
+      "relations": {
+        "dc:replaces": [
+          "http://zotero.org/users/13706285/items/IIHBCEQQ"
+        ]
+      },
+      "dateAdded": "2024-03-09T03:24:48Z",
+      "dateModified": "2025-03-28T03:28:50Z",
+      "uri": "http://zotero.org/users/13706285/items/4BDFXLL9",
+      "attachments": [
+        {
+          "itemType": "attachment",
+          "title": "Eisenhardt and Martin - 2000 - Dynamic Capabilities What Are They.pdf",
+          "url": "https://www.jstor.org/stable/pdfplus/10.2307/3094429.pdf?acceptTC=true",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2024-11-03T02:21:41Z",
+          "dateModified": "2025-03-28T03:28:50Z",
+          "uri": "http://zotero.org/users/13706285/items/PPAEN2AH",
+          "path": "files/2161/Eisenhardt and Martin - 2000 - Dynamic Capabilities What Are They.pdf",
+          "select": "zotero://select/library/items/PPAEN2AH"
+        }
+      ],
+      "notes": [],
+      "citationKey": "eisenhardt_martin_2000",
+      "itemID": 425,
+      "itemKey": "4BDFXLL9",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/4BDFXLL9"
+    },
+    {
+      "version": 10299,
+      "itemType": "journalArticle",
+      "title": "Separation of Ownership and Control",
+      "abstractNote": "This paper analyzes the survival of organizations in which decision agents do not bear a major share of the wealth effects of their decisions. This is what the literature on large corporations calls separation of ownership and control. Such separation of decision and risk bearing functions is also common to organizations like large professional partnerships, financial mutuals and nonprofits. We contend that separation of decision and risk bearing functions survives in these organizations in part because of the benefits of specialization of management and risk bearing but also because of an effective common approach to controlling the implied agency problems. In particular, the contract structures of all these organizations separate the ratification and monitoring of decisions from the initiation and implementation of the decisions.",
+      "date": "1983",
+      "language": "en",
+      "libraryCatalog": "papers.ssrn.com",
+      "url": "https://papers.ssrn.com/abstract=94034",
+      "accessDate": "2025-01-28T23:17:10Z",
+      "DOI": "10.2139/ssrn.94034",
+      "creators": [
+        {
+          "firstName": "Eugene F.",
+          "lastName": "Fama",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Michael C.",
+          "lastName": "Jensen",
+          "creatorType": "author"
+        }
+      ],
+      "tags": [
+        {
+          "tag": "SSRN",
+          "type": 1
+        },
+        {
+          "tag": "Eugene F. Fama",
+          "type": 1
+        },
+        {
+          "tag": "Michael C. Jensen (Deceased)",
+          "type": 1
+        },
+        {
+          "tag": "Separation of Ownership and Control",
+          "type": 1
+        }
+      ],
+      "relations": {},
+      "dateAdded": "2025-01-28T23:17:10Z",
+      "dateModified": "2025-03-05T13:21:01Z",
+      "uri": "http://zotero.org/users/13706285/items/JLGTS9VT",
+      "attachments": [
+        {
+          "itemType": "attachment",
+          "title": "Fama and Jensen - 1983 - Separation of Ownership and Control.pdf",
+          "url": "https://papers.ssrn.com/sol3/Delivery.cfm/SSRN_ID924170_code9.pdf?abstractid=94034&mirid=1",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2025-01-28T23:17:13Z",
+          "dateModified": "2025-03-05T13:21:12Z",
+          "uri": "http://zotero.org/users/13706285/items/RUEADAIV",
+          "path": "files/4010/Fama and Jensen - 1983 - Separation of Ownership and Control.pdf",
+          "select": "zotero://select/library/items/RUEADAIV"
+        }
+      ],
+      "notes": [],
+      "citationKey": "fama_jensen_1983",
+      "itemID": 1277,
+      "itemKey": "JLGTS9VT",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/JLGTS9VT"
+    },
+    {
+      "version": 4529,
+      "itemType": "preprint",
+      "title": "Separation of Ownership and Control",
+      "abstractNote": "This paper analyzes the survival of organizations in which decision agents do not bear a major share of the wealth effects of their decisions. This is what the literature on large corporations calls separation of ownership and control. Such separation of decision and risk bearing functions is also common to organizations like large professional partnerships, financial mutuals and nonprofits. We contend that separation of decision and risk bearing functions survives in these organizations in part because of the benefits of specialization of management and risk bearing but also because of an effective common approach to controlling the implied agency problems. In particular, the contract structures of all these organizations separate the ratification and monitoring of decisions from the initiation and implementation of the decisions.",
+      "date": "1998-11-29",
+      "language": "en",
+      "libraryCatalog": "papers.ssrn.com",
+      "url": "https://papers.ssrn.com/abstract=94034",
+      "accessDate": "2024-10-13T03:01:38Z",
+      "place": "Rochester, NY",
+      "DOI": "10.2139/ssrn.94034",
+      "creators": [
+        {
+          "firstName": "Eugene F.",
+          "lastName": "Fama",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Michael C.",
+          "lastName": "Jensen",
+          "creatorType": "author"
+        }
+      ],
+      "tags": [
+        {
+          "tag": "SSRN",
+          "type": 1
+        },
+        {
+          "tag": "Eugene F. Fama",
+          "type": 1
+        },
+        {
+          "tag": "Michael C. Jensen (Deceased)",
+          "type": 1
+        },
+        {
+          "tag": "Separation of Ownership and Control",
+          "type": 1
+        }
+      ],
+      "relations": {},
+      "dateAdded": "2024-10-13T03:01:38Z",
+      "dateModified": "2024-10-13T03:02:17Z",
+      "uri": "http://zotero.org/users/13706285/items/P7BYPBD8",
+      "attachments": [
+        {
+          "itemType": "attachment",
+          "title": "Fama and Jensen - 1998 - Separation of Ownership and Control.pdf",
+          "url": "https://papers.ssrn.com/sol3/Delivery.cfm/SSRN_ID924170_code9.pdf?abstractid=94034&mirid=1",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2024-10-13T03:01:42Z",
+          "dateModified": "2024-10-13T03:02:23Z",
+          "uri": "http://zotero.org/users/13706285/items/N4JY7UX6",
+          "path": "files/2872/Fama and Jensen - 1998 - Separation of Ownership and Control.pdf",
+          "select": "zotero://select/library/items/N4JY7UX6"
+        }
+      ],
+      "notes": [],
+      "citationKey": "fama_jensen_1998",
+      "itemID": 719,
+      "itemKey": "P7BYPBD8",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/P7BYPBD8",
+      "type": "SSRN Scholarly Paper",
+      "number": "94034",
+      "publisher": "Social Science Research Network"
+    },
+    {
+      "version": 18652,
+      "itemType": "journalArticle",
+      "title": "The intraorganizational power struggle: Rise of finance personnel to top leadership in large corporations, 1919–1979",
+      "abstractNote": "Examined links among organizations, environments, and internal power struggles using 10-yr interval data for the 100 largest US firms between 1919 and 1979. 50 firms stayed on the list of largest corporations for the entire study period, and 166 others temporarily appeared on the list. Early in the century, large firms were controlled by personnel who came up through manufacturing or by entrepreneurs. In the middle decades, sales and marketing personnel were predominant. In the past 25 yrs, finance personnel have come to dominate. These power shifts resulted from changes in organizational strategy and structure, antitrust laws, and the behavior of other similar firms. Results support a nonfunctionalist interpretation of organizational power and change, and show how actors' claims to power rest on their positions within organizations, external events, and their definitions of key problems within organizations. (PsycINFO Database Record (c) 2016 APA, all rights reserved)",
+      "date": "1987",
+      "shortTitle": "The intraorganizational power struggle",
+      "libraryCatalog": "APA PsycNet",
+      "extra": "Place: US",
+      "volume": "52",
+      "publisher": "American Sociological Assn",
+      "pages": "44-58",
+      "publicationTitle": "American Sociological Review",
+      "DOI": "10.2307/2095391",
+      "issue": "1",
+      "ISSN": "1939-8271",
+      "creators": [
+        {
+          "firstName": "Neil",
+          "lastName": "Fligstein",
+          "creatorType": "author"
+        }
+      ],
+      "tags": [
+        {
+          "tag": "Finance",
+          "type": 1
+        },
+        {
+          "tag": "Business Organizations",
+          "type": 1
+        },
+        {
+          "tag": "Leadership",
+          "type": 1
+        },
+        {
+          "tag": "Interpersonal Control",
+          "type": 1
+        },
+        {
+          "tag": "Organizational Climate",
+          "type": 1
+        }
+      ],
+      "relations": {},
+      "dateAdded": "2025-01-28T23:10:59Z",
+      "dateModified": "2025-01-28T23:10:59Z",
+      "uri": "http://zotero.org/users/13706285/items/AFMHB749",
+      "attachments": [
+        {
+          "itemType": "attachment",
+          "title": "Fligstein - 1987 - The intraorganizational power struggle Rise of fi.pdf",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2025-01-28T23:11:14Z",
+          "dateModified": "2025-01-28T23:11:14Z",
+          "uri": "http://zotero.org/users/13706285/items/JSUWTBBE",
+          "path": "files/2302/Fligstein - 1987 - The intraorganizational power struggle Rise of fi.pdf",
+          "select": "zotero://select/library/items/JSUWTBBE"
+        },
+        {
+          "itemType": "attachment",
+          "title": "Snapshot",
+          "url": "https://psycnet.apa.org/record/1988-15579-001",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2025-01-28T23:11:01Z",
+          "dateModified": "2025-01-28T23:11:01Z",
+          "uri": "http://zotero.org/users/13706285/items/7JP3ZB5B",
+          "path": "files/2303/1988-15579-001.html",
+          "select": "zotero://select/library/items/7JP3ZB5B"
+        }
+      ],
+      "notes": [],
+      "citationKey": "fligstein_1987",
+      "itemID": 1151,
+      "itemKey": "AFMHB749",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/AFMHB749"
+    },
+    {
+      "version": 16771,
+      "itemType": "journalArticle",
+      "title": "Markets as Politics: A Political-Cultural Approach to Market Institutions",
+      "date": "1996",
+      "language": "en",
+      "libraryCatalog": "Zotero",
+      "creators": [
+        {
+          "firstName": "Neil",
+          "lastName": "Fligstein",
+          "creatorType": "author"
+        }
+      ],
+      "tags": [
+        {
+          "tag": "workflow/priority🚩"
+        }
+      ],
+      "relations": {},
+      "dateAdded": "2025-10-28T05:39:34Z",
+      "dateModified": "2025-10-29T16:31:10Z",
+      "uri": "http://zotero.org/users/13706285/items/AEUFG2EW",
+      "attachments": [
+        {
+          "itemType": "attachment",
+          "title": "PDF",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2025-10-28T05:39:32Z",
+          "dateModified": "2025-10-28T05:39:34Z",
+          "uri": "http://zotero.org/users/13706285/items/YD9LRKCX",
+          "path": "files/1768/Fligstein - 1996 - Markets as Politics A Political-Cultural Approach to Market Institutions.pdf",
+          "select": "zotero://select/library/items/YD9LRKCX"
+        }
+      ],
+      "notes": [],
+      "citationKey": "fligstein_1996",
+      "itemID": 1563,
+      "itemKey": "AEUFG2EW",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/AEUFG2EW"
+    },
+    {
+      "version": 18642,
+      "itemType": "journalArticle",
+      "title": "Knowledge-Based Approaches to the Theory of the Firm: Some Critical Comments",
+      "abstractNote": "It is argued that Kogut and Zander (1992) and Conner (1991) erred in the specific way in which they claimed that a distinct theory of the multi-person firm can be constructed on the basis of a theory of organizational knowledge or from resource-based insights. It is not possible to tell very much of a story about why there should be firms in lieu of notions such as \"opportunism\" or \"moral hazard.\" However, properly interpreted, knowledge-based theories may help shed light on issues relating to the boundaries and internal organization of the firm.",
+      "date": "1996",
+      "shortTitle": "Knowledge-Based Approaches to the Theory of the Firm",
+      "libraryCatalog": "JSTOR",
+      "url": "https://www.jstor.org/stable/2635285",
+      "accessDate": "2024-12-12T16:48:28Z",
+      "volume": "7",
+      "publisher": "INFORMS",
+      "pages": "470-476",
+      "publicationTitle": "Organization Science",
+      "issue": "5",
+      "ISSN": "1047-7039",
+      "creators": [
+        {
+          "firstName": "Nicolai J.",
+          "lastName": "Foss",
+          "creatorType": "author"
+        }
+      ],
+      "tags": [],
+      "relations": {},
+      "dateAdded": "2024-12-12T16:48:28Z",
+      "dateModified": "2024-12-12T16:48:28Z",
+      "uri": "http://zotero.org/users/13706285/items/MKTHGRM4",
+      "attachments": [
+        {
+          "itemType": "attachment",
+          "title": "Foss - 1996 - Knowledge-Based Approaches to the Theory of the Fi.pdf",
+          "url": "https://www.jstor.org/stable/pdfplus/10.2307/2635285.pdf?acceptTC=true",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2024-12-12T16:48:29Z",
+          "dateModified": "2024-12-12T16:48:42Z",
+          "uri": "http://zotero.org/users/13706285/items/A7CX5LS2",
+          "path": "files/2414/Foss - 1996 - Knowledge-Based Approaches to the Theory of the Fi.pdf",
+          "select": "zotero://select/library/items/A7CX5LS2"
+        }
+      ],
+      "notes": [],
+      "citationKey": "foss_1996",
+      "itemID": 631,
+      "itemKey": "MKTHGRM4",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/MKTHGRM4"
+    },
+    {
+      "version": 18642,
+      "itemType": "journalArticle",
+      "title": "Organization Design: An Information Processing View",
+      "date": "1974",
+      "shortTitle": "Organization Design",
+      "libraryCatalog": "JSTOR",
+      "url": "https://www.jstor.org/stable/25059090",
+      "accessDate": "2024-12-05T04:20:54Z",
+      "volume": "4",
+      "publisher": "INFORMS",
+      "pages": "28-36",
+      "publicationTitle": "Interfaces",
+      "issue": "3",
+      "ISSN": "0092-2102",
+      "creators": [
+        {
+          "firstName": "Jay R.",
+          "lastName": "Galbraith",
+          "creatorType": "author"
+        }
+      ],
+      "tags": [],
+      "relations": {},
+      "dateAdded": "2024-12-05T04:20:54Z",
+      "dateModified": "2024-12-05T04:20:54Z",
+      "uri": "http://zotero.org/users/13706285/items/8Z8I8EPW",
+      "attachments": [
+        {
+          "itemType": "attachment",
+          "title": "Galbraith - 1974 - Organization Design An Information Processing Vie.pdf",
+          "url": "https://www.jstor.org/stable/pdfplus/10.2307/25059090.pdf?acceptTC=true",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2024-12-05T04:20:56Z",
+          "dateModified": "2024-12-05T04:21:03Z",
+          "uri": "http://zotero.org/users/13706285/items/PW3XBK8P",
+          "path": "files/2424/Galbraith - 1974 - Organization Design An Information Processing Vie.pdf",
+          "select": "zotero://select/library/items/PW3XBK8P"
+        }
+      ],
+      "notes": [],
+      "citationKey": "galbraith_1974",
+      "itemID": 640,
+      "itemKey": "8Z8I8EPW",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/8Z8I8EPW"
+    },
+    {
+      "version": 18652,
+      "itemType": "journalArticle",
+      "title": "Upper Echelons: The Organization as a Reflection of Its Top Managers",
+      "abstractNote": "Theorists in various fields have discussed characteristics of top managers. This paper attempts to synthesize these previously fragmented literatures around a more general \"upper echelons perspective.\" The theory states that organizational outcomes-strategic choices and performance levels-are partially predicted by managerial background characteristics. Propositions and methodological suggestions are included.",
+      "date": "1984",
+      "shortTitle": "Upper Echelons",
+      "libraryCatalog": "JSTOR",
+      "url": "https://www.jstor.org/stable/258434",
+      "accessDate": "2025-01-28T23:09:26Z",
+      "volume": "9",
+      "publisher": "Academy of Management",
+      "pages": "193-206",
+      "publicationTitle": "The Academy of Management Review",
+      "DOI": "10.2307/258434",
+      "issue": "2",
+      "ISSN": "0363-7425",
+      "creators": [
+        {
+          "firstName": "Donald C.",
+          "lastName": "Hambrick",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Phyllis A.",
+          "lastName": "Mason",
+          "creatorType": "author"
+        }
+      ],
+      "tags": [],
+      "relations": {},
+      "dateAdded": "2025-01-28T23:09:26Z",
+      "dateModified": "2025-01-28T23:09:26Z",
+      "uri": "http://zotero.org/users/13706285/items/QYH6BHWS",
+      "attachments": [
+        {
+          "itemType": "attachment",
+          "title": "Hambrick and Mason - 1984 - Upper Echelons The Organization as a Reflection o.pdf",
+          "url": "https://www.jstor.org/stable/pdfplus/10.2307/258434.pdf?acceptTC=true",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2025-01-28T23:09:27Z",
+          "dateModified": "2025-01-28T23:11:20Z",
+          "uri": "http://zotero.org/users/13706285/items/Y5T4CWRK",
+          "path": "files/2301/Hambrick and Mason - 1984 - Upper Echelons The Organization as a Reflection o.pdf",
+          "select": "zotero://select/library/items/Y5T4CWRK"
+        }
+      ],
+      "notes": [],
+      "citationKey": "hambrick_mason_1984",
+      "itemID": 1152,
+      "itemKey": "QYH6BHWS",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/QYH6BHWS"
+    },
+    {
+      "version": 18647,
+      "itemType": "journalArticle",
+      "title": "Evolutionary Trajectories in Petroleum Firm R&D",
+      "abstractNote": "Tacit knowledge and cumulative learning underlie an evolutionary theory of business firm development and strategy. As one test case of the theory, this study examines firms' applied research and development activities. Evolutionary theory suggests that firms within an industry will tend both to persist and to differ in the amount of effort they devote to various R&D applications. A test of the hypothesis of presistent differences in R&D, using uniquely detailed data from the petroleum industry, provides support for evolutionary theory.",
+      "date": "1994-12",
+      "libraryCatalog": "pubsonline.informs.org (Atypon)",
+      "url": "https://pubsonline.informs.org/doi/abs/10.1287/mnsc.40.12.1720",
+      "accessDate": "2024-10-07T03:21:21Z",
+      "volume": "40",
+      "publisher": "INFORMS",
+      "pages": "1720-1747",
+      "publicationTitle": "Management Science",
+      "DOI": "10.1287/mnsc.40.12.1720",
+      "issue": "12",
+      "ISSN": "0025-1909",
+      "creators": [
+        {
+          "firstName": "Constance E.",
+          "lastName": "Helfat",
+          "creatorType": "author"
+        }
+      ],
+      "tags": [
+        {
+          "tag": "innovation",
+          "type": 1
+        },
+        {
+          "tag": "evolution",
+          "type": 1
+        },
+        {
+          "tag": "research and development",
+          "type": 1
+        }
+      ],
+      "relations": {},
+      "dateAdded": "2024-10-07T03:21:21Z",
+      "dateModified": "2024-10-07T03:21:21Z",
+      "uri": "http://zotero.org/users/13706285/items/GX3KD9AH",
+      "attachments": [
+        {
+          "itemType": "attachment",
+          "title": "Helfat - 1994 - Evolutionary Trajectories in Petroleum Firm R&D.pdf",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2024-10-07T03:21:55Z",
+          "dateModified": "2024-10-07T03:21:55Z",
+          "uri": "http://zotero.org/users/13706285/items/4TJN54TL",
+          "path": "files/2995/Helfat - 1994 - Evolutionary Trajectories in Petroleum Firm R&D.pdf",
+          "select": "zotero://select/library/items/4TJN54TL"
+        }
+      ],
+      "notes": [],
+      "citationKey": "helfat_1994",
+      "itemID": 734,
+      "itemKey": "GX3KD9AH",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/GX3KD9AH"
+    },
+    {
+      "version": 3789,
+      "itemType": "journalArticle",
+      "title": "The dynamic resource-based view: capability lifecycles",
+      "abstractNote": "This article introduces the concept of the capability lifecycle (CLC), which articulates general patterns and paths in the evolution of organizational capabilities over time. The capability lifecycle provides a structure for a more comprehensive approach to dynamic resource-based theory. The analysis incorporates the founding, development, and maturity of capabilities in a manner that helps to explain the sources of heterogeneity in organizational capabilities. In addition, the analysis includes the ‘branching’ of an original capability into several possible altered forms. Copyright © 2003 John Wiley & Sons, Ltd.",
+      "date": "2003",
+      "language": "en",
+      "shortTitle": "The dynamic resource-based view",
+      "libraryCatalog": "Wiley Online Library",
+      "url": "https://onlinelibrary.wiley.com/doi/abs/10.1002/smj.332",
+      "accessDate": "2024-10-07T03:33:25Z",
+      "rights": "Copyright © 2003 John Wiley & Sons, Ltd.",
+      "extra": "_eprint: https://onlinelibrary.wiley.com/doi/pdf/10.1002/smj.332",
+      "volume": "24",
+      "pages": "997-1010",
+      "publicationTitle": "Strategic Management Journal",
+      "DOI": "10.1002/smj.332",
+      "issue": "10",
+      "ISSN": "1097-0266",
+      "creators": [
+        {
+          "firstName": "Constance E.",
+          "lastName": "Helfat",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Margaret A.",
+          "lastName": "Peteraf",
+          "creatorType": "author"
+        }
+      ],
+      "tags": [
+        {
+          "tag": "resource-based view",
+          "type": 1
+        },
+        {
+          "tag": "dynamic capabilities",
+          "type": 1
+        },
+        {
+          "tag": "diversification",
+          "type": 1
+        },
+        {
+          "tag": "capability lifecycles",
+          "type": 1
+        },
+        {
+          "tag": "organizational evolution",
+          "type": 1
+        }
+      ],
+      "relations": {},
+      "dateAdded": "2024-10-07T03:33:25Z",
+      "dateModified": "2024-10-07T03:33:25Z",
+      "uri": "http://zotero.org/users/13706285/items/49B4JJ43",
+      "attachments": [
+        {
+          "itemType": "attachment",
+          "title": "Helfat and Peteraf - 2003 - The dynamic resource-based view capability lifecy.pdf",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2024-10-07T03:38:42Z",
+          "dateModified": "2024-10-07T03:38:42Z",
+          "uri": "http://zotero.org/users/13706285/items/RTEREHAS",
+          "path": "files/2987/Helfat and Peteraf - 2003 - The dynamic resource-based view capability lifecy.pdf",
+          "select": "zotero://select/library/items/RTEREHAS"
+        },
+        {
+          "itemType": "attachment",
+          "title": "Snapshot",
+          "url": "https://onlinelibrary.wiley.com/doi/10.1002/smj.332",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2024-10-07T03:33:30Z",
+          "dateModified": "2024-10-07T03:33:30Z",
+          "uri": "http://zotero.org/users/13706285/items/X5WHVJ54",
+          "path": "files/2993/smj.html",
+          "select": "zotero://select/library/items/X5WHVJ54"
+        }
+      ],
+      "notes": [],
+      "citationKey": "helfat_peteraf_2003",
+      "itemID": 729,
+      "itemKey": "49B4JJ43",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/49B4JJ43"
+    },
+    {
+      "version": 18727,
+      "itemType": "journalArticle",
+      "title": "Measuring Competence? Exploring Firm Effects in Pharmaceutical Research",
+      "abstractNote": "Renewed interest in the resource-based theory of the firm has focused attention on the role of heterogeneous organizational ‘competence’ in competition. This paper attempts to measure the importance of these effects in the context of pharmaceutical research. We distinguish between ‘component’ and ‘architectural’ competence, and using internal firm data at the program level from 10 major pharmaceutical companies show that together the two forms of competence appear to explain a significant fraction of the variance in research productivity across firms. Our results raise some intriguing questions about the nature of competencies and the ways in which they diffuse over time.",
+      "date": "1994",
+      "language": "en",
+      "shortTitle": "Measuring Competence?",
+      "libraryCatalog": "Wiley Online Library",
+      "url": "https://onlinelibrary.wiley.com/doi/abs/10.1002/smj.4250150906",
+      "accessDate": "2024-11-03T02:09:09Z",
+      "rights": "Copyright © 1994 John Wiley & Sons, Ltd.",
+      "extra": "_eprint: https://onlinelibrary.wiley.com/doi/pdf/10.1002/smj.4250150906",
+      "volume": "15",
+      "pages": "63-84",
+      "publicationTitle": "Strategic Management Journal",
+      "DOI": "10.1002/smj.4250150906",
+      "issue": "S1",
+      "ISSN": "1097-0266",
+      "creators": [
+        {
+          "firstName": "Rebecca",
+          "lastName": "Henderson",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Iain",
+          "lastName": "Cockburn",
+          "creatorType": "author"
+        }
+      ],
+      "tags": [
+        {
+          "tag": "resource-based view",
+          "type": 1
+        },
+        {
+          "tag": "Firm effects",
+          "type": 1
+        },
+        {
+          "tag": "organizational competence",
+          "type": 1
+        },
+        {
+          "tag": "pharmaceutical research productivity",
+          "type": 1
+        }
+      ],
+      "relations": {},
+      "dateAdded": "2024-11-03T02:09:09Z",
+      "dateModified": "2024-11-03T02:09:09Z",
+      "uri": "http://zotero.org/users/13706285/items/ZSUTK49L",
+      "attachments": [
+        {
+          "itemType": "attachment",
+          "title": "Henderson and Cockburn - 1994 - Measuring Competence Exploring Firm Effects in Ph.pdf",
+          "url": "https://dspace.mit.edu/bitstream/1721.1/2524/1/SWP-3712-31904706.pdf",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2024-11-03T02:09:15Z",
+          "dateModified": "2024-11-03T02:09:31Z",
+          "uri": "http://zotero.org/users/13706285/items/WUFD23PU",
+          "path": "files/2715/Henderson and Cockburn - 1994 - Measuring Competence Exploring Firm Effects in Ph.pdf",
+          "select": "zotero://select/library/items/WUFD23PU"
+        },
+        {
+          "itemType": "attachment",
+          "title": "Snapshot",
+          "url": "https://onlinelibrary.wiley.com/doi/abs/10.1002/smj.4250150906",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2024-11-03T02:09:16Z",
+          "dateModified": "2024-11-03T02:09:16Z",
+          "uri": "http://zotero.org/users/13706285/items/7CWNBXTL",
+          "path": "files/2716/smj.html",
+          "select": "zotero://select/library/items/7CWNBXTL"
+        }
+      ],
+      "notes": [],
+      "citationKey": "henderson_cockburn_1994",
+      "itemID": 557,
+      "itemKey": "ZSUTK49L",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/ZSUTK49L"
+    },
+    {
+      "version": 18656,
+      "itemType": "journalArticle",
+      "title": "The Determinants of Board Composition",
+      "abstractNote": "We identify factors that lead to changes among corporate directors. We hypothesize that the CEO succession process and firm performance will affect board composition. Our findings are consistent with both hypotheses. When their CEO nears retirement, firms tend to add inside directors (who may be possible candidates to be the next CEO) Just after a CEO change, inside directors with short tenures appear more likely to leave the board (they, perhaps, being the losing candidates). We also find that inside directors are more likely to leave the board and outside directors more likely to join after a firm performs poorly and when a firm leaves a product market.",
+      "date": "1988",
+      "language": "en",
+      "libraryCatalog": "ideas.repec.org",
+      "url": "https://ideas.repec.org//a/rje/randje/v19y1988iwinterp589-606.html",
+      "accessDate": "2025-03-05T00:23:00Z",
+      "volume": "19",
+      "publisher": "The RAND Corporation",
+      "pages": "589-606",
+      "publicationTitle": "RAND Journal of Economics",
+      "issue": "4",
+      "creators": [
+        {
+          "firstName": "Benjamin E.",
+          "lastName": "Hermalin",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Michael S.",
+          "lastName": "Weisbach",
+          "creatorType": "author"
+        }
+      ],
+      "tags": [],
+      "relations": {},
+      "dateAdded": "2025-03-05T00:23:00Z",
+      "dateModified": "2025-03-05T00:23:00Z",
+      "uri": "http://zotero.org/users/13706285/items/NAU4LGZH",
+      "attachments": [
+        {
+          "itemType": "attachment",
+          "title": "Hermalin and Weisbach - 1988 - The Determinants of Board Composition.pdf",
+          "url": "https://bpb-us-w2.wpmucdn.com/u.osu.edu/dist/8/7843/files/2015/01/hermalinweisbachrand-owwbah.pdf",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2025-03-05T00:22:19Z",
+          "dateModified": "2025-03-05T00:23:31Z",
+          "uri": "http://zotero.org/users/13706285/items/6Z6V7P3T",
+          "path": "files/2120/Hermalin and Weisbach - 1988 - The Determinants of Board Composition.pdf",
+          "select": "zotero://select/library/items/6Z6V7P3T"
+        },
+        {
+          "itemType": "attachment",
+          "title": "Snapshot",
+          "url": "https://ideas.repec.org/a/rje/randje/v19y1988iwinterp589-606.html",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2025-03-05T00:23:05Z",
+          "dateModified": "2025-03-05T00:23:05Z",
+          "uri": "http://zotero.org/users/13706285/items/4HP8CDS9",
+          "path": "files/2121/v19y1988iwinterp589-606.html",
+          "select": "zotero://select/library/items/4HP8CDS9"
+        }
+      ],
+      "notes": [],
+      "citationKey": "hermalin_weisbach_1988",
+      "itemID": 1278,
+      "itemKey": "NAU4LGZH",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/NAU4LGZH"
+    },
+    {
+      "version": 18646,
+      "itemType": "journalArticle",
+      "title": "Agency Costs of Free Cash Flow, Corporate Finance, and Takeovers",
+      "date": "1986",
+      "libraryCatalog": "JSTOR",
+      "url": "https://www.jstor.org/stable/1818789",
+      "accessDate": "2024-10-13T03:03:12Z",
+      "volume": "76",
+      "publisher": "American Economic Association",
+      "pages": "323-329",
+      "publicationTitle": "The American Economic Review",
+      "issue": "2",
+      "ISSN": "0002-8282",
+      "creators": [
+        {
+          "firstName": "Michael C.",
+          "lastName": "Jensen",
+          "creatorType": "author"
+        }
+      ],
+      "tags": [],
+      "relations": {},
+      "dateAdded": "2024-10-13T03:03:13Z",
+      "dateModified": "2024-10-13T03:03:13Z",
+      "uri": "http://zotero.org/users/13706285/items/DNYYBKNS",
+      "attachments": [
+        {
+          "itemType": "attachment",
+          "title": "Jensen - 1986 - Agency Costs of Free Cash Flow, Corporate Finance,.pdf",
+          "url": "https://www.jstor.org/stable/pdfplus/10.2307/1818789.pdf?acceptTC=true",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2024-10-13T03:03:15Z",
+          "dateModified": "2024-10-13T03:06:05Z",
+          "uri": "http://zotero.org/users/13706285/items/D4G4BXRG",
+          "path": "files/2871/Jensen - 1986 - Agency Costs of Free Cash Flow, Corporate Finance,.pdf",
+          "select": "zotero://select/library/items/D4G4BXRG"
+        }
+      ],
+      "notes": [],
+      "citationKey": "jensen_1986",
+      "itemID": 718,
+      "itemKey": "DNYYBKNS",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/DNYYBKNS"
+    },
+    {
+      "version": 18646,
+      "itemType": "journalArticle",
+      "title": "The Modern Industrial Revolution, Exit, and the Failure of Internal Control Systems",
+      "abstractNote": "Since 1973 technological, political, regulatory, and economic forces have been changing the worldwide economy in a fashion comparable to the changes experienced during the nineteenth century Industrial Revolution. As in the nineteenth century, we are experiencing declining costs, increasing average (but decreasing marginal) productivity of labor, reduced growth rates of labor income, excess capacity, and the requirement for downsizing and exit. The last two decades indicate corporate internal control systems have failed to deal effectively with these changes, especially slow growth and the requirement for exit. The next several decades pose a major challenge for Western firms and political systems as these forces continue to work their way through the worldwide economy.",
+      "date": "1993",
+      "libraryCatalog": "JSTOR",
+      "url": "https://www.jstor.org/stable/2329018",
+      "accessDate": "2024-10-13T03:13:04Z",
+      "volume": "48",
+      "publisher": "[American Finance Association, Wiley]",
+      "pages": "831-880",
+      "publicationTitle": "The Journal of Finance",
+      "DOI": "10.2307/2329018",
+      "issue": "3",
+      "ISSN": "0022-1082",
+      "creators": [
+        {
+          "firstName": "Michael C.",
+          "lastName": "Jensen",
+          "creatorType": "author"
+        }
+      ],
+      "tags": [],
+      "relations": {},
+      "dateAdded": "2024-10-13T03:13:04Z",
+      "dateModified": "2024-10-13T03:13:17Z",
+      "uri": "http://zotero.org/users/13706285/items/C88PQGW9",
+      "attachments": [
+        {
+          "itemType": "attachment",
+          "title": "JSTOR Full Text PDF",
+          "url": "https://www.jstor.org/stable/pdfplus/10.2307/2329018.pdf?acceptTC=true",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2024-10-13T03:13:07Z",
+          "dateModified": "2024-10-13T03:13:07Z",
+          "uri": "http://zotero.org/users/13706285/items/FGEBUDH5",
+          "path": "files/2867/Jensen - 1993 - The Modern Industrial Revolution, Exit, and the Fa.pdf",
+          "select": "zotero://select/library/items/FGEBUDH5"
+        }
+      ],
+      "notes": [],
+      "citationKey": "jensen_1993",
+      "itemID": 715,
+      "itemKey": "C88PQGW9",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/C88PQGW9"
+    },
+    {
+      "version": 18363,
+      "itemType": "journalArticle",
+      "title": "Theory of the firm: Managerial behavior, agency costs and ownership structure",
+      "abstractNote": "This paper integrates elements from the theory of agency, the theory of property rights and the theory of finance to develop a theory of the ownership structure of the firm. We define the concept of agency costs, show its relationship to the ‘separation and control’ issue, investigate the nature of the agency costs generated by the existence of debt and outside equity, demonstrate who bears these costs and why, and investigate the Pareto optimality of their existence. We also provide a new definition of the firm, and show how our analysis of the factors influencing the creation and issuance of debt and equity claims is a special case of the supply side of the completeness of markets problem. The directors of such [joint-stock] companies, however, being the managers rather of other people's money than of their own, it cannot well be expected, that they should watch over it with the same anxious vigilance with which the partners in a private copartnery frequently watch over their own. Like the stewards of a rich man, they are apt to consider attention to small matters as not for their master's honour, and very easily give themselves a dispensation from having it. Negligence and profusion, therefore, must always prevail, more or less, in the management of the affairs of such a company. Adam Smith, The Wealth of Nations, 1776, Cannan Edition (Modern Library, New York, 1937) p. 700.",
+      "date": "1976-10-01",
+      "shortTitle": "Theory of the firm",
+      "libraryCatalog": "ScienceDirect",
+      "url": "https://www.sciencedirect.com/science/article/pii/0304405X7690026X",
+      "accessDate": "2024-10-13T02:59:32Z",
+      "volume": "3",
+      "pages": "305-360",
+      "publicationTitle": "Journal of Financial Economics",
+      "DOI": "10.1016/0304-405X(76)90026-X",
+      "issue": "4",
+      "journalAbbreviation": "Journal of Financial Economics",
+      "ISSN": "0304-405X",
+      "creators": [
+        {
+          "firstName": "Michael C.",
+          "lastName": "Jensen",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "William H.",
+          "lastName": "Meckling",
+          "creatorType": "author"
+        }
+      ],
+      "tags": [],
+      "relations": {
+        "dc:replaces": [
+          "http://zotero.org/users/13706285/items/SFS8A5IR"
+        ]
+      },
+      "dateAdded": "2024-10-13T02:59:32Z",
+      "dateModified": "2024-10-24T23:06:54Z",
+      "uri": "http://zotero.org/users/13706285/items/EIFRZAHP",
+      "attachments": [
+        {
+          "itemType": "attachment",
+          "title": "Jensen and Meckling - 1976 - Theory of the firm Managerial behavior, agency co.pdf",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2024-10-24T23:07:36Z",
+          "dateModified": "2024-10-24T23:07:36Z",
+          "uri": "http://zotero.org/users/13706285/items/282TPBVU",
+          "path": "files/2975/Jensen and Meckling - 1976 - Theory of the firm Managerial behavior, agency co.pdf",
+          "select": "zotero://select/library/items/282TPBVU"
+        },
+        {
+          "itemType": "attachment",
+          "title": "ScienceDirect Snapshot",
+          "url": "https://www.sciencedirect.com/science/article/pii/0304405X7690026X",
+          "tags": [],
+          "relations": {
+            "dc:replaces": [
+              "http://zotero.org/users/13706285/items/M5JCAW8M"
+            ]
+          },
+          "dateAdded": "2024-10-13T02:59:40Z",
+          "dateModified": "2024-10-24T23:06:54Z",
+          "uri": "http://zotero.org/users/13706285/items/AH2VCFXD",
+          "path": "files/2976/0304405X7690026X.html",
+          "select": "zotero://select/library/items/AH2VCFXD"
+        }
+      ],
+      "notes": [],
+      "citationKey": "jensen_meckling_1976",
+      "itemID": 594,
+      "itemKey": "EIFRZAHP",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/EIFRZAHP"
+    },
+    {
+      "version": 18632,
+      "itemType": "journalArticle",
+      "title": "Organizational Structure, Information Processing, and Decision-Making: A Retrospective and Road Map for Research",
+      "abstractNote": "Beginning with Simon (1947)—and motivated by an interest in the effect of formal organizational structure on decision-making—a large body of research has examined how organizations process information. Yet, research in this area is extremely diverse and fragmented. We offer a retrospective of past research to summarize our collective knowledge, as well as identify and advance new concerns and questions. In doing so, we identify three critical issues: a division between an aggregation perspective and a constraint perspective of structure, little focus on informational sources of conflict, and uneven treatment of various stages of decision-making. We then offer a road map for future research that elaborates the role of organizational structure in decision-making. In this endeavor, we offer an ecological perspective of information processing that addresses the issues and provides opportunities to expand research in new directions.",
+      "date": "2020-01",
+      "shortTitle": "Organizational Structure, Information Processing, and Decision-Making",
+      "libraryCatalog": "journals.aom.org (Atypon)",
+      "url": "https://journals.aom.org/doi/10.5465/annals.2017.0103",
+      "accessDate": "2024-11-05T05:01:13Z",
+      "volume": "14",
+      "publisher": "Academy of Management",
+      "pages": "267-302",
+      "publicationTitle": "Academy of Management Annals",
+      "DOI": "10.5465/annals.2017.0103",
+      "issue": "1",
+      "journalAbbreviation": "ANNALS",
+      "ISSN": "1941-6520",
+      "creators": [
+        {
+          "firstName": "John",
+          "lastName": "Joseph",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Vibha",
+          "lastName": "Gaba",
+          "creatorType": "author"
+        }
+      ],
+      "tags": [
+        {
+          "tag": "hierarchy",
+          "type": 1
+        },
+        {
+          "tag": "organization design",
+          "type": 1
+        },
+        {
+          "tag": "📥workflow/unprocessed"
+        },
+        {
+          "tag": "behavioral theory of the firm",
+          "type": 1
+        },
+        {
+          "tag": "decision making",
+          "type": 1
+        },
+        {
+          "tag": "information processing",
+          "type": 1
+        },
+        {
+          "tag": "interdependence",
+          "type": 1
+        },
+        {
+          "tag": "Organizational structure",
+          "type": 1
+        },
+        {
+          "tag": "workflow/priority🚩"
+        }
+      ],
+      "relations": {
+        "owl:sameAs": [
+          "http://zotero.org/groups/5930218/items/9KANEH7G"
+        ],
+        "dc:replaces": [
+          "http://zotero.org/users/13706285/items/9SFNAGB4",
+          "http://zotero.org/users/13706285/items/M29U2JS4",
+          "http://zotero.org/users/13706285/items/ZGHKNNDK"
+        ]
+      },
+      "dateAdded": "2024-02-27T20:25:29Z",
+      "dateModified": "2025-12-12T22:28:29Z",
+      "uri": "http://zotero.org/users/13706285/items/8CCTSFZ5",
+      "attachments": [
+        {
+          "itemType": "attachment",
+          "title": "Joseph and Gaba - 2020 - Organizational Structure, Information Processing, and Decision-Making A Retrospective and Road Map",
+          "tags": [],
+          "relations": {
+            "owl:sameAs": [
+              "http://zotero.org/groups/5930218/items/B898P4DS"
+            ],
+            "dc:replaces": [
+              "http://zotero.org/users/13706285/items/2RKZGMM2"
+            ]
+          },
+          "dateAdded": "2025-09-11T23:29:57Z",
+          "dateModified": "2025-12-12T22:28:29Z",
+          "uri": "http://zotero.org/users/13706285/items/7PGLEHKR",
+          "path": "files/1828/Joseph and Gaba - 2020 - Organizational Structure, Information Processing, and Decision-Making A Retrospective and Road Map.pdf",
+          "select": "zotero://select/library/items/7PGLEHKR"
+        }
+      ],
+      "notes": [],
+      "citationKey": "joseph_gaba_2020",
+      "itemID": 239,
+      "itemKey": "8CCTSFZ5",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/8CCTSFZ5"
+    },
+    {
+      "version": 18642,
+      "itemType": "journalArticle",
+      "title": "Knowledge of the Firm, Combinative Capabilities, and the Replication of Technology",
+      "abstractNote": "How should we understand why firms exist? A prevailing view has been that they serve to keep in check the transaction costs arising from the self-interested motivations of individuals. We develop in this article the argument that what firms do better than markets is the sharing and transfer of the knowledge of individuals and groups within an organization. This knowledge consists of information (e.g., who knows what) and of know-how (e.g., how to organize a research team). What is central to our argument is that knowledge is held by individuals, but is also expressed in regularities by which members cooperate in a social community (i.e., group, organization, or network). If knowledge is only held at the individual level, then firms could change simply by employee turnover. Because we know that hiring new workers is not equivalent to changing the skills of a firm, an analysis of what firms can do must understand knowledge as embedded in the organizing principles by which people cooperate within organizations. Based on this discussion, a paradox is identified: efforts by a firm to grow by the replication of its technology enhances the potential for imitation. By considering how firms can deter imitation by innovation, we develop a more dynamic view of how firms create new knowledge. We build up this dynamic perspective by suggesting that firms learn new skills by recombining their current capabilities. Because new ways of cooperating cannot be easily acquired, growth occurs by building on the social relationships that currently exist in a firm. What a firm has done before tends to predict what it can do in the future. In this sense, the cumulative knowledge of the firm provides options to expand in new but uncertain markets in the future. We discuss at length the example of the make/buy decision and propose several testable hypotheses regarding the boundaries of the firm, without appealing to the notion of \"opportunism.\"",
+      "date": "1992",
+      "libraryCatalog": "JSTOR",
+      "url": "https://www.jstor.org/stable/2635279",
+      "accessDate": "2024-12-12T16:47:33Z",
+      "volume": "3",
+      "publisher": "INFORMS",
+      "pages": "383-397",
+      "publicationTitle": "Organization Science",
+      "issue": "3",
+      "ISSN": "1047-7039",
+      "creators": [
+        {
+          "firstName": "Bruce",
+          "lastName": "Kogut",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Udo",
+          "lastName": "Zander",
+          "creatorType": "author"
+        }
+      ],
+      "tags": [],
+      "relations": {},
+      "dateAdded": "2024-12-12T16:47:33Z",
+      "dateModified": "2024-12-12T16:47:33Z",
+      "uri": "http://zotero.org/users/13706285/items/LEARLCNA",
+      "attachments": [
+        {
+          "itemType": "attachment",
+          "title": "Kogut and Zander - 1992 - Knowledge of the Firm, Combinative Capabilities, a.pdf",
+          "url": "https://www.jstor.org/stable/pdfplus/10.2307/2635279.pdf?acceptTC=true",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2024-12-12T16:47:35Z",
+          "dateModified": "2024-12-12T16:48:43Z",
+          "uri": "http://zotero.org/users/13706285/items/N5IND7I2",
+          "path": "files/2413/Kogut and Zander - 1992 - Knowledge of the Firm, Combinative Capabilities, a.pdf",
+          "select": "zotero://select/library/items/N5IND7I2"
+        }
+      ],
+      "notes": [],
+      "citationKey": "kogut_zander_1992",
+      "itemID": 633,
+      "itemKey": "LEARLCNA",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/LEARLCNA"
+    },
+    {
+      "version": 2283,
+      "itemType": "journalArticle",
+      "title": "Foundations and Futures of Strategic Management",
+      "date": "2020-3-4",
+      "libraryCatalog": "DOI.org (Crossref)",
+      "url": "http://www.nowpublishers.com/article/Details/SMR-0001",
+      "accessDate": "2024-09-28T17:15:47Z",
+      "volume": "1",
+      "pages": "1-33",
+      "publicationTitle": "Strategic Management Review",
+      "DOI": "10.1561/111.00000001",
+      "issue": "1",
+      "journalAbbreviation": "SMR",
+      "ISSN": "26882612, 26882639",
+      "creators": [
+        {
+          "firstName": "Michael J.",
+          "lastName": "Leiblein",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Jeffrey J.",
+          "lastName": "Reuer",
+          "creatorType": "author"
+        }
+      ],
+      "tags": [],
+      "relations": {},
+      "dateAdded": "2024-09-28T17:15:47Z",
+      "dateModified": "2024-09-28T17:15:47Z",
+      "uri": "http://zotero.org/users/13706285/items/V6FKHATF",
+      "attachments": [
+        {
+          "itemType": "attachment",
+          "title": "Leiblein and Reuer - 2020 - Foundations and Futures of Strategic Management.pdf",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2024-09-28T17:04:02Z",
+          "dateModified": "2024-09-28T17:17:38Z",
+          "uri": "http://zotero.org/users/13706285/items/T5MEX59T",
+          "path": "files/3710/Leiblein and Reuer - 2020 - Foundations and Futures of Strategic Management.pdf",
+          "select": "zotero://select/library/items/T5MEX59T"
+        }
+      ],
+      "notes": [],
+      "citationKey": "leiblein_reuer_2020",
+      "itemID": 762,
+      "itemKey": "V6FKHATF",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/V6FKHATF"
+    },
+    {
+      "version": 6699,
+      "itemType": "journalArticle",
+      "title": "First-mover advantages",
+      "abstractNote": "This article surveys the theoretical and empirical literature on mechanisms that confer advantages and disadvantages on first-mover firms. Major conceptual issues are addressed, and recommendations are given for future research. Managerial implications are also discussed.",
+      "date": "1988",
+      "language": "en",
+      "libraryCatalog": "Wiley Online Library",
+      "url": "https://onlinelibrary.wiley.com/doi/abs/10.1002/smj.4250090706",
+      "accessDate": "2024-11-15T19:16:45Z",
+      "extra": "_eprint: https://onlinelibrary.wiley.com/doi/pdf/10.1002/smj.4250090706",
+      "volume": "9",
+      "pages": "41-58",
+      "publicationTitle": "Strategic Management Journal",
+      "DOI": "10.1002/smj.4250090706",
+      "issue": "S1",
+      "ISSN": "1097-0266",
+      "creators": [
+        {
+          "firstName": "Marvin B.",
+          "lastName": "Lieberman",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "David B.",
+          "lastName": "Montgomery",
+          "creatorType": "author"
+        }
+      ],
+      "tags": [],
+      "relations": {},
+      "dateAdded": "2024-11-15T19:16:45Z",
+      "dateModified": "2024-11-15T19:16:51Z",
+      "uri": "http://zotero.org/users/13706285/items/UHB2JXIB",
+      "attachments": [
+        {
+          "itemType": "attachment",
+          "title": "Lieberman and Montgomery - 1988 - First-mover advantages.pdf",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2024-11-15T19:20:11Z",
+          "dateModified": "2024-11-15T19:20:26Z",
+          "uri": "http://zotero.org/users/13706285/items/538W9ARW",
+          "path": "files/2583/Lieberman and Montgomery - 1988 - First-mover advantages.pdf",
+          "select": "zotero://select/library/items/538W9ARW"
+        },
+        {
+          "itemType": "attachment",
+          "title": "Snapshot",
+          "url": "https://onlinelibrary.wiley.com/doi/abs/10.1002/smj.4250090706",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2024-11-15T19:16:53Z",
+          "dateModified": "2024-11-15T19:16:53Z",
+          "uri": "http://zotero.org/users/13706285/items/3DU52FJE",
+          "path": "files/2584/smj.html",
+          "select": "zotero://select/library/items/3DU52FJE"
+        }
+      ],
+      "notes": [],
+      "citationKey": "lieberman_montgomery_1988",
+      "itemID": 658,
+      "itemKey": "UHB2JXIB",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/UHB2JXIB"
+    },
+    {
+      "version": 18643,
+      "itemType": "journalArticle",
+      "title": "How Much Does Industry Matter, Really?",
+      "abstractNote": "In this paper, we examine the importance of year, industry, corporate-parent, and business-specific effects on the profitability of U.S. public corporations within specific 4-digit SIC categories. Our results indicate that year, industry, corporate-parent, and business-specific effects account for 2 percent, 19 percent, 4 percent, and 32 percent, respectively, of the aggregate variance in profitability. We also find that the importance of the effects differs substantially across broad economic sectors. Industry effects account for a smaller portion of profit variance in manufacturing but a larger portion in lodging/entertainment, services, wholesale/retail trade, and transportation. Across all sectors we find a negative covariance between corporate-parent and industry effects. A detailed analysis suggests that industry, corporate-parent, and business-specific effects are related in complex ways.",
+      "date": "1997",
+      "libraryCatalog": "JSTOR",
+      "url": "https://www.jstor.org/stable/3088208",
+      "accessDate": "2024-11-09T02:33:02Z",
+      "volume": "18",
+      "publisher": "Wiley",
+      "pages": "15-30",
+      "publicationTitle": "Strategic Management Journal",
+      "ISSN": "0143-2095",
+      "creators": [
+        {
+          "firstName": "Anita M.",
+          "lastName": "McGahan",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Michael E.",
+          "lastName": "Porter",
+          "creatorType": "author"
+        }
+      ],
+      "tags": [],
+      "relations": {},
+      "dateAdded": "2024-11-09T02:33:02Z",
+      "dateModified": "2024-11-09T02:33:02Z",
+      "uri": "http://zotero.org/users/13706285/items/PQ87GLS7",
+      "attachments": [
+        {
+          "itemType": "attachment",
+          "title": "McGahan and Porter - 1997 - How Much Does Industry Matter, Really.pdf",
+          "url": "https://www.jstor.org/stable/pdfplus/10.2307/3088208.pdf?acceptTC=true",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2024-11-09T02:33:05Z",
+          "dateModified": "2024-11-09T02:43:37Z",
+          "uri": "http://zotero.org/users/13706285/items/JLPMJJ2I",
+          "path": "files/2542/McGahan and Porter - 1997 - How Much Does Industry Matter, Really.pdf",
+          "select": "zotero://select/library/items/JLPMJJ2I"
+        }
+      ],
+      "notes": [],
+      "citationKey": "mcgahan_porter_1997",
+      "itemID": 669,
+      "itemKey": "PQ87GLS7",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/PQ87GLS7"
+    },
+    {
+      "version": 6721,
+      "itemType": "journalArticle",
+      "title": "Sources and Consequences of Competitive Inertia: A Study of the U.S. Airline Industry",
+      "date": "1994",
+      "shortTitle": "Sources and Consequences of Competitive Inertia",
+      "libraryCatalog": "COinS",
+      "volume": "39",
+      "publicationTitle": "Administrative science quarterly : ASQ ; dedicated to advancing the understanding of administration through empirical investigation and theoretical analysis",
+      "series": "Administrative science quarterly : ASQ ; dedicated to advancing the understanding of administration through empirical investigation and theoretical analysis. - London : Sage, ISSN 0001-8392, ZDB-ID 2104878. - Vol. 39.1994, 1, p. 1-23",
+      "issue": "1",
+      "creators": [
+        {
+          "firstName": "Danny",
+          "lastName": "Miller",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Ming-Jer",
+          "lastName": "Chen",
+          "creatorType": "author"
+        }
+      ],
+      "tags": [],
+      "relations": {
+        "dc:replaces": [
+          "http://zotero.org/users/13706285/items/NF4HC7BU"
+        ]
+      },
+      "dateAdded": "2024-11-15T19:21:51Z",
+      "dateModified": "2024-11-15T19:24:50Z",
+      "uri": "http://zotero.org/users/13706285/items/L8HA7KGF",
+      "attachments": [
+        {
+          "itemType": "attachment",
+          "title": "Miller and Chen - 1994 - Sources and Consequences of Competitive Inertia A.pdf",
+          "url": "https://www.jstor.org/stable/pdfplus/10.2307/2393492.pdf?acceptTC=true",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2024-11-15T19:24:25Z",
+          "dateModified": "2024-11-15T19:24:57Z",
+          "uri": "http://zotero.org/users/13706285/items/9KU2DAK3",
+          "path": "files/2581/Miller and Chen - 1994 - Sources and Consequences of Competitive Inertia A.pdf",
+          "select": "zotero://select/library/items/9KU2DAK3"
+        },
+        {
+          "itemType": "attachment",
+          "title": "Sources and Consequences of Competitive Inertia: A Study of the U.S. Airline Industry - EconBiz",
+          "url": "https://www.econbiz.de/Record/sources-and-consequences-of-competitive-inertia-a-study-of-the-u-s-airline-industry-miller-danny/10006343333",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2024-11-15T19:21:55Z",
+          "dateModified": "2024-11-15T19:21:55Z",
+          "uri": "http://zotero.org/users/13706285/items/NN7QAUT8",
+          "path": "files/2582/10006343333.html",
+          "select": "zotero://select/library/items/NN7QAUT8"
+        }
+      ],
+      "notes": [],
+      "citationKey": "miller_chen_1994a",
+      "itemID": 657,
+      "itemKey": "L8HA7KGF",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/L8HA7KGF"
+    },
+    {
+      "version": 2714,
+      "itemType": "journalArticle",
+      "title": "Patterns in Strategy Formation",
+      "date": "1978",
+      "language": "en",
+      "libraryCatalog": "Zotero",
+      "creators": [
+        {
+          "firstName": "HENRY",
+          "lastName": "Mintzberg",
+          "creatorType": "author"
+        }
+      ],
+      "tags": [
+        {
+          "tag": "workflow/processed✅"
+        }
+      ],
+      "relations": {},
+      "dateAdded": "2024-09-28T17:04:07Z",
+      "dateModified": "2024-10-02T02:00:31Z",
+      "uri": "http://zotero.org/users/13706285/items/RG8N8VAF",
+      "attachments": [
+        {
+          "itemType": "attachment",
+          "title": "Mintzberg - 1978 - Patterns in Strategy Formation.pdf",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2024-09-28T17:04:03Z",
+          "dateModified": "2024-10-01T05:50:29Z",
+          "uri": "http://zotero.org/users/13706285/items/MSGEVY3C",
+          "path": "files/3110/Mintzberg - 1978 - Patterns in Strategy Formation.pdf",
+          "select": "zotero://select/library/items/MSGEVY3C"
+        }
+      ],
+      "notes": [],
+      "citationKey": "mintzberg_1978",
+      "itemID": 754,
+      "itemKey": "RG8N8VAF",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/RG8N8VAF"
+    },
+    {
+      "version": 18643,
+      "itemType": "journalArticle",
+      "title": "Whether and When? Probability and Timing of Incumbents' Entry into Emerging Industrial Subfields",
+      "abstractNote": "This paper examines the probability and timing of entry by industry incumbents into emerging technical subfields. When a new technical subfield of an industry emerges, an industry incumbent faces opposing entry incentives, either to wait until technical and market uncertainties subside or to stake out a strong position early. This paper argues that an incumbent is likely to enter a new subfield if the firm's core products are threatened or if it possesses industry-specialized supporting assets. The greater the competitive threat, the less likely an incumbent is to enter but the earlier it will do so. The predictions are supported with analysis of 30 years of entry data from five subfields of the American medical diagnostic imaging industry.",
+      "date": "1989",
+      "shortTitle": "Whether and When?",
+      "libraryCatalog": "JSTOR",
+      "url": "https://www.jstor.org/stable/2989896",
+      "accessDate": "2024-11-15T19:28:18Z",
+      "volume": "34",
+      "publisher": "[Sage Publications, Inc., Johnson Graduate School of Management, Cornell University]",
+      "pages": "208-230",
+      "publicationTitle": "Administrative Science Quarterly",
+      "DOI": "10.2307/2989896",
+      "issue": "2",
+      "ISSN": "0001-8392",
+      "creators": [
+        {
+          "firstName": "Will",
+          "lastName": "Mitchell",
+          "creatorType": "author"
+        }
+      ],
+      "tags": [],
+      "relations": {},
+      "dateAdded": "2024-11-15T19:28:19Z",
+      "dateModified": "2024-11-15T19:28:19Z",
+      "uri": "http://zotero.org/users/13706285/items/2VRB9NU2",
+      "attachments": [
+        {
+          "itemType": "attachment",
+          "title": "Mitchell - 1989 - Whether and When Probability and Timing of Incumb.pdf",
+          "url": "https://www.jstor.org/stable/pdfplus/10.2307/2989896.pdf?acceptTC=true",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2024-11-15T19:28:30Z",
+          "dateModified": "2024-11-15T19:28:39Z",
+          "uri": "http://zotero.org/users/13706285/items/X6GP889Z",
+          "path": "files/2578/Mitchell - 1989 - Whether and When Probability and Timing of Incumb.pdf",
+          "select": "zotero://select/library/items/X6GP889Z"
+        }
+      ],
+      "notes": [],
+      "citationKey": "mitchell_1989",
+      "itemID": 654,
+      "itemKey": "2VRB9NU2",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/2VRB9NU2"
+    },
+    {
+      "version": 2858,
+      "itemType": "journalArticle",
+      "title": "Strategy content and the research process: A critique and commentary",
+      "abstractNote": "Abstract\n            The purpose of this paper is to encourage discussion on the ‘state‐of‐the‐science’ in strategy content research. We present a view of an interactive research process and argue that strategy content research would benefit from (1) more carefully developed theoretical work; (2) more theory‐driven data analysis; and (3) less emphasis on the immediate applicability of results.",
+      "date": "03/1989",
+      "language": "en",
+      "shortTitle": "Strategy content and the research process",
+      "libraryCatalog": "DOI.org (Crossref)",
+      "url": "https://onlinelibrary.wiley.com/doi/10.1002/smj.4250100208",
+      "accessDate": "2024-09-28T17:04:09Z",
+      "rights": "http://onlinelibrary.wiley.com/termsAndConditions#vor",
+      "volume": "10",
+      "pages": "189-197",
+      "publicationTitle": "Strategic Management Journal",
+      "DOI": "10.1002/smj.4250100208",
+      "issue": "2",
+      "journalAbbreviation": "Strategic Management Journal",
+      "ISSN": "0143-2095, 1097-0266",
+      "creators": [
+        {
+          "firstName": "Cynthia A.",
+          "lastName": "Montgomery",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Birger",
+          "lastName": "Wernerfelt",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Srinivasan",
+          "lastName": "Balakrishnan",
+          "creatorType": "author"
+        }
+      ],
+      "tags": [
+        {
+          "tag": "workflow/processed✅"
+        }
+      ],
+      "relations": {},
+      "dateAdded": "2024-09-28T17:04:09Z",
+      "dateModified": "2024-10-02T03:02:22Z",
+      "uri": "http://zotero.org/users/13706285/items/5RWE8VI3",
+      "attachments": [
+        {
+          "itemType": "attachment",
+          "title": "Montgomery et al. - 1989 - Strategy content and the research process A criti.pdf",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2024-09-28T17:04:03Z",
+          "dateModified": "2024-09-28T17:04:09Z",
+          "uri": "http://zotero.org/users/13706285/items/P5W86BJ4",
+          "path": "files/3712/Montgomery et al. - 1989 - Strategy content and the research process A criti.pdf",
+          "select": "zotero://select/library/items/P5W86BJ4"
+        }
+      ],
+      "notes": [],
+      "citationKey": "montgomery_etal_1989",
+      "itemID": 753,
+      "itemKey": "5RWE8VI3",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/5RWE8VI3"
+    },
+    {
+      "version": 18647,
+      "itemType": "journalArticle",
+      "title": "Evolutionary Thought in Management and Organization Theory at the Beginning of the New Millennium: A Symposium on the State of the Art and Opportunities for Future Research",
+      "abstractNote": "The beginning of a new millennium provides a welcome opportunity to take stock of the accomplishments, open questions, and most promising research avenues of evolutionary models in management and organization theory. Johann Peter Murmann has invited Howard Aldrich, Daniel Levinthal, and Sidney Winter to appraise the state of the art in evolutionary research and where scholarly efforts should go in the new millennium. The panel also clarified their positions by answering questions that Johann Peter Murmann solicited from the scholarly community in response to the panel's dialogue.",
+      "date": "2003-03-01",
+      "language": "en",
+      "shortTitle": "Evolutionary Thought in Management and Organization Theory at the Beginning of the New Millennium",
+      "libraryCatalog": "SAGE Journals",
+      "url": "https://doi.org/10.1177/1056492602250516",
+      "accessDate": "2024-10-07T03:24:26Z",
+      "volume": "12",
+      "publisher": "SAGE Publications Inc",
+      "pages": "22-40",
+      "publicationTitle": "Journal of Management Inquiry",
+      "DOI": "10.1177/1056492602250516",
+      "issue": "1",
+      "ISSN": "1056-4926",
+      "creators": [
+        {
+          "firstName": "Johann Peter",
+          "lastName": "Murmann",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Howard E.",
+          "lastName": "Aldrich",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Daniel",
+          "lastName": "Levinthal",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Sidney G.",
+          "lastName": "Winter",
+          "creatorType": "author"
+        }
+      ],
+      "tags": [],
+      "relations": {},
+      "dateAdded": "2024-10-07T03:24:26Z",
+      "dateModified": "2024-10-07T03:24:26Z",
+      "uri": "http://zotero.org/users/13706285/items/VI67BHCM",
+      "attachments": [
+        {
+          "itemType": "attachment",
+          "title": "Murmann et al. - 2003 - Evolutionary Thought in Management and Organizatio.pdf",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2024-10-07T03:24:41Z",
+          "dateModified": "2024-10-07T03:24:41Z",
+          "uri": "http://zotero.org/users/13706285/items/AH2XX83T",
+          "path": "files/2994/Murmann et al. - 2003 - Evolutionary Thought in Management and Organizatio.pdf",
+          "select": "zotero://select/library/items/AH2XX83T"
+        }
+      ],
+      "notes": [],
+      "citationKey": "murmann_etal_2003",
+      "itemID": 733,
+      "itemKey": "VI67BHCM",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/VI67BHCM"
+    },
+    {
+      "version": 3161,
+      "itemType": "journalArticle",
+      "title": "What is strategic management, really? Inductive derivation of a consensus definition of the field",
+      "abstractNote": "Abstract\n            It is commonly asserted that the field of strategic management is fragmented and lacks a coherent identity. This skepticism, however, is paradoxically at odds with the great success that strategic management has enjoyed. How might one explain this paradox? We seek answers to this question by relying first on a large‐scale survey of strategic management scholars from which we derive an implicit consensual definition of the field—as tacitly held by its members. We then supplement this implicit definition with an examination of the espoused definitions of the field obtained from a group of boundary‐spanning scholars. Our findings suggest that strategic management's success as a field emerges from an underlying consensus that enables it to attract multiple perspectives, while still maintaining its coherent distinctiveness. Copyright © 2007 John Wiley & Sons, Ltd.",
+      "date": "1967",
+      "language": "en",
+      "shortTitle": "What is strategic management, really?",
+      "libraryCatalog": "DOI.org (Crossref)",
+      "url": "https://onlinelibrary.wiley.com/doi/10.1002/smj.615",
+      "accessDate": "2024-09-28T17:04:11Z",
+      "rights": "http://onlinelibrary.wiley.com/termsAndConditions#vor",
+      "volume": "28",
+      "pages": "935-955",
+      "publicationTitle": "Strategic Management Journal",
+      "DOI": "10.1002/smj.615",
+      "issue": "9",
+      "journalAbbreviation": "Strategic Management Journal",
+      "ISSN": "0143-2095, 1097-0266",
+      "creators": [
+        {
+          "firstName": "Rajiv",
+          "lastName": "Nag",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Donald C.",
+          "lastName": "Hambrick",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Ming‐Jer",
+          "lastName": "Chen",
+          "creatorType": "author"
+        }
+      ],
+      "tags": [],
+      "relations": {},
+      "dateAdded": "2024-09-28T17:04:11Z",
+      "dateModified": "2024-10-02T20:04:44Z",
+      "uri": "http://zotero.org/users/13706285/items/KDV9Z6T9",
+      "attachments": [
+        {
+          "itemType": "attachment",
+          "title": "Nag et al. - 1967 - What is strategic management, really Inductive de.pdf",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2024-09-28T17:04:04Z",
+          "dateModified": "2024-10-02T20:04:49Z",
+          "uri": "http://zotero.org/users/13706285/items/NYLIUDH5",
+          "path": "files/3007/Nag et al. - 1967 - What is strategic management, really Inductive de.pdf",
+          "select": "zotero://select/library/items/NYLIUDH5"
+        }
+      ],
+      "notes": [],
+      "citationKey": "nag_etal_1967",
+      "itemID": 746,
+      "itemKey": "KDV9Z6T9",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/KDV9Z6T9"
+    },
+    {
+      "version": 9158,
+      "itemType": "journalArticle",
+      "title": "Political Dynamics and the Circulation of Power: CEO Succession in U.S. Industrial Corporations, 1960-1990",
+      "abstractNote": "To explain patterns of political dynamics, this paper develops a model of the circulation of power and compares it with an alternative model, the institutionalization of power, in an event history analysis of CEO succession. The circulation of power emphasizes the internal contests for control and opposition to the CEO that emerge with increased executive tenure and under conditions of economic adversity. The study finds support for an increasing rate of CEO succession during the first decade of tenure, consistent with the model of circulation, followed by a slow decline afterward, consistent with institutionalization. The effects of economic adversity were found to trigger circulation when combined with long prior board tenure and large board size. Also, contrary to conventional views, under economic adversity, more inside board members increase CEO succession.",
+      "date": "1994-06-01",
+      "shortTitle": "Political Dynamics and the Circulation of Power",
+      "libraryCatalog": "Illinois Experts",
+      "volume": "39",
+      "pages": "285-312",
+      "publicationTitle": "Administrative Science Quarterly",
+      "DOI": "10.2307/2393237",
+      "issue": "2",
+      "ISSN": "0001-8392",
+      "creators": [
+        {
+          "firstName": "William",
+          "lastName": "Ocasio",
+          "creatorType": "author"
+        }
+      ],
+      "tags": [],
+      "relations": {},
+      "dateAdded": "2025-01-28T23:14:01Z",
+      "dateModified": "2025-01-28T23:14:01Z",
+      "uri": "http://zotero.org/users/13706285/items/AC9A9SQQ",
+      "attachments": [
+        {
+          "itemType": "attachment",
+          "title": "Ocasio - 1994 - Political Dynamics and the Circulation of Power C.pdf",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2025-01-28T23:14:55Z",
+          "dateModified": "2025-01-28T23:14:55Z",
+          "uri": "http://zotero.org/users/13706285/items/WF5YMNAF",
+          "path": "files/2300/Ocasio - 1994 - Political Dynamics and the Circulation of Power C.pdf",
+          "select": "zotero://select/library/items/WF5YMNAF"
+        }
+      ],
+      "notes": [],
+      "citationKey": "ocasio_1994",
+      "itemID": 1148,
+      "itemKey": "AC9A9SQQ",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/AC9A9SQQ"
+    },
+    {
+      "version": 5583,
+      "itemType": "journalArticle",
+      "title": "The cornerstones of competitive advantage: A resource-based view",
+      "abstractNote": "This paper elucidates the underlying economics of the resource-based view of competitive advantage and integrates existing perspectives into a parsimonious model of resources and firm performance. The essence of this model is that four conditions underlie sustained competitive advantage, all of which must be met. These include superior resources (heterogeneity within an industry), ex post limits to competition, imperfect resource mobility, and ex ante limits to competition. In the concluding section, applications of the model for both single business strategy and corporate strategy are discussed.",
+      "date": "1993",
+      "language": "en",
+      "shortTitle": "The cornerstones of competitive advantage",
+      "libraryCatalog": "Wiley Online Library",
+      "url": "https://onlinelibrary.wiley.com/doi/abs/10.1002/smj.4250140303",
+      "accessDate": "2024-11-03T02:12:10Z",
+      "rights": "Copyright © 1993 John Wiley & Sons, Ltd.",
+      "extra": "_eprint: https://onlinelibrary.wiley.com/doi/pdf/10.1002/smj.4250140303",
+      "volume": "14",
+      "pages": "179-191",
+      "publicationTitle": "Strategic Management Journal",
+      "DOI": "10.1002/smj.4250140303",
+      "issue": "3",
+      "ISSN": "1097-0266",
+      "creators": [
+        {
+          "firstName": "Margaret A.",
+          "lastName": "Peteraf",
+          "creatorType": "author"
+        }
+      ],
+      "tags": [
+        {
+          "tag": "competitive advantage",
+          "type": 1
+        },
+        {
+          "tag": "corporate strategy",
+          "type": 1
+        },
+        {
+          "tag": "rents",
+          "type": 1
+        },
+        {
+          "tag": "Resources",
+          "type": 1
+        },
+        {
+          "tag": "single-business strategy",
+          "type": 1
+        }
+      ],
+      "relations": {},
+      "dateAdded": "2024-11-03T02:12:10Z",
+      "dateModified": "2024-11-03T02:12:10Z",
+      "uri": "http://zotero.org/users/13706285/items/ANMCRAHF",
+      "attachments": [
+        {
+          "itemType": "attachment",
+          "title": "Peteraf - 1993 - The cornerstones of competitive advantage A resou.pdf",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2024-11-03T02:12:29Z",
+          "dateModified": "2024-11-03T02:12:29Z",
+          "uri": "http://zotero.org/users/13706285/items/WRIVALFK",
+          "path": "files/2712/Peteraf - 1993 - The cornerstones of competitive advantage A resou.pdf",
+          "select": "zotero://select/library/items/WRIVALFK"
+        },
+        {
+          "itemType": "attachment",
+          "title": "Snapshot",
+          "url": "https://onlinelibrary.wiley.com/doi/10.1002/smj.4250140303",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2024-11-03T02:12:17Z",
+          "dateModified": "2024-11-03T02:12:17Z",
+          "uri": "http://zotero.org/users/13706285/items/TU5KZ8L9",
+          "path": "files/2713/smj.html",
+          "select": "zotero://select/library/items/TU5KZ8L9"
+        }
+      ],
+      "notes": [],
+      "citationKey": "peteraf_1993",
+      "itemID": 556,
+      "itemKey": "ANMCRAHF",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/ANMCRAHF"
+    },
+    {
+      "version": 2510,
+      "itemType": "document",
+      "title": "What Is Strategy",
+      "abstractNote": "Today’s dynamic markets and technologies have called into question the sustainability of competitive advantage. Under pressure to improve productivity, quality, and speed, managers have embraced tools such as TQM, benchmarking, and re-engineering. Dramatic operational improvements have resulted, but rarely have these gains translated into sustainable profitability. And gradually, the tools have taken the place of strategy. In his five-part article, Michael Porter explores how that shift has led to the rise of mutually destructive competitive battles that damage the profitability of many companies. As managers push to improve on all fronts, they move further away from viable competitive positions. Porter argues that operational effectiveness, although necessary to superior performance, is not sufficient, because its techniques are easy to imitate. In contrast, the essence of strategy is choosing a unique and valuable position rooted in systems of activities that are much more difficult to match. Porter thus traces the economic basis of competitive advantage down to the level of the specific activities a company performs. Using cases such as Ikea and Vanguard, he shows how making trade-offs among activities is critical to the sustainability of a strategy. Whereas managers often focus on individual components of success such as core competencies or critical resources, Porter shows how managing fit across all of a company’s activities enhances both competitive advantage and sustainability. While stressing the role of leadership in making and enforcing clear strategic choices, Porter also offers advice on how companies can reconnect with strategies that have become blurred over tim",
+      "date": "1996",
+      "url": "https://hbr.org/1996/11/what-is-strategy",
+      "publisher": "Harvard Business School",
+      "creators": [
+        {
+          "firstName": "Michael E.",
+          "lastName": "Porter",
+          "creatorType": "author"
+        }
+      ],
+      "tags": [
+        {
+          "tag": "workflow/processed✅"
+        }
+      ],
+      "relations": {},
+      "dateAdded": "2024-09-28T17:12:21Z",
+      "dateModified": "2024-10-01T05:24:23Z",
+      "uri": "http://zotero.org/users/13706285/items/TZC4WR5F",
+      "attachments": [
+        {
+          "itemType": "attachment",
+          "title": "Porter - 1996 - What Is Strategy.pdf",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2024-09-28T17:04:04Z",
+          "dateModified": "2024-09-28T17:13:52Z",
+          "uri": "http://zotero.org/users/13706285/items/JVY5VTU3",
+          "path": "files/3711/Porter - 1996 - What Is Strategy.pdf",
+          "select": "zotero://select/library/items/JVY5VTU3"
+        }
+      ],
+      "notes": [],
+      "citationKey": "porter_1996",
+      "itemID": 760,
+      "itemKey": "TZC4WR5F",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/TZC4WR5F"
+    },
+    {
+      "version": 18647,
+      "itemType": "bookSection",
+      "title": "The Core Competence of the Corporation",
+      "date": "1990",
+      "language": "en",
+      "libraryCatalog": "DOI.org (Crossref)",
+      "url": "http://link.springer.com/10.1007/3-540-30763-X_14",
+      "accessDate": "2024-09-28T17:06:30Z",
+      "place": "Berlin/Heidelberg",
+      "publisher": "Springer-Verlag",
+      "ISBN": "978-3-540-23575-0",
+      "pages": "275-292",
+      "DOI": "10.1007/3-540-30763-X_14",
+      "creators": [
+        {
+          "firstName": "Dietger",
+          "lastName": "Hahn",
+          "creatorType": "editor"
+        },
+        {
+          "firstName": "Bernard",
+          "lastName": "Taylor",
+          "creatorType": "editor"
+        },
+        {
+          "firstName": "C. K.",
+          "lastName": "Prahalad",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "G.",
+          "lastName": "Hamel",
+          "creatorType": "author"
+        }
+      ],
+      "tags": [
+        {
+          "tag": "workflow/processed✅"
+        }
+      ],
+      "relations": {},
+      "dateAdded": "2024-09-28T17:06:30Z",
+      "dateModified": "2024-10-03T05:43:36Z",
+      "uri": "http://zotero.org/users/13706285/items/65A3JI3E",
+      "attachments": [
+        {
+          "itemType": "attachment",
+          "title": "Prahalad and Hamel - 1990 - The Core Competence of the Corporation.pdf",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2024-09-28T17:04:05Z",
+          "dateModified": "2024-10-02T20:04:12Z",
+          "uri": "http://zotero.org/users/13706285/items/D6SH7RE9",
+          "path": "files/3008/Prahalad and Hamel - 1990 - The Core Competence of the Corporation.pdf",
+          "select": "zotero://select/library/items/D6SH7RE9"
+        }
+      ],
+      "notes": [],
+      "citationKey": "prahalad_hamel_1990",
+      "itemID": 744,
+      "itemKey": "65A3JI3E",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/65A3JI3E",
+      "publicationTitle": "Strategische Unternehmungsplanung — Strategische Unternehmungsführung"
+    },
+    {
+      "version": 18640,
+      "itemType": "journalArticle",
+      "title": "Is the Resource-Based \"View\" a Useful Perspective for Strategic Management Research?",
+      "abstractNote": "As a potential theory, the elemental resource-based view (RBV) is not currently a theoretical structure. Moreover, RBV proponents have assumed stability in product markets and eschewed determining resources' values. As a perspective for strategic management, imprecise definitions hinder prescription and static approaches relegate causality to a \"black box.\" We outline conceptual challenges for improving this situation, including rigorously formalizing the RBV, answering the causal \"how\" questions, incorporating the temporal component, and integrating the RBV with demand heterogeneity models.",
+      "date": "2001",
+      "libraryCatalog": "JSTOR",
+      "url": "https://www.jstor.org/stable/259392",
+      "accessDate": "2024-11-03T02:13:25Z",
+      "volume": "26",
+      "publisher": "Academy of Management",
+      "pages": "22-40",
+      "publicationTitle": "The Academy of Management Review",
+      "DOI": "10.2307/259392",
+      "issue": "1",
+      "ISSN": "0363-7425",
+      "creators": [
+        {
+          "firstName": "Richard L.",
+          "lastName": "Priem",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "John E.",
+          "lastName": "Butler",
+          "creatorType": "author"
+        }
+      ],
+      "tags": [],
+      "relations": {},
+      "dateAdded": "2024-11-03T02:13:25Z",
+      "dateModified": "2024-11-03T02:13:25Z",
+      "uri": "http://zotero.org/users/13706285/items/N2GTMQKI",
+      "attachments": [
+        {
+          "itemType": "attachment",
+          "title": "Priem and Butler - 2001 - Is the Resource-Based View a Useful Perspective .pdf",
+          "url": "https://www.jstor.org/stable/pdfplus/10.2307/259392.pdf?acceptTC=true",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2024-11-03T02:13:28Z",
+          "dateModified": "2024-11-03T02:13:41Z",
+          "uri": "http://zotero.org/users/13706285/items/88N3R285",
+          "path": "files/2711/Priem and Butler - 2001 - Is the Resource-Based View a Useful Perspective .pdf",
+          "select": "zotero://select/library/items/88N3R285"
+        }
+      ],
+      "notes": [],
+      "citationKey": "priem_butler_2001",
+      "itemID": 555,
+      "itemKey": "N2GTMQKI",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/N2GTMQKI"
+    },
+    {
+      "version": 6330,
+      "itemType": "journalArticle",
+      "title": "A resource-based approach to the multibusiness firm: Empirical analysis of portfolio interrelationships and corporate financial performance",
+      "abstractNote": "The resource-based view of the firm has provided important new insights into corporate strategy (Barney, 1991; Peteraf, 1993); however, there has been only limited empirical research linked to the theory (e.g., Farjoun, 1994). Although a great deal of work has been done on Corporate diversification, the measures and data typically have a weak connection to resource-based theory. Empirical research on resource-based corporate strategy has been particularly dificult because key concepts such as tacit knowledge or capabilities resist direct measurement. This study is an effort to narrow the gap between theory and empirical research on the multibusiness firm. It develops a resource-based approach to modeling interrelationships among businesses and applies it to the analysis of corporate economic performance. This approach proves to be significant in explaining the financial performance of large manufacturing firms, and it promises to be an important source of insight into corporate strategy.",
+      "date": "1995",
+      "language": "en",
+      "shortTitle": "A resource-based approach to the multibusiness firm",
+      "libraryCatalog": "Wiley Online Library",
+      "url": "https://onlinelibrary.wiley.com/doi/abs/10.1002/smj.4250160403",
+      "accessDate": "2024-11-09T02:41:47Z",
+      "rights": "Copyright © 1995 John Wiley & Sons, Ltd.",
+      "extra": "_eprint: https://onlinelibrary.wiley.com/doi/pdf/10.1002/smj.4250160403",
+      "volume": "16",
+      "pages": "277-299",
+      "publicationTitle": "Strategic Management Journal",
+      "DOI": "10.1002/smj.4250160403",
+      "issue": "4",
+      "ISSN": "1097-0266",
+      "creators": [
+        {
+          "firstName": "James",
+          "lastName": "Robins",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Margarethe F.",
+          "lastName": "Wiersema",
+          "creatorType": "author"
+        }
+      ],
+      "tags": [
+        {
+          "tag": "corporate strategy",
+          "type": 1
+        },
+        {
+          "tag": "corporate performance",
+          "type": 1
+        },
+        {
+          "tag": "diversification",
+          "type": 1
+        },
+        {
+          "tag": "multi-business organization",
+          "type": 1
+        },
+        {
+          "tag": "resource-based strategy",
+          "type": 1
+        }
+      ],
+      "relations": {
+        "dc:replaces": [
+          "http://zotero.org/users/13706285/items/V5DB32D5"
+        ]
+      },
+      "dateAdded": "2024-11-09T02:41:47Z",
+      "dateModified": "2024-11-09T02:43:27Z",
+      "uri": "http://zotero.org/users/13706285/items/J99JAWY6",
+      "attachments": [
+        {
+          "itemType": "attachment",
+          "title": "Robins and Wiersema - 1995 - A resource-based approach to the multibusiness fir.pdf",
+          "url": "https://www.jstor.org/stable/pdfplus/10.2307/2486958.pdf?acceptTC=true",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2024-11-09T02:42:58Z",
+          "dateModified": "2024-11-09T02:43:42Z",
+          "uri": "http://zotero.org/users/13706285/items/CHB5HQE2",
+          "path": "files/2541/Robins and Wiersema - 1995 - A resource-based approach to the multibusiness fir.pdf",
+          "select": "zotero://select/library/items/CHB5HQE2"
+        },
+        {
+          "itemType": "attachment",
+          "title": "Snapshot",
+          "url": "https://onlinelibrary.wiley.com/doi/abs/10.1002/smj.4250160403",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2024-11-09T02:41:56Z",
+          "dateModified": "2024-11-09T02:41:56Z",
+          "uri": "http://zotero.org/users/13706285/items/Q69C9SIS",
+          "path": "files/2543/smj.html",
+          "select": "zotero://select/library/items/Q69C9SIS"
+        }
+      ],
+      "notes": [],
+      "citationKey": "robins_wiersema_1995",
+      "itemID": 666,
+      "itemKey": "J99JAWY6",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/J99JAWY6"
+    },
+    {
+      "version": 18643,
+      "itemType": "journalArticle",
+      "title": "Diversification Strategy and Profitability",
+      "abstractNote": "Prior work has shown an association between diversification strategy and profitability. This paper replicates that association using more recent and complete data and goes on to investigate the sources of the association. Theoretical arguments are advanced which predict the association which will remain once the effects of varying industry profitability are removed. Empirical tests verify this prediction and permit the discrimination between the effects of industry and diversification strategy on profitability.",
+      "date": "1982",
+      "libraryCatalog": "JSTOR",
+      "url": "https://www.jstor.org/stable/2486302",
+      "accessDate": "2024-11-09T02:31:43Z",
+      "volume": "3",
+      "publisher": "Wiley",
+      "pages": "359-369",
+      "publicationTitle": "Strategic Management Journal",
+      "issue": "4",
+      "ISSN": "0143-2095",
+      "creators": [
+        {
+          "firstName": "Richard P.",
+          "lastName": "Rumelt",
+          "creatorType": "author"
+        }
+      ],
+      "tags": [],
+      "relations": {},
+      "dateAdded": "2024-11-09T02:31:43Z",
+      "dateModified": "2024-11-09T02:31:43Z",
+      "uri": "http://zotero.org/users/13706285/items/BQ8SKRLF",
+      "attachments": [
+        {
+          "itemType": "attachment",
+          "title": "Rumelt - 1982 - Diversification Strategy and Profitability.pdf",
+          "url": "https://www.jstor.org/stable/pdfplus/10.2307/2486302.pdf?acceptTC=true",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2024-11-09T02:31:48Z",
+          "dateModified": "2024-11-09T02:59:59Z",
+          "uri": "http://zotero.org/users/13706285/items/IHS88WH7",
+          "path": "files/2538/Rumelt - 1982 - Diversification Strategy and Profitability.pdf",
+          "select": "zotero://select/library/items/IHS88WH7"
+        }
+      ],
+      "notes": [],
+      "citationKey": "rumelt_1982",
+      "itemID": 670,
+      "itemKey": "BQ8SKRLF",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/BQ8SKRLF"
+    },
+    {
+      "version": 3433,
+      "itemType": "journalArticle",
+      "title": "Strategic Management and Economics",
+      "date": "1991",
+      "language": "en",
+      "libraryCatalog": "Zotero",
+      "creators": [
+        {
+          "firstName": "Richard P",
+          "lastName": "Rumelt",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Dan",
+          "lastName": "Schendel",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "David J",
+          "lastName": "Teece",
+          "creatorType": "author"
+        }
+      ],
+      "tags": [
+        {
+          "tag": "workflow/processed✅"
+        }
+      ],
+      "relations": {},
+      "dateAdded": "2024-09-28T17:04:13Z",
+      "dateModified": "2024-10-03T05:04:11Z",
+      "uri": "http://zotero.org/users/13706285/items/VRT9BIZ9",
+      "attachments": [
+        {
+          "itemType": "attachment",
+          "title": "Rumelt et al. - 1991 - Strategic Management and Economics.pdf",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2024-09-28T17:04:05Z",
+          "dateModified": "2024-10-02T20:02:29Z",
+          "uri": "http://zotero.org/users/13706285/items/4T2G6H8D",
+          "path": "files/3009/Rumelt et al. - 1991 - Strategic Management and Economics.pdf",
+          "select": "zotero://select/library/items/4T2G6H8D"
+        }
+      ],
+      "notes": [],
+      "citationKey": "rumelt_etal_1991",
+      "itemID": 745,
+      "itemKey": "VRT9BIZ9",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/VRT9BIZ9"
+    },
+    {
+      "version": 18647,
+      "itemType": "bookSection",
+      "title": "The Theory of Economic Development",
+      "date": "2003",
+      "language": "en",
+      "libraryCatalog": "Springer Link",
+      "url": "https://doi.org/10.1007/0-306-48082-4_3",
+      "accessDate": "2024-10-07T03:27:17Z",
+      "place": "Boston, MA",
+      "publisher": "Springer US",
+      "ISBN": "978-0-306-48082-9",
+      "pages": "61-116",
+      "DOI": "10.1007/0-306-48082-4_3",
+      "creators": [
+        {
+          "firstName": "Joseph",
+          "lastName": "Schumpeter",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Ursula",
+          "lastName": "Backhaus",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Jürgen",
+          "lastName": "Backhaus",
+          "creatorType": "editor"
+        }
+      ],
+      "tags": [],
+      "relations": {},
+      "dateAdded": "2024-10-07T03:27:17Z",
+      "dateModified": "2024-10-07T03:27:17Z",
+      "uri": "http://zotero.org/users/13706285/items/WXPHK5T5",
+      "attachments": [],
+      "notes": [],
+      "citationKey": "schumpeter_backhaus_2003",
+      "itemID": 732,
+      "itemKey": "WXPHK5T5",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/WXPHK5T5",
+      "publicationTitle": "Joseph Alois Schumpeter: Entrepreneurship, Style and Vision"
+    },
+    {
+      "version": 3799,
+      "itemType": "journalArticle",
+      "title": "Local search and the evolution of technological capabilities",
+      "abstractNote": "The assumption that ‘local search’ constrains the direction of corporate R&D is central in evolutionary perspectives on technological change and competition. In this paper, we propose a network-analytic approach for identifying the evolution of firms' technological positions. The approach (1) permits graphical and quantitative assessments of the extent to which firms' search behavior is locally bounded, and (2) enables firms to be positioned and grouped according to the similarities in their innovative capabilities. The utility of the proposed framework is demonstrated by an analysis of strategic partnering and the evolution of the technological positions of the 10 largest Japanese semiconductor producers from 1982 to 1992.",
+      "date": "1996",
+      "language": "en",
+      "libraryCatalog": "Wiley Online Library",
+      "url": "https://onlinelibrary.wiley.com/doi/abs/10.1002/smj.4250171004",
+      "accessDate": "2024-10-07T03:37:43Z",
+      "rights": "Copyright © 1996 John Wiley & Sons, Ltd.",
+      "extra": "_eprint: https://onlinelibrary.wiley.com/doi/pdf/10.1002/smj.4250171004",
+      "volume": "17",
+      "pages": "21-38",
+      "publicationTitle": "Strategic Management Journal",
+      "DOI": "10.1002/smj.4250171004",
+      "issue": "S1",
+      "ISSN": "1097-0266",
+      "creators": [
+        {
+          "firstName": "Toby E.",
+          "lastName": "Stuart",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Joel M.",
+          "lastName": "Podolny",
+          "creatorType": "author"
+        }
+      ],
+      "tags": [
+        {
+          "tag": "innovation",
+          "type": 1
+        },
+        {
+          "tag": "evolutionary theory",
+          "type": 1
+        },
+        {
+          "tag": "local search",
+          "type": 1
+        },
+        {
+          "tag": "technological change",
+          "type": 1
+        }
+      ],
+      "relations": {},
+      "dateAdded": "2024-10-07T03:37:43Z",
+      "dateModified": "2024-10-07T03:37:43Z",
+      "uri": "http://zotero.org/users/13706285/items/GVJMYXEL",
+      "attachments": [
+        {
+          "itemType": "attachment",
+          "title": "Snapshot",
+          "url": "https://onlinelibrary.wiley.com/doi/10.1002/smj.4250171004",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2024-10-07T03:37:48Z",
+          "dateModified": "2024-10-07T03:37:48Z",
+          "uri": "http://zotero.org/users/13706285/items/7UTWMG32",
+          "path": "files/2990/smj.html",
+          "select": "zotero://select/library/items/7UTWMG32"
+        },
+        {
+          "itemType": "attachment",
+          "title": "Stuart and Podolny - 1996 - Local search and the evolution of technological ca.pdf",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2024-10-07T03:38:15Z",
+          "dateModified": "2024-10-07T03:38:15Z",
+          "uri": "http://zotero.org/users/13706285/items/8FJ3JMF7",
+          "path": "files/2989/Stuart and Podolny - 1996 - Local search and the evolution of technological ca.pdf",
+          "select": "zotero://select/library/items/8FJ3JMF7"
+        }
+      ],
+      "notes": [],
+      "citationKey": "stuart_podolny_1996",
+      "itemID": 726,
+      "itemKey": "GVJMYXEL",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/GVJMYXEL"
+    },
+    {
+      "version": 18621,
+      "itemType": "journalArticle",
+      "title": "Exploring internal stickiness: Impediments to the transfer of best practice within the firm",
+      "abstractNote": "The ability to transfer best practices internally is critical to a firm's ability to build competitive advantage through the appropriation of rents from scarce internal knowledge. Just as a firm's distinctive competencies might be difficult for other firms to imitate, its best practices could be difficult to imitate internally. Yet, little systematic attention has been paid to such internal stickiness. The author analyzes internal stickiness of knowledge transfer and tests the resulting model using canonical correlation analysis of a data set consisting of 271 observations of 122 best-practice transfers in eight companies. Contrary to conventional wisdom that blames primarily motivational factors, the study findings show the major barriers to internal knowledge transfer to be knowledge-related factors such as the recipient's lack of absorptive capacity, causal ambiguity, and an arduous relationship between the source and the recipient.",
+      "date": "1996",
+      "language": "en",
+      "shortTitle": "Exploring internal stickiness",
+      "libraryCatalog": "Wiley Online Library",
+      "url": "https://onlinelibrary.wiley.com/doi/abs/10.1002/smj.4250171105",
+      "accessDate": "2024-12-12T16:47:59Z",
+      "rights": "Copyright © 1996 John Wiley & Sons, Ltd.",
+      "extra": "_eprint: https://onlinelibrary.wiley.com/doi/pdf/10.1002/smj.4250171105",
+      "volume": "17",
+      "pages": "27-43",
+      "publicationTitle": "Strategic Management Journal",
+      "DOI": "10.1002/smj.4250171105",
+      "issue": "S2",
+      "ISSN": "1097-0266",
+      "creators": [
+        {
+          "firstName": "Gabriel",
+          "lastName": "Szulanski",
+          "creatorType": "author"
+        }
+      ],
+      "tags": [
+        {
+          "tag": "best practice transfer",
+          "type": 1
+        },
+        {
+          "tag": "internal stickiness",
+          "type": 1
+        },
+        {
+          "tag": "knowledge transfer",
+          "type": 1
+        },
+        {
+          "tag": "knowledgement management",
+          "type": 1
+        },
+        {
+          "tag": "rent appropriation",
+          "type": 1
+        }
+      ],
+      "relations": {
+        "dc:replaces": [
+          "http://zotero.org/users/13706285/items/THHXUP7I"
+        ]
+      },
+      "dateAdded": "2024-12-12T16:47:59Z",
+      "dateModified": "2026-01-14T02:11:19Z",
+      "uri": "http://zotero.org/users/13706285/items/Q5NXWBKD",
+      "attachments": [
+        {
+          "itemType": "attachment",
+          "title": "Snapshot",
+          "url": "https://onlinelibrary.wiley.com/doi/10.1002/smj.4250171105",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2024-12-12T16:48:05Z",
+          "dateModified": "2024-12-12T16:48:05Z",
+          "uri": "http://zotero.org/users/13706285/items/ZK4MCXW8",
+          "path": "files/2416/smj.html",
+          "select": "zotero://select/library/items/ZK4MCXW8"
+        },
+        {
+          "itemType": "attachment",
+          "title": "Szulanski - 1996 - Exploring internal stickiness Impediments to the .pdf",
+          "url": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1002/smj.4250171105",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2024-12-12T16:48:00Z",
+          "dateModified": "2024-12-12T16:48:38Z",
+          "uri": "http://zotero.org/users/13706285/items/PSTNTUI9",
+          "path": "files/2415/Szulanski - 1996 - Exploring internal stickiness Impediments to the .pdf",
+          "select": "zotero://select/library/items/PSTNTUI9"
+        }
+      ],
+      "notes": [],
+      "citationKey": "szulanski_1996",
+      "itemID": 632,
+      "itemKey": "Q5NXWBKD",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/Q5NXWBKD"
+    },
+    {
+      "version": 6318,
+      "itemType": "journalArticle",
+      "title": "Towards an economic theory of the multiproduct firm",
+      "abstractNote": "This paper outlines a theory of the multiproduct firm. Important building blocks include excess capacity and its creation, market imperfections, and the peculiarities of organizational knowledge, including its fungible and tacit character. A framework is adopted in which profit seeking firms are seen to diversify in order to avoid the high transactions costs associated with using various markets to trade the services of various specialized assets. Neoclassical explanations of the multiproduct firm are shown to be seriously deficient.",
+      "date": "1982-03-01",
+      "libraryCatalog": "ScienceDirect",
+      "url": "https://www.sciencedirect.com/science/article/pii/0167268182900038",
+      "accessDate": "2024-11-09T02:40:54Z",
+      "volume": "3",
+      "pages": "39-63",
+      "publicationTitle": "Journal of Economic Behavior & Organization",
+      "DOI": "10.1016/0167-2681(82)90003-8",
+      "issue": "1",
+      "journalAbbreviation": "Journal of Economic Behavior & Organization",
+      "ISSN": "0167-2681",
+      "creators": [
+        {
+          "firstName": "David J.",
+          "lastName": "Teece",
+          "creatorType": "author"
+        }
+      ],
+      "tags": [],
+      "relations": {},
+      "dateAdded": "2024-11-09T02:40:54Z",
+      "dateModified": "2024-11-09T02:40:54Z",
+      "uri": "http://zotero.org/users/13706285/items/UWIJDUIJ",
+      "attachments": [
+        {
+          "itemType": "attachment",
+          "title": "ScienceDirect Snapshot",
+          "url": "https://www.sciencedirect.com/science/article/pii/0167268182900038",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2024-11-09T02:41:14Z",
+          "dateModified": "2024-11-09T02:41:14Z",
+          "uri": "http://zotero.org/users/13706285/items/N4K7RAS2",
+          "path": "files/2544/0167268182900038.html",
+          "select": "zotero://select/library/items/N4K7RAS2"
+        },
+        {
+          "itemType": "attachment",
+          "title": "Teece - 1982 - Towards an economic theory of the multiproduct fir.pdf",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2024-11-09T02:45:31Z",
+          "dateModified": "2024-11-09T02:45:31Z",
+          "uri": "http://zotero.org/users/13706285/items/52T6LQJC",
+          "path": "files/2540/Teece - 1982 - Towards an economic theory of the multiproduct fir.pdf",
+          "select": "zotero://select/library/items/52T6LQJC"
+        }
+      ],
+      "notes": [],
+      "citationKey": "teece_1982",
+      "itemID": 667,
+      "itemKey": "UWIJDUIJ",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/UWIJDUIJ"
+    },
+    {
+      "version": 18725,
+      "itemType": "journalArticle",
+      "title": "Dynamic capabilities and strategic management",
+      "abstractNote": "The dynamic capabilities framework analyzes the sources and methods of wealth creation and capture by private enterprise firms operating in environments of rapid technological change. The competitive advantage of firms is seen as resting on distinctive processes (ways of coordinating and combining), shaped by the firm’s (specific) asset positions (such as the firm’s portfolio of difficult-to-trade knowledge assets and complementary assets), and the evolution path(s) it has adopted or inherited. The importance of path dependencies is amplified where conditions of increasing returns exist. Whether and how a firm’s competitive advantage is eroded depends on the stability of market demand, and the ease of replicability (expanding internally) and imitatability (replication by competitors). If correct, the framework suggests that private wealth creation in regimes of rapid technological change depends in large measure on honing internal technological, organizational, and managerial processes inside the firm. In short, identifying new opportunities and organizing effectively and efficiently to embrace them are generally more fundamental to private wealth creation than is strategizing, if by strategizing one means engaging in business conduct that keeps competitors off balance, raises rival’s costs, and excludes new entrants. © 1997 by John Wiley & Sons, Ltd.",
+      "date": "1997",
+      "language": "en",
+      "libraryCatalog": "Wiley Online Library",
+      "url": "https://onlinelibrary.wiley.com/doi/abs/10.1002/%28SICI%291097-0266%28199708%2918%3A7%3C509%3A%3AAID-SMJ882%3E3.0.CO%3B2-Z",
+      "accessDate": "2024-03-09T03:09:04Z",
+      "rights": "Copyright © 1997 John Wiley & Sons, Ltd.",
+      "extra": "_eprint: https://onlinelibrary.wiley.com/doi/pdf/10.1002/%28SICI%291097-0266%28199708%2918%3A7%3C509%3A%3AAID-SMJ882%3E3.0.CO%3B2-Z",
+      "volume": "18",
+      "pages": "509-533",
+      "publicationTitle": "Strategic Management Journal",
+      "DOI": "10.1002/(SICI)1097-0266(199708)18:7<509::AID-SMJ882>3.0.CO;2-Z",
+      "issue": "7",
+      "ISSN": "1097-0266",
+      "creators": [
+        {
+          "firstName": "David J.",
+          "lastName": "Teece",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Gary",
+          "lastName": "Pisano",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Amy",
+          "lastName": "Shuen",
+          "creatorType": "author"
+        }
+      ],
+      "tags": [
+        {
+          "tag": "innovation",
+          "type": 1
+        },
+        {
+          "tag": "workflow/unprocessed📥"
+        },
+        {
+          "tag": "organizational learning"
+        },
+        {
+          "tag": "capabilities",
+          "type": 1
+        },
+        {
+          "tag": "strategy",
+          "type": 1
+        },
+        {
+          "tag": "competences",
+          "type": 1
+        },
+        {
+          "tag": "knowledge assets",
+          "type": 1
+        },
+        {
+          "tag": "path dependency",
+          "type": 1
+        }
+      ],
+      "relations": {
+        "dc:replaces": [
+          "http://zotero.org/users/13706285/items/J7GXXWN5"
+        ]
+      },
+      "dateAdded": "2024-03-09T03:09:04Z",
+      "dateModified": "2025-03-28T03:28:49Z",
+      "uri": "http://zotero.org/users/13706285/items/8L95UGL6",
+      "attachments": [
+        {
+          "itemType": "attachment",
+          "title": "Teece et al. - 1997 - Dynamic Capabilities and Strategic Management.pdf",
+          "url": "https://www.jstor.org/stable/pdfplus/10.2307/3088148.pdf?acceptTC=true",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2024-11-03T02:14:52Z",
+          "dateModified": "2025-03-28T03:28:49Z",
+          "uri": "http://zotero.org/users/13706285/items/FKJB876X",
+          "path": "files/2162/Teece et al. - 1997 - Dynamic Capabilities and Strategic Management.pdf",
+          "select": "zotero://select/library/items/FKJB876X"
+        }
+      ],
+      "notes": [],
+      "citationKey": "teece_etal_1997",
+      "itemID": 426,
+      "itemKey": "8L95UGL6",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/8L95UGL6"
+    },
+    {
+      "version": 17678,
+      "itemType": "journalArticle",
+      "title": "Institutional Logics and the Historical Contingency of Power in Organizations: Executive Succession in the Higher Education Publishing Industry, 1958– 1990",
+      "date": "11/1999",
+      "language": "en",
+      "shortTitle": "Institutional Logics and the Historical Contingency of Power in Organizations",
+      "libraryCatalog": "DOI.org (Crossref)",
+      "url": "https://www.journals.uchicago.edu/doi/10.1086/210361",
+      "accessDate": "2025-01-28T23:12:55Z",
+      "volume": "105",
+      "pages": "801-843",
+      "publicationTitle": "American Journal of Sociology",
+      "DOI": "10.1086/210361",
+      "issue": "3",
+      "journalAbbreviation": "American Journal of Sociology",
+      "ISSN": "0002-9602, 1537-5390",
+      "creators": [
+        {
+          "firstName": "Patricia H.",
+          "lastName": "Thornton",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "William",
+          "lastName": "Ocasio",
+          "creatorType": "author"
+        }
+      ],
+      "tags": [],
+      "relations": {},
+      "dateAdded": "2025-01-28T23:12:55Z",
+      "dateModified": "2025-01-28T23:12:55Z",
+      "uri": "http://zotero.org/users/13706285/items/KPI2S4SX",
+      "attachments": [
+        {
+          "itemType": "attachment",
+          "title": "PDF",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2025-02-05T20:49:17Z",
+          "dateModified": "2025-02-05T20:49:17Z",
+          "uri": "http://zotero.org/users/13706285/items/E32JAUFJ",
+          "path": "files/2349/Thornton and Ocasio - 1999 - Institutional Logics and the Historical Contingency of Power in Organizations Executive Succession.pdf",
+          "select": "zotero://select/library/items/E32JAUFJ"
+        }
+      ],
+      "notes": [],
+      "citationKey": "thornton_ocasio_1999",
+      "itemID": 1150,
+      "itemKey": "KPI2S4SX",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/KPI2S4SX"
+    },
+    {
+      "version": 18642,
+      "itemType": "journalArticle",
+      "title": "Information Processing as an Integrating Concept in Organizational Design",
+      "abstractNote": "Concepts of uncertainty and information processing are used to integrate the diverse organization design/structure literatures. This approach more fully explicates the concept of congruence which lies at the heart of contingency ideas. The review suggests a contingency approach to design which develops a feasible set of structural alternatives from which the organization can choose.",
+      "date": "1978",
+      "libraryCatalog": "JSTOR",
+      "url": "https://www.jstor.org/stable/257550",
+      "accessDate": "2024-12-05T04:21:30Z",
+      "volume": "3",
+      "publisher": "Academy of Management",
+      "pages": "613-624",
+      "publicationTitle": "The Academy of Management Review",
+      "DOI": "10.2307/257550",
+      "issue": "3",
+      "ISSN": "0363-7425",
+      "creators": [
+        {
+          "firstName": "Michael L.",
+          "lastName": "Tushman",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "David A.",
+          "lastName": "Nadler",
+          "creatorType": "author"
+        }
+      ],
+      "tags": [],
+      "relations": {},
+      "dateAdded": "2024-12-05T04:21:30Z",
+      "dateModified": "2024-12-05T04:21:30Z",
+      "uri": "http://zotero.org/users/13706285/items/JTIG6B3F",
+      "attachments": [
+        {
+          "itemType": "attachment",
+          "title": "Tushman and Nadler - 1978 - Information Processing as an Integrating Concept i.pdf",
+          "url": "https://www.jstor.org/stable/pdfplus/10.2307/257550.pdf?acceptTC=true",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2024-12-05T04:21:31Z",
+          "dateModified": "2024-12-05T04:21:39Z",
+          "uri": "http://zotero.org/users/13706285/items/8ZNHK5KT",
+          "path": "files/2423/Tushman and Nadler - 1978 - Information Processing as an Integrating Concept i.pdf",
+          "select": "zotero://select/library/items/8ZNHK5KT"
+        }
+      ],
+      "notes": [],
+      "citationKey": "tushman_nadler_1978",
+      "itemID": 639,
+      "itemKey": "JTIG6B3F",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/JTIG6B3F"
+    },
+    {
+      "version": 18642,
+      "itemType": "journalArticle",
+      "title": "Managerial and Organizational Cognition: Notes from a Trip Down Memory Lane",
+      "abstractNote": "The study of cognition in organizations has burgeoned in recent years. Top-down information processing theory suggests that individuals create knowledge structures to help them process information and make decisions. While the benefits of employing such knowledge structures are widely noted, there is a growing concern that they can limit decision makers' abilities to understand their information environments and thus, compromise their decision making. This issue has captured the imagination of managerial and organizational cognition researchers. To date, their inquiry has been eclectic in focus and method. To order and advance this work, the author reviews extant research on the developmental origins and decision consequences of both the content and structure of knowledge structures at multiple levels of analysis. A host of research challenges are identified to help develop a better understanding of knowledge structure representation, development, and use in organizations.",
+      "date": "1995",
+      "shortTitle": "Managerial and Organizational Cognition",
+      "libraryCatalog": "JSTOR",
+      "url": "https://www.jstor.org/stable/2635252",
+      "accessDate": "2024-12-05T04:23:02Z",
+      "volume": "6",
+      "publisher": "INFORMS",
+      "pages": "280-321",
+      "publicationTitle": "Organization Science",
+      "issue": "3",
+      "ISSN": "1047-7039",
+      "creators": [
+        {
+          "firstName": "James P.",
+          "lastName": "Walsh",
+          "creatorType": "author"
+        }
+      ],
+      "tags": [],
+      "relations": {},
+      "dateAdded": "2024-12-05T04:23:02Z",
+      "dateModified": "2024-12-05T04:23:02Z",
+      "uri": "http://zotero.org/users/13706285/items/8TKEIN4X",
+      "attachments": [
+        {
+          "itemType": "attachment",
+          "title": "Walsh - 1995 - Managerial and Organizational Cognition Notes fro.pdf",
+          "url": "https://www.jstor.org/stable/pdfplus/10.2307/2635252.pdf?acceptTC=true",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2024-12-05T04:23:03Z",
+          "dateModified": "2024-12-05T04:23:08Z",
+          "uri": "http://zotero.org/users/13706285/items/3LHQEA5G",
+          "path": "files/2422/Walsh - 1995 - Managerial and Organizational Cognition Notes fro.pdf",
+          "select": "zotero://select/library/items/3LHQEA5G"
+        }
+      ],
+      "notes": [],
+      "citationKey": "walsh_1995",
+      "itemID": 638,
+      "itemKey": "8TKEIN4X",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/8TKEIN4X"
+    },
+    {
+      "version": 18646,
+      "itemType": "journalArticle",
+      "title": "On the Efficiency of Internal and External Corporate Control Mechanisms",
+      "abstractNote": "Internal, organizationally based mechanisms of corporate control and external, market-based control mechanisms can be employed to help align the diverse interests of managers and shareholders. After reviewing the related work in organization theory and financial economics, this paper articulates the strengths and shortcomings of both types of control mechanisms; it also identifies a variety of managerial entrenchment practices that managers can use to compromise these mechanisms. A theoretical framework is developed next that explicates the interrelationships between and among these corporate control mechanisms. A number of research opportunities that span the disciplines of organization theory and financial economics are identified.",
+      "date": "1990",
+      "libraryCatalog": "JSTOR",
+      "url": "https://www.jstor.org/stable/258017",
+      "accessDate": "2024-10-13T03:04:21Z",
+      "volume": "15",
+      "publisher": "Academy of Management",
+      "pages": "421-458",
+      "publicationTitle": "The Academy of Management Review",
+      "DOI": "10.2307/258017",
+      "issue": "3",
+      "ISSN": "0363-7425",
+      "creators": [
+        {
+          "firstName": "James P.",
+          "lastName": "Walsh",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "James K.",
+          "lastName": "Seward",
+          "creatorType": "author"
+        }
+      ],
+      "tags": [],
+      "relations": {},
+      "dateAdded": "2024-10-13T03:04:21Z",
+      "dateModified": "2024-10-13T03:04:21Z",
+      "uri": "http://zotero.org/users/13706285/items/5HR74V49",
+      "attachments": [
+        {
+          "itemType": "attachment",
+          "title": "Walsh and Seward - 1990 - On the Efficiency of Internal and External Corpora.pdf",
+          "url": "https://www.jstor.org/stable/pdfplus/10.2307/258017.pdf?acceptTC=true",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2024-10-13T03:04:24Z",
+          "dateModified": "2024-10-13T03:06:10Z",
+          "uri": "http://zotero.org/users/13706285/items/K4PIHPR3",
+          "path": "files/2869/Walsh and Seward - 1990 - On the Efficiency of Internal and External Corpora.pdf",
+          "select": "zotero://select/library/items/K4PIHPR3"
+        }
+      ],
+      "notes": [],
+      "citationKey": "walsh_seward_1990",
+      "itemID": 717,
+      "itemKey": "5HR74V49",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/5HR74V49"
+    },
+    {
+      "version": 18418,
+      "itemType": "journalArticle",
+      "title": "The symbolic management of stockholders: Corporate governance reforms and shareholder reactions",
+      "abstractNote": "This paper examines the consequences of symbolic action in corporate governance. Specifically, we examine (1) whether the stock market reacts favorably to specific governance mechanisms that convey the alignment of CEO and shareholder interests, such as the adoption of long-term incentive plans (LTIPs), even if such plans are not actually implemented, (2) whether providing agency-related explanations for LTIPs affects the stock market response, and (3) whether the symbolic adoption of LTIPs deters other governance reforms that would reduce CEOs' control over their boards. Analysis of data from over 400 corporations over a ten-year period suggests that symbolic corporate actions can engender significant positive stockholder reactions and deter other, more substantive governance reforms, thus perpetuating power imbalances in organizations. We discuss implications for institutional and agency-based perspectives on organizations.",
+      "date": "1998-03",
+      "shortTitle": "The symbolic management of stockholders",
+      "libraryCatalog": "Northwestern Scholars",
+      "url": "http://www.scopus.com/inward/record.url?scp=0032220361&partnerID=8YFLogxK",
+      "accessDate": "2025-01-28T23:18:24Z",
+      "volume": "43",
+      "pages": "127-153",
+      "publicationTitle": "Administrative Science Quarterly",
+      "DOI": "10.2307/2393593",
+      "issue": "1",
+      "ISSN": "0001-8392",
+      "creators": [
+        {
+          "firstName": "James D.",
+          "lastName": "Westphal",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Edward J.",
+          "lastName": "Zajac",
+          "creatorType": "author"
+        }
+      ],
+      "tags": [],
+      "relations": {
+        "dc:replaces": [
+          "http://zotero.org/users/13706285/items/3UJQ56LX"
+        ]
+      },
+      "dateAdded": "2025-01-28T23:18:25Z",
+      "dateModified": "2025-12-15T23:02:48Z",
+      "uri": "http://zotero.org/users/13706285/items/ATS4G9XR",
+      "attachments": [
+        {
+          "itemType": "attachment",
+          "title": "JSTOR Full Text PDF",
+          "url": "https://www.jstor.org/stable/pdfplus/10.2307/2393593.pdf?acceptTC=true",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2025-12-15T23:02:39Z",
+          "dateModified": "2025-12-15T23:02:48Z",
+          "uri": "http://zotero.org/users/13706285/items/C5KKT5MA",
+          "path": "files/1788/Westphal and Zajac - 1998 - The Symbolic Management of Stockholders Corporate Governance Reforms and Shareholder Reactions.pdf",
+          "select": "zotero://select/library/items/C5KKT5MA"
+        },
+        {
+          "itemType": "attachment",
+          "title": "Westphal and Zajac - 1998 - The symbolic management of stockholders Corporate.pdf",
+          "url": "https://repositories.lib.utexas.edu/bitstreams/67687fc1-95e7-4467-9832-bfbdf717185d/download",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2025-01-28T23:18:28Z",
+          "dateModified": "2025-01-28T23:18:42Z",
+          "uri": "http://zotero.org/users/13706285/items/84UU682P",
+          "path": "files/2296/Westphal and Zajac - 1998 - The symbolic management of stockholders Corporate.pdf",
+          "select": "zotero://select/library/items/84UU682P"
+        }
+      ],
+      "notes": [],
+      "citationKey": "westphal_zajac_1998",
+      "itemID": 207,
+      "itemKey": "ATS4G9XR",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/ATS4G9XR"
+    },
+    {
+      "version": 18652,
+      "itemType": "journalArticle",
+      "title": "Top Management Team Demography and Corporate Strategic Change",
+      "abstractNote": "This study examined the relationship between the demography of top management teams and corporate strategic change, measured as absolute change in diversification level, within a sample of Fortune 500 companies. Controlling for prior firm performance, organizational size, top team size, and industry structure, we found that the firms most likely to undergo changes in corporate strategy had top management teams characterized by lower average age, shorter organizational tenure, higher team tenure, higher educational level, higher educational specialization heterogeneity, and higher academic training in the sciences than other teams. The results suggest that top managers' cognitive perspectives, as reflected in a team's demographic characteristics, are linked to the team's propensity to change corporate strategy.",
+      "date": "1992",
+      "libraryCatalog": "JSTOR",
+      "url": "https://www.jstor.org/stable/256474",
+      "accessDate": "2025-01-28T23:13:21Z",
+      "volume": "35",
+      "publisher": "Academy of Management",
+      "pages": "91-121",
+      "publicationTitle": "The Academy of Management Journal",
+      "DOI": "10.2307/256474",
+      "issue": "1",
+      "ISSN": "0001-4273",
+      "creators": [
+        {
+          "firstName": "Margarethe F.",
+          "lastName": "Wiersema",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Karen A.",
+          "lastName": "Bantel",
+          "creatorType": "author"
+        }
+      ],
+      "tags": [],
+      "relations": {},
+      "dateAdded": "2025-01-28T23:13:21Z",
+      "dateModified": "2025-01-28T23:13:21Z",
+      "uri": "http://zotero.org/users/13706285/items/6F2VQK32",
+      "attachments": [
+        {
+          "itemType": "attachment",
+          "title": "PDF",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2025-02-05T22:38:30Z",
+          "dateModified": "2025-02-05T22:38:37Z",
+          "uri": "http://zotero.org/users/13706285/items/P7KKURVF",
+          "path": "files/2348/Wiersema - TOP MANAGEMENT TEAM DEMOGRAPHY AND CORPORATE STRATEGIC CHANGE.pdf",
+          "select": "zotero://select/library/items/P7KKURVF"
+        }
+      ],
+      "notes": [],
+      "citationKey": "wiersema_bantel_1992",
+      "itemID": 1149,
+      "itemKey": "6F2VQK32",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/6F2VQK32"
+    },
+    {
+      "version": 7090,
+      "itemType": "journalArticle",
+      "title": "Strategy research: governance and competence perspectives",
+      "abstractNote": "Business strategy is a complex subject and is usefully examined from several perspectives. This paper applies the lenses of governance and competence to the study of strategy. Both the governance and the competence perspectives have had the benefit of distinguished antecedents. They have also had to deal with tautological reputations. I begin with the governance perspective, with emphasis on the six key moves through which it has been operationalized. I then examine the competence perspective in these same six respects. Governance challenges the competence perspective to apply itself more assiduously to operationalization, including the need to choose and give definition to one or more units of analysis (of which the ‘routine’ is a promising candidate). The research challenges posed by competence to which governance can and should respond include dynamic transaction costs, learning, and the need to push beyond generic governance to address strategy issues faced by particular firms (with their distinctive strengths and disabilities). A lively research future for these two perspectives, individually and in combination, is projected. Copyright © 1999 John Wiley & Sons, Ltd.",
+      "date": "1999",
+      "language": "en",
+      "shortTitle": "Strategy research",
+      "libraryCatalog": "Wiley Online Library",
+      "url": "https://onlinelibrary.wiley.com/doi/abs/10.1002/%28SICI%291097-0266%28199912%2920%3A12%3C1087%3A%3AAID-SMJ71%3E3.0.CO%3B2-Z",
+      "accessDate": "2024-11-25T17:44:43Z",
+      "rights": "Copyright © 1999 John Wiley & Sons, Ltd.",
+      "extra": "_eprint: https://onlinelibrary.wiley.com/doi/pdf/10.1002/%28SICI%291097-0266%28199912%2920%3A12%3C1087%3A%3AAID-SMJ71%3E3.0.CO%3B2-Z",
+      "volume": "20",
+      "pages": "1087-1108",
+      "publicationTitle": "Strategic Management Journal",
+      "DOI": "10.1002/(SICI)1097-0266(199912)20:12<1087::AID-SMJ71>3.0.CO;2-Z",
+      "issue": "12",
+      "ISSN": "1097-0266",
+      "creators": [
+        {
+          "firstName": "Oliver E.",
+          "lastName": "Williamson",
+          "creatorType": "author"
+        }
+      ],
+      "tags": [
+        {
+          "tag": "strategy",
+          "type": 1
+        },
+        {
+          "tag": "learning",
+          "type": 1
+        },
+        {
+          "tag": "competence",
+          "type": 1
+        },
+        {
+          "tag": "contracting",
+          "type": 1
+        },
+        {
+          "tag": "transaction cost",
+          "type": 1
+        }
+      ],
+      "relations": {},
+      "dateAdded": "2024-11-25T17:44:43Z",
+      "dateModified": "2024-11-25T17:44:43Z",
+      "uri": "http://zotero.org/users/13706285/items/RYK4BNYP",
+      "attachments": [
+        {
+          "itemType": "attachment",
+          "title": "Full Text PDF",
+          "url": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1002/%28SICI%291097-0266%28199912%2920%3A12%3C1087%3A%3AAID-SMJ71%3E3.0.CO%3B2-Z",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2024-11-25T17:44:45Z",
+          "dateModified": "2024-11-25T17:44:45Z",
+          "uri": "http://zotero.org/users/13706285/items/6HJ2L3Z5",
+          "path": "files/2437/Williamson - 1999 - Strategy research governance and competence persp.pdf",
+          "select": "zotero://select/library/items/6HJ2L3Z5"
+        },
+        {
+          "itemType": "attachment",
+          "title": "Snapshot",
+          "url": "https://onlinelibrary.wiley.com/doi/abs/10.1002/%28SICI%291097-0266%28199912%2920%3A12%3C1087%3A%3AAID-SMJ71%3E3.0.CO%3B2-Z",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2024-11-25T17:44:51Z",
+          "dateModified": "2024-11-25T17:44:51Z",
+          "uri": "http://zotero.org/users/13706285/items/ZHJZW3U7",
+          "path": "files/2436/(SICI)1097-0266(199912)20121087AID-SMJ713.0.html",
+          "select": "zotero://select/library/items/ZHJZW3U7"
+        }
+      ],
+      "notes": [],
+      "citationKey": "williamson_1999",
+      "itemID": 649,
+      "itemKey": "RYK4BNYP",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/RYK4BNYP"
+    },
+    {
+      "version": 18646,
+      "itemType": "journalArticle",
+      "title": "When the Principal Is the Firm’s Problem: Principal Costs and Their Corporate Governance Implications",
+      "abstractNote": "While agency theory has long dominated corporate governance research, we suggest that the common transplanting of the dyadic principal–agent problem into the corporate context has blurred key differences between principals and the firm as an entity. We redress this imbalance by advancing a conceptual framework of principal costs vis-à-vis the firm. We first show how principal costs can exist even in the single-principal corporate context, based on owner consumption and competence characteristics, which allows us to also distinguish principal costs from both agency costs and principal–principal expropriation costs. We then extend our principal costs theory to the multi-principal context, in which we highlight how principal costs, including private benefits of influence, can exist even in corporations with no controlling shareholder enjoying private benefits of control. In this latter context, we redirect the agency theoretic lens of incentive and informational concerns toward active minority shareholders whose actions generate principal costs vis-à-vis the firm, as well as passive shareholders who fail to constrain such principal costs. We conclude with a discussion of the broader implications of our theory for current and future corporate governance research, practice, and public policy.",
+      "date": "2024-07-08",
+      "shortTitle": "When the Principal Is the Firm’s Problem",
+      "libraryCatalog": "journals.aom.org (Atypon)",
+      "url": "https://journals.aom.org/doi/abs/10.5465/amr.2022.0479",
+      "accessDate": "2024-10-13T03:14:24Z",
+      "publisher": "Academy of Management",
+      "pages": "amr.2022.0479",
+      "publicationTitle": "Academy of Management Review",
+      "DOI": "10.5465/amr.2022.0479",
+      "journalAbbreviation": "AMR",
+      "ISSN": "0363-7425",
+      "creators": [
+        {
+          "firstName": "Edward J.",
+          "lastName": "Zajac",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Maria",
+          "lastName": "Goranova",
+          "creatorType": "author"
+        }
+      ],
+      "tags": [],
+      "relations": {},
+      "dateAdded": "2024-10-13T03:14:24Z",
+      "dateModified": "2024-10-13T03:14:24Z",
+      "uri": "http://zotero.org/users/13706285/items/PQPB5K3N",
+      "attachments": [],
+      "notes": [],
+      "citationKey": "zajac_goranova_2024",
+      "itemID": 714,
+      "itemKey": "PQPB5K3N",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/PQPB5K3N"
+    },
+    {
+      "version": 18421,
+      "itemType": "journalArticle",
+      "title": "The Costs and Benefits of Managerial Incentives and Monitoring in Large U.S. Corporations: When is More not Better?",
+      "abstractNote": "Recent research and public discourse on executive compensation and corporate governance suggests a growing consensus that firms can and should increase their control over top managers by increasing the use of managerial incentives and monitoring by boards of directors. This study departs from this consensus by offering an alternative perspective that considers not only the benefits, but also the costs of both incentives and monitoring in large corporations. The study develops and tests a contingency cost/benefit perspective on governance decisions as resource allocation decisions, proposing how and why the observed levels of managerial incentives and monitoring may vary across organizations and across time. Specifically, the study suggests that: (1) firms that are more risky face greater costs when using incentive compensation contracts for top managers, thus reducing the expected level of incentive compensation use for such firms; (2) firms facing this problem of low incentive compensation use can realize greater benefits from higher levels of board monitoring, and thus are likely to rely more on board monitoring; and (3) firms with more complex comporate strategies face higher costs in using board monitoring, and are thus likely to rely less on board monitoring as a source of controlling top management behavior. The study also proposes that within this contingency perspective there may be diminishing ‘behavioral returns’ to increases in monitoring and incentives. These hypotheses are tested using extensive longitudinal data from over 400 of the largest U.S. corporations. The supportive findings suggest that maximal levels of incentives and monitoring are not necessarily optimal, and that a firm's strategy may not only have significant product/market implications, but also corporate governance implications.",
+      "date": "1994",
+      "language": "en",
+      "shortTitle": "The Costs and Benefits of Managerial Incentives and Monitoring in Large U.S. Corporations",
+      "libraryCatalog": "Wiley Online Library",
+      "url": "https://onlinelibrary.wiley.com/doi/abs/10.1002/smj.4250150909",
+      "accessDate": "2024-10-13T03:05:18Z",
+      "rights": "Copyright © 1994 John Wiley & Sons, Ltd.",
+      "extra": "_eprint: https://onlinelibrary.wiley.com/doi/pdf/10.1002/smj.4250150909",
+      "volume": "15",
+      "pages": "121-142",
+      "publicationTitle": "Strategic Management Journal",
+      "DOI": "10.1002/smj.4250150909",
+      "issue": "S1",
+      "ISSN": "1097-0266",
+      "creators": [
+        {
+          "firstName": "Edward J.",
+          "lastName": "Zajac",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "James D.",
+          "lastName": "Westphal",
+          "creatorType": "author"
+        }
+      ],
+      "tags": [
+        {
+          "tag": "agency theory",
+          "type": 1
+        },
+        {
+          "tag": "boards of directors",
+          "type": 1
+        },
+        {
+          "tag": "CEO compensation",
+          "type": 1
+        },
+        {
+          "tag": "Corporate governance",
+          "type": 1
+        }
+      ],
+      "relations": {
+        "dc:replaces": [
+          "http://zotero.org/users/13706285/items/UD85MXGB"
+        ]
+      },
+      "dateAdded": "2024-10-13T03:05:18Z",
+      "dateModified": "2025-12-15T23:03:06Z",
+      "uri": "http://zotero.org/users/13706285/items/PHE9PX75",
+      "attachments": [
+        {
+          "itemType": "attachment",
+          "title": "Snapshot",
+          "url": "https://onlinelibrary.wiley.com/doi/10.1002/smj.4250150909",
+          "tags": [],
+          "relations": {
+            "dc:replaces": [
+              "http://zotero.org/users/13706285/items/NCLI25FG"
+            ]
+          },
+          "dateAdded": "2024-10-13T03:05:32Z",
+          "dateModified": "2025-12-15T23:03:06Z",
+          "uri": "http://zotero.org/users/13706285/items/PXT2PS3M",
+          "path": "files/1787/smj.html",
+          "select": "zotero://select/library/items/PXT2PS3M"
+        },
+        {
+          "itemType": "attachment",
+          "title": "Zajac and Westphal - 1994 - The Costs and Benefits of Managerial Incentives an.pdf",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2024-10-13T03:12:01Z",
+          "dateModified": "2024-10-13T03:12:01Z",
+          "uri": "http://zotero.org/users/13706285/items/LUVBFUYD",
+          "path": "files/2868/Zajac and Westphal - 1994 - The Costs and Benefits of Managerial Incentives an.pdf",
+          "select": "zotero://select/library/items/LUVBFUYD"
+        }
+      ],
+      "notes": [],
+      "citationKey": "zajac_westphal_1994",
+      "itemID": 205,
+      "itemKey": "PHE9PX75",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/PHE9PX75"
+    },
+    {
+      "version": 18651,
+      "itemType": "journalArticle",
+      "title": "CEO Narcissism and the Impact of Prior Board Experience on Corporate Strategy",
+      "abstractNote": "We examine how chief executive officer (CEO) narcissism influences the interorganizational imitation of corporate strategy. We theorize that narcissistic CEOs are influenced more by the corporate strategies they experienced on other boards and less by the corporate strategies experienced by other directors. These effects are strengthened if the other firms to which the CEO has interlock ties have high status and if the CEO is powerful. Through longitudinal analyses of Fortune 500 companies’ decisions (from 1997 to 2006) related to the acquisition emphasis of a firm’s growth strategy and the firm’s level of international diversification, we show that narcissistic CEOs are influenced by corporate strategies that they witnessed at other firms much more than other CEOs. In addition, relatively narcissistic CEOs not only strongly resist the influence of other directors’ prior experience but also tend to demonstrate their superiority by adopting corporate strategies that are the opposite of what fellow directors’ prior experience would suggest. Our theory and results highlight how CEO narcissism limits directors’ influence over corporate strategy and influences CEOs’ learning and information processing in making strategic decisions.",
+      "date": "2015-03-01",
+      "language": "en",
+      "libraryCatalog": "SAGE Journals",
+      "url": "https://doi.org/10.1177/0001839214554989",
+      "accessDate": "2025-01-28T23:15:32Z",
+      "volume": "60",
+      "publisher": "SAGE Publications Inc",
+      "pages": "31-65",
+      "publicationTitle": "Administrative Science Quarterly",
+      "DOI": "10.1177/0001839214554989",
+      "issue": "1",
+      "ISSN": "0001-8392",
+      "creators": [
+        {
+          "firstName": "David H.",
+          "lastName": "Zhu",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Guoli",
+          "lastName": "Chen",
+          "creatorType": "author"
+        }
+      ],
+      "tags": [],
+      "relations": {},
+      "dateAdded": "2025-01-28T23:15:32Z",
+      "dateModified": "2025-01-28T23:15:32Z",
+      "uri": "http://zotero.org/users/13706285/items/I5DXHDPD",
+      "attachments": [
+        {
+          "itemType": "attachment",
+          "title": "SAGE PDF Full Text",
+          "url": "https://journals.sagepub.com/doi/pdf/10.1177/0001839214554989",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2025-01-28T23:15:33Z",
+          "dateModified": "2025-01-28T23:15:33Z",
+          "uri": "http://zotero.org/users/13706285/items/IUV8LUTX",
+          "path": "files/2299/Zhu and Chen - 2015 - CEO Narcissism and the Impact of Prior Board Exper.pdf",
+          "select": "zotero://select/library/items/IUV8LUTX"
+        }
+      ],
+      "notes": [],
+      "citationKey": "zhu_chen_2015",
+      "itemID": 1147,
+      "itemKey": "I5DXHDPD",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/I5DXHDPD"
+    }
+  ]
+}
