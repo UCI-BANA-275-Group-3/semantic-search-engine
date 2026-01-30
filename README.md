@@ -9,6 +9,15 @@ Production-ready semantic search over a document corpus (≥100 docs) using embe
 
 ---
 
+## Team Responsibilities
+- **Alex:** Domain selection, data collection, preprocessing pipeline, and overall system design
+- **Syeda:** Embedding implementation (model choice + vectorization) and cosine similarity search
+- **Shweta:** LLM enhancement (summarize / QA / compare)
+- **Neha:** CLI interface and optional UI deployment
+- **Fatima:** Code quality, documentation, and deliverables coordination
+
+---
+
 ## Status Note (Existing Corpus)
 All Zotero exports should live under `corpus/raw/zotero/` as documented below.
 
@@ -101,8 +110,8 @@ Exit non‑zero if critical checks fail (missing attachments, too few docs), to 
 
 Completed Tasks: Text extraction (20_extract_text.py)
 1) Read manifest.jsonl and iterate attachments with supported extensions.
-2) Extract raw text (PDF/HTML/TXT) while capturing page numbers when possible.
-3) Clean minimal artifacts (line breaks/hyphenation), preserve provenance fields.
+2) Extract PDFs as Markdown with preserved headings (PyMuPDF4LLM).
+3) Extract HTML/TXT as raw text.
 4) Write extracted.jsonl with one record per attachment (or per page/section if needed).
 5) Log extraction errors and warnings to corpus/logs/ (e.g., unsupported types, missing files).
 
@@ -111,28 +120,85 @@ Completed Tasks: Text extraction (20_extract_text.py)
 - Input: `corpus/derived/text/extracted.jsonl`
 - Output: `corpus/derived/text/cleaned.jsonl`
 
+Completed Tasks: Cleaning (30_clean_text.py)
+1) Read extracted.jsonl and preserve all provenance fields (doc_id, path, collections).
+2) Clean page-by-page when available: remove boilerplate and metadata lines before stitching.
+3) Stitch pages into one flow, repairing hyphenation across page breaks and normalizing Unicode (including Greek letters).
+4) Keep paragraph breaks (`\\n\\n`) as structural anchors for chunking later.
+5) Strip references/bibliography into `references_text` to keep the main body focused.
+6) Normalize citations to `<CITATION>` to reduce noise in embeddings.
+7) Record QA metrics (raw_len, cleaned_len) and a cleaning summary in `corpus/logs/clean_text_summary.json`.
+8) Write cleaned.jsonl with one record per input record.
+9) Log any cleaning exceptions to `corpus/logs/clean_text_errors.jsonl`.
+
 ### **Chunking**
 - Script: `src/40_chunk_text.py`
 - Input: `corpus/derived/text/cleaned.jsonl`
 - Output: `corpus/derived/chunks/chunks.jsonl`
+
+Plan: Chunking (40_chunk_text.py)
+1) Read `corpus/derived/text/cleaned.jsonl` and keep paragraph breaks (`\\n\\n`) as *soft boundaries* when you split.
+   - If a paragraph break is nearby, prefer splitting there instead of cutting a sentence.
+2) Split into chunks by length (characters or tokens) with overlap, so context carries across boundaries.
+3) Use a deterministic `chunk_id` format: `doc_id:chunk_index`.
+4) Preserve metadata on each chunk (title, creators, year, collection, source path).
+5) Store chunk text and basic stats (length, position) for debugging.
+6) Write `corpus/derived/chunks/chunks.jsonl`.
+7) Log any failures to `corpus/logs/chunk_text_errors.jsonl`.
+Note: Use `cleaned_text` as the primary input for chunking. A single example of a cleaned record is saved at `corpus/derived/text/cleaned_example.json`.
 
 ### **Embeddings**
 - Scripts: `src/50_embedding_backends.py`, `src/60_embed_corpus.py`
 - Input: `corpus/derived/chunks/chunks.jsonl`
 - Outputs: `corpus/derived/embeddings/embeddings.npy`, `corpus/derived/embeddings/index.jsonl`
 
+Plan: Embeddings (50_embedding_backends.py, 60_embed_corpus.py)
+1) Choose and configure a backend (Sentence Transformers / OpenAI / Word2Vec).
+2) Embed each chunk text (batched) and persist vectors to embeddings.npy.
+3) Write index.jsonl mapping row → chunk_id + metadata pointer.
+4) Validate embedding shapes and count alignment with chunks.jsonl.
+5) Log backend config + model name to corpus/logs/ for reproducibility.
+
 ### **Similarity search**
 - Script: `src/70_similarity_search.py`
 - Inputs: embeddings artifacts
 - Output: top-K chunks with cosine scores
 
+Plan: Similarity search (70_similarity_search.py)
+1) Load embeddings.npy and index.jsonl into memory.
+2) Embed the query with the same backend and normalize if required.
+3) Compute cosine similarity and return top-K results with scores.
+4) Include chunk text + provenance for explainability.
+5) (Optional) Add ANN index (FAISS/Annoy) if brute force is slow.
+
 ### **LLM enhancement (choose ONE)**
 - Script: `src/80_llm_enhancement.py`
 - Modes: summarize / QA / compare
 
+Plan: LLM enhancement (80_llm_enhancement.py)
+1) Accept top-K chunks and the user query.
+2) Format a concise context window (truncate/merge as needed).
+3) Run one chosen mode: summarize / QA / compare.
+4) Return the LLM response + citations (chunk ids / titles).
+5) Log prompt + model config for transparency.
+
 ### **CLI interface**
 - Script: `src/90_main.py`
 - Runs retrieval + optional enhancement
+
+Plan: CLI interface (90_main.py)
+1) Parse arguments (query, top_k, backend, enhance mode).
+2) Run retrieval and print ranked results with scores.
+3) Optionally call LLM enhancement and print final response.
+4) Provide examples + sane defaults for the demo.
+5) Exit with non-zero status on fatal errors.
+
+### **Optional UI (Bonus)**
+If we build a public UI (Streamlit/Gradio/HF Space), keep it minimal and demo-focused:
+1) Simple search box + top-K slider.
+2) Display ranked results with source metadata.
+3) Toggle LLM enhancement mode (summarize/QA/compare).
+4) Provide link to repo and demo video.
 
 ---
 
@@ -147,11 +213,15 @@ python3.12 -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
 ```
+Note: A fresh install must include the required extraction dependencies (`pymupdf4llm`, `pymupdf_layout`, `tqdm`).
 
 ### Extraction dependencies (add as we grow)
-- **PDFs:** `pymupdf` (required by `src/20_extract_text.py`)
+- **PDFs:** `pymupdf4llm` (required by `src/20_extract_text.py`)
 - **HTML/TXT:** stdlib only for now
-- **Progress:** `tqdm` (optional status bar in extraction)
+- **Progress:** `tqdm` (required for status bar in extraction)
+
+### Potential enhancements
+- **Layout-aware PDFs:** `pymupdf_layout` for improved page structure in Markdown extraction (required).
 
 ### Environment variables (if using OpenAI)
 Create `.env` (do not commit):
@@ -187,6 +257,28 @@ python -m src.90_main \
   --k 5 \
   --enhance summarize
 ```
+
+---
+
+## Integrating Into the Final App (Precompute vs. Search-Time)
+You do **not** need to run the full pipeline every time you search. Use a two-step workflow:
+
+**1) Offline / Precompute (run once or when corpus changes)**
+- Run stages **00 → 60** to generate artifacts:
+  - `corpus/derived/manifest/manifest.jsonl`
+  - `corpus/derived/text/extracted.jsonl`
+  - `corpus/derived/text/cleaned.jsonl`
+  - `corpus/derived/chunks/chunks.jsonl`
+  - `corpus/derived/embeddings/embeddings.npy`
+  - `corpus/derived/embeddings/index.jsonl`
+
+**2) Search-Time (run per query)**
+- Run **70 → 90** to load artifacts and answer queries:
+  - `src/70_similarity_search.py`
+  - `src/80_llm_enhancement.py` (optional)
+  - `src/90_main.py`
+
+This keeps the app fast and avoids recomputing embeddings for every query.
 
 ---
 

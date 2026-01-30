@@ -79,21 +79,33 @@ def extract_html(path: str) -> str:
     return parser.get_text()
 
 
-def extract_pdf(path: str) -> Dict[str, Any]:
-    """Extract text from a PDF using PyMuPDF (fitz)."""
+def _pymupdf4llm_to_markdown(path: str) -> str:
+    """Convert PDF to Markdown using PyMuPDF4LLM if available."""
     try:
-        import fitz  # PyMuPDF
+        import pymupdf4llm  # type: ignore
     except Exception as exc:  # pragma: no cover - dependency optional
-        raise RuntimeError("PyMuPDF is required for PDF extraction.") from exc
+        raise RuntimeError("PyMuPDF4LLM is required for PDF extraction.") from exc
 
-    doc = fitz.open(path)
-    pages: List[Dict[str, Any]] = []
-    for i in range(len(doc)):
-        page = doc.load_page(i)
-        text = page.get_text("text") or ""
-        pages.append({"page_num": i + 1, "text": text})
-    full_text = "\n".join(p["text"] for p in pages)
-    return {"text": full_text, "pages": pages}
+    # Optional layout improvements (if installed)
+    try:
+        import pymupdf_layout  # type: ignore  # noqa: F401
+    except Exception:
+        pass
+
+    for fn_name in ("to_markdown", "convert_to_markdown", "pdf_to_markdown"):
+        fn = getattr(pymupdf4llm, fn_name, None)
+        if callable(fn):
+            return fn(path)
+
+    raise RuntimeError(
+        "PyMuPDF4LLM is installed but no markdown conversion function was found."
+    )
+
+
+def extract_pdf(path: str) -> Dict[str, Any]:
+    """Extract text from a PDF using PyMuPDF4LLM (Markdown-first)."""
+    markdown = _pymupdf4llm_to_markdown(path) or ""
+    return {"text": markdown, "pages": None}
 
 
 def extract_record(record: Dict[str, Any]) -> Dict[str, Any]:
