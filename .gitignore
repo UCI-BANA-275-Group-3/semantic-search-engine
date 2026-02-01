@@ -1,0 +1,10 @@
+# Python
+__pycache__/
+*.pyc
+
+# Virtual environments
+.venv/
+
+# Generated corpus artifacts (don’t version)
+corpus/derived/
+corpus/logs/
