@@ -8,3 +8,12 @@ __pycache__/
 # Generated corpus artifacts (don’t version)
 corpus/derived/
 corpus/logs/
+
+# Generated artifacts
+corpus/derived/embeddings/
+corpus/logs/
+src/__pycache__/
+*.pyc
+.env
+.venv/
+
