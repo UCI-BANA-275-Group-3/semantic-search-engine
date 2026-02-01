@@ -311,7 +311,8 @@ def chunk_document(cleaned_text: str, tok: TokenizerWrapper, cfg: ChunkingConfig
     if cfg.overlap_tokens > 0 and len(chunks) > 1:
         overlapped: List[str] = [chunks[0]]
         for i in range(1, len(chunks)):
-            prefix = _build_overlap_prefix_by_tokens(tok, overlapped[-1], cfg.overlap_tokens)
+            prev_chunk_text = chunks[i - 1]
+            prefix = _build_overlap_prefix_by_tokens(tok, prev_chunk_text, cfg.overlap_tokens)
             if prefix:
                 overlapped.append((prefix + "\n\n" + chunks[i]).strip())
             else:

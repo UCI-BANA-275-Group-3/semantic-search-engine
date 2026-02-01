@@ -74,6 +74,41 @@ def topk_similarities(query_vec: np.ndarray, vectors: np.ndarray, k: int) -> np.
     idx = idx[np.argsort(-scores[idx])]
     return idx
 
+def _maybe_normalize_rows(x: np.ndarray, eps: float = 1e-12) -> np.ndarray:
+    """Ensure rows are unit-length. Safe even if already normalized."""
+    norms = np.linalg.norm(x, axis=1, keepdims=True) + eps
+    return x / norms
+
+
+def search_top_k(
+    query: str,
+    k: int,
+    *,
+    vectors_path: str = "corpus/derived/embeddings/vectors.npy",
+    meta_path: str = "corpus/derived/embeddings/meta.jsonl",
+    model: str = "sentence-transformers/all-MiniLM-L6-v2",
+    device: str | None = None,
+) -> List[Dict[str, Any]]:
+    """Programmatic API: return top-K results as list of dicts with rank + score."""
+    vectors, meta_rows = load_index(vectors_path, meta_path)
+
+    # Safety: normalize vectors in case someone embedded without normalization
+    vectors = _maybe_normalize_rows(vectors.astype(np.float32, copy=False))
+
+    backend = get_backend(model_name=model, normalize=True, device=device)
+    qvec = backend.embed_query(query).astype(np.float32, copy=False)
+
+    idx = topk_similarities(qvec, vectors, k)
+    scores = (vectors[idx] @ qvec).astype(float)
+
+    results: List[Dict[str, Any]] = []
+    for rank, (i, s) in enumerate(zip(idx.tolist(), scores.tolist()), start=1):
+        row = dict(meta_rows[i])
+        row["score"] = s
+        row["rank"] = rank
+        results.append(row)
+    return results
+
 
 def format_result(rank: int, score: float, row: Dict[str, Any]) -> str:
     title = row.get("title") or "(no title)"
@@ -147,6 +182,9 @@ def main() -> int:
         year = r.get("year") or ""
         print(f"{r['rank']:02d}. score={r['score']:.4f} | {title} {f'({year})' if year else ''}")
         print(f"    doc_id={r.get('doc_id')} chunk_id={r.get('chunk_id')}")
+        
+        snippet = (r.get("chunk_text") or "")[:300].replace("\n", " ").strip()
+        print(f"    snippet: {snippet}...")
 
     # Optional: top unique docs
     if args.dedup_docs and args.dedup_docs > 0:

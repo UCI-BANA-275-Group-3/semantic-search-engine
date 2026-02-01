@@ -1,0 +1,16 @@
+{
+  "total_records": 142,
+  "valid_records": 142,
+  "missing_files": 0,
+  "duplicate_doc_ids": 0,
+  "extension_counts": {
+    ".docx": 1,
+    ".pdf": 116,
+    ".html": 25
+  },
+  "missing_title_count": 0,
+  "missing_creators_count": 4,
+  "missing_year_count": 9,
+  "error_count": 0,
+  "warning_count": 14
+}
