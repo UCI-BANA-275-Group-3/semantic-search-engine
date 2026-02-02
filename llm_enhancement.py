@@ -1,111 +1,69 @@
-# src/llm_enhancement.py
+# TODO: Implement CLI for querying the semantic search pipeline.
+# src/90_main.py
 
-import os
+import argparse
+import json
 from typing import List, Dict
 
+from src.llm_enhancement import summarize_top_k
 
-def _build_context(results: List[Dict], max_chars_per_chunk: int = 400) -> str:
-    """Build a text context from top-K results."""
-    lines = []
-    for r in results:
-        label = (
-            str(r.get("docid"))
-            or str(r.get("pdffile"))
-            or str(r.get("chunkid"))
-            or str(r.get("rank"))
-            or "source"
-        )
-        text = r.get("text") or r.get("preview") or ""
-        if not text:
-            continue
-        text = text.strip()
-        if len(text) > max_chars_per_chunk:
-            text = text[:max_chars_per_chunk] + "..."
-        lines.append(f"[{label}] {text}")
-    return "\n\n".join(lines)
+def load_top_k_from_file(path: str, k: int) -> List[Dict]:
+    """Read top-K results from a JSONL file."""
+    results: List[Dict] = []
+    with open(path, "r", encoding="utf-8") as f:
+        for line in f:
+            line = line.strip()
+            if not line:
+                continue
+            results.append(json.loads(line))
+            if len(results) >= k:
+                break
+    return results
 
 
-def summarize_top_k(query: str, results: List[Dict]) -> str:
-    """
-    Option A: Summarize top-K results.
+def main():
+    parser = argparse.ArgumentParser(
+        description="Semantic search CLI with optional LLM enhancement."
+    )
+    parser.add_argument("--query", required=True, help="User query string.")
+    parser.add_argument("--k", type=int, default=5, help="Number of results to use.")
+    parser.add_argument(
+        "--enhance",
+        choices=["none", "summarize"],
+        default="none",
+        help="Choose ONE LLM enhancement mode.",
+    )
+    parser.add_argument(
+        "--topk-file",
+        type=str,
+        required=True,
+        help="Path to a JSONL file containing top-K results.",
+    )
+    args = parser.parse_args()
 
-    If OPENAI_API_KEY is set, it will call an LLM.
-    If not, it returns a pseudo-summary constructed from the chunks.
-    """
-    if not results:
-        return "No results were retrieved, so there is nothing to summarize."
+    query = args.query
+    k = args.k
 
-    context_str = _build_context(results)
-    api_key = os.getenv("OPENAI_API_KEY")
+    top_k = load_top_k_from_file(args.topk_file, k=k)
 
-    if not api_key:
-        # No key: deterministic summary
-        bullets = []
-        for i, r in enumerate(results[:5], start=1):
-            text = (r.get("text") or r.get("preview") or "").strip()
-            if len(text) > 160:
-                text = text[:160] + "..."
-            bullets.append(f"- Result {i}: {text}")
-        bullet_str = "\n".join(bullets)
-        return (
-            "LLM API key is not configured, so this is an auto-generated summary "
-            "constructed from the top-K chunks:\n\n"
-            f"Query: {query}\n\n"
-            f"{bullet_str}"
-        )
+    print("\n=== TOP-K RESULTS (RAW) ===\n")
+    for r in top_k:
+        # Added r.get('doc') to match your screenshot
+        doc_label = r.get('docid') or r.get('doc') or r.get('pdffile') or 'N/A'
+        print(f"{r.get('rank', '?')}. score={r.get('score', '?')}, doc={doc_label}")
+        
+        # Added r.get('content') just in case
+        text = (r.get("text") or r.get("preview") or r.get("content") or "").strip()
+        print(text[:300] + ("..." if len(text) > 300 else ""))
+        print("-" * 80)
 
-    # If later your team gets a key, this block will use a real LLM
-    try:
-        from openai import OpenAI  # type: ignore
+    if args.enhance == "summarize":
+        summary = summarize_top_k(query, top_k)
 
-        client = OpenAI(api_key=api_key)
-        model_name = os.getenv("OPENAI_MODEL", "gpt-4.1-mini")
 
-        prompt = f"""
-You are helping a student understand search results from an academic semantic search engine.
+        print("\n=== OPTION A: SUMMARY OF TOP-K RESULTS ===\n")
+        print(summary)
 
-User query:
-{query}
 
-Below are the top-K relevant text chunks retrieved for this query.
-Each chunk may come from a different paper or page.
-
-TASK:
-1. Read the chunks.
-2. Write a concise summary (4–6 sentences) capturing the main ideas that answer the query.
-3. If the sources disagree, briefly mention the disagreement.
-4. Use simple, clear language.
-
-Top-K retrieved chunks:
-{context_str}
-"""
-
-        response = client.chat.completions.create(
-            model=model_name,
-            messages=[
-                {
-                    "role": "system",
-                    "content": "You summarize semantic search results for an academic research assistant.",
-                },
-                {"role": "user", "content": prompt},
-            ],
-            temperature=0.3,
-            max_tokens=400,
-        )
-        return response.choices[0].message.content.strip()
-    except Exception as e:
-        bullets = []
-        for i, r in enumerate(results[:5], start=1):
-            text = (r.get("text") or r.get("preview") or "").strip()
-            if len(text) > 160:
-                text = text[:160] + "..."
-            bullets.append(f"- Result {i}: {text}")
-        bullet_str = "\n".join(bullets)
-        return (
-            "Error calling the LLM backend; returning an auto-generated summary "
-            "constructed from the top-K chunks instead.\n\n"
-            f"Query: {query}\n\n"
-            f"{bullet_str}\n\n"
-            f"(Internal error: {e})"
-        )
-# TODO: Implement LLM enhancement (summarize/QA/compare) over top-K results.
+if __name__ == "__main__":
+    main()
