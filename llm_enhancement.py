@@ -1,69 +1,74 @@
-# TODO: Implement CLI for querying the semantic search pipeline.
-# src/90_main.py
-
-import argparse
-import json
+import os
 from typing import List, Dict
+from transformers import pipeline
 
-from src.llm_enhancement import summarize_top_k
+# Global variable to cache the model so it doesn't reload every time you search
+_summarizer_pipeline = None
 
-def load_top_k_from_file(path: str, k: int) -> List[Dict]:
-    """Read top-K results from a JSONL file."""
-    results: List[Dict] = []
-    with open(path, "r", encoding="utf-8") as f:
-        for line in f:
-            line = line.strip()
-            if not line:
-                continue
-            results.append(json.loads(line))
-            if len(results) >= k:
-                break
-    return results
+def get_summarizer():
+    """Lazy-load the summarizer to save memory until it's actually called."""
+    global _summarizer_pipeline
+    if _summarizer_pipeline is None:
+        # Using distilbart: it's small (~300MB) and very fast for local CPUs
+        _summarizer_pipeline = pipeline(
+            "summarization", 
+            model="sshleifer/distilbart-cnn-12-6",
+            device=-1  # Forces CPU usage; change to 0 if you have a GPU
+        )
+    return _summarizer_pipeline
 
-
-def main():
-    parser = argparse.ArgumentParser(
-        description="Semantic search CLI with optional LLM enhancement."
-    )
-    parser.add_argument("--query", required=True, help="User query string.")
-    parser.add_argument("--k", type=int, default=5, help="Number of results to use.")
-    parser.add_argument(
-        "--enhance",
-        choices=["none", "summarize"],
-        default="none",
-        help="Choose ONE LLM enhancement mode.",
-    )
-    parser.add_argument(
-        "--topk-file",
-        type=str,
-        required=True,
-        help="Path to a JSONL file containing top-K results.",
-    )
-    args = parser.parse_args()
-
-    query = args.query
-    k = args.k
-
-    top_k = load_top_k_from_file(args.topk_file, k=k)
-
-    print("\n=== TOP-K RESULTS (RAW) ===\n")
-    for r in top_k:
-        # Added r.get('doc') to match your screenshot
-        doc_label = r.get('docid') or r.get('doc') or r.get('pdffile') or 'N/A'
-        print(f"{r.get('rank', '?')}. score={r.get('score', '?')}, doc={doc_label}")
+def _build_context(results: List[Dict], max_chars_per_chunk: int = 500) -> str:
+    """Combines retrieved chunks into a single string for the model."""
+    lines = []
+    for r in results:
+        # Check all common keys to prevent the "empty bullet" issue
+        text = (r.get("text") or r.get("content") or r.get("preview") or "").strip()
+        doc_id = r.get("docid") or r.get("id") or "Source"
         
-        # Added r.get('content') just in case
-        text = (r.get("text") or r.get("preview") or r.get("content") or "").strip()
-        print(text[:300] + ("..." if len(text) > 300 else ""))
-        print("-" * 80)
+        if text:
+            # Truncate long chunks so we don't exceed model token limits
+            if len(text) > max_chars_per_chunk:
+                text = text[:max_chars_per_chunk] + "..."
+            lines.append(f"[{doc_id}]: {text}")
+    
+    return "\n\n".join(lines)
 
-    if args.enhance == "summarize":
-        summary = summarize_top_k(query, top_k)
+def summarize_top_k(query: str, results: List[Dict]) -> str:
+    """
+    Main function for Option A: Summarization.
+    Uses a local Transformer instead of OpenAI.
+    """
+    if not results:
+        return "No results found to summarize."
 
+    context_str = _build_context(results)
+    
+    try:
+        model = get_summarizer()
+        
+        # We prompt the model by giving it the query and the data
+        input_text = f"Summarize these search results for the query: {query}\n\nResults:\n{context_str}"
+        
+        # Generate the summary
+        summary_output = model(
+            input_text, 
+            max_length=150, 
+            min_length=40, 
+            truncation=True
+        )
+        
+        summary_text = summary_output[0]['summary_text']
+        
+        return (
+            "### Semantic Search Summary\n"
+            f"{summary_text}\n\n"
+            "---\n"
+            "*Generated locally using DistilBART.*"
+        )
 
-        print("\n=== OPTION A: SUMMARY OF TOP-K RESULTS ===\n")
-        print(summary)
-
-
-if __name__ == "__main__":
-    main()
+    except Exception as e:
+        # Robust fallback so the UI never looks broken
+        return (
+            f"Note: Local summarizer is initializing or encountered an error. "
+            f"Showing top results for: **{query}**\n\n{context_str}"
+        )
