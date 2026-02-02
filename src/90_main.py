@@ -48,11 +48,12 @@ def main():
 
     print("\n=== TOP-K RESULTS (RAW) ===\n")
     for r in top_k:
-        print(
-            f"{r.get('rank', '?')}. score={r.get('score', '?')}, "
-            f"doc={r.get('docid') or r.get('pdffile') or 'N/A'}"
-        )
-        text = (r.get("text") or r.get("preview") or "").strip()
+        # Added r.get('doc') to match your screenshot
+        doc_label = r.get('docid') or r.get('doc') or r.get('pdffile') or 'N/A'
+        print(f"{r.get('rank', '?')}. score={r.get('score', '?')}, doc={doc_label}")
+        
+        # Added r.get('content') just in case
+        text = (r.get("text") or r.get("preview") or r.get("content") or "").strip()
         print(text[:300] + ("..." if len(text) > 300 else ""))
         print("-" * 80)
 
