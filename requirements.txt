@@ -1,7 +1,8 @@
-pymupdf4llm>=0.1.0
-pymupdf_layout>=0.1.0
+pymupdf>=1.24.0
 tqdm>=4.66.0
-transformers
 sentence-transformers
+transformers
+torch
 numpy
-
+pandas
+python-dotenv
