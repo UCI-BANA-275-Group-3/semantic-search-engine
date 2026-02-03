@@ -80,6 +80,58 @@ def _maybe_normalize_rows(x: np.ndarray, eps: float = 1e-12) -> np.ndarray:
     return x / norms
 
 
+def aggregate_chunks_to_docs(
+    results: List[Dict[str, Any]], agg_method: str = "max"
+) -> List[Dict[str, Any]]:
+    """
+    Aggregate chunk-level scores to document level and return top-K unique documents.
+    
+    Args:
+        results: list of chunk results with 'doc_id' and 'score' fields
+        agg_method: 'max' (max chunk score) or 'mean' (mean chunk score per doc)
+    
+    Returns:
+        list of results grouped by doc_id, ranked by aggregated score, with original chunks preserved
+    """
+    doc_scores: Dict[str, float] = {}
+    doc_results: Dict[str, List[Dict[str, Any]]] = {}
+    
+    for r in results:
+        did = r.get("doc_id")
+        if not did:
+            continue
+        score = r.get("score", 0.0)
+        
+        if did not in doc_results:
+            doc_results[did] = []
+            if agg_method == "max":
+                doc_scores[did] = score
+            elif agg_method == "mean":
+                doc_scores[did] = score
+        else:
+            if agg_method == "max":
+                doc_scores[did] = max(doc_scores[did], score)
+            elif agg_method == "mean":
+                doc_scores[did] = (doc_scores[did] * len(doc_results[did]) + score) / (len(doc_results[did]) + 1)
+        
+        doc_results[did].append(r)
+    
+    # Rank documents by aggregated score
+    ranked_docs = sorted(doc_scores.items(), key=lambda x: x[1], reverse=True)
+    
+    # Build result list with top chunk per document
+    aggregated: List[Dict[str, Any]] = []
+    for rank, (did, agg_score) in enumerate(ranked_docs, start=1):
+        top_chunk = max(doc_results[did], key=lambda x: x.get("score", 0.0))
+        row = dict(top_chunk)
+        row["score"] = agg_score
+        row["rank"] = rank
+        row["num_chunks"] = len(doc_results[did])
+        aggregated.append(row)
+    
+    return aggregated
+
+
 def search_top_k(
     query: str,
     k: int,
@@ -88,8 +140,25 @@ def search_top_k(
     meta_path: str = "corpus/derived/embeddings/meta.jsonl",
     model: str = "sentence-transformers/all-MiniLM-L6-v2",
     device: str | None = None,
+    dedup_docs: bool = False,
+    agg_method: str = "max",
+    alpha: float = 0.6,
+    lex_weight: float = 0.3,
+    meta_weight: float = 0.1,
 ) -> List[Dict[str, Any]]:
-    """Programmatic API: return top-K results as list of dicts with rank + score."""
+    """
+    Programmatic API: return top-K results as list of dicts with rank + score.
+    
+    Args:
+        query: search query text
+        k: number of results to return (chunks if dedup_docs=False, documents if True)
+        vectors_path, meta_path, model, device: embedding config
+        dedup_docs: if True, aggregate chunk scores to document level and rank by doc
+        agg_method: 'max' or 'mean' for aggregation
+    
+    Returns:
+        list of result dicts, each with doc_id, score, rank, etc.
+    """
     vectors, meta_rows = load_index(vectors_path, meta_path)
 
     # Safety: normalize vectors in case someone embedded without normalization
@@ -98,8 +167,50 @@ def search_top_k(
     backend = get_backend(model_name=model, normalize=True, device=device)
     qvec = backend.embed_query(query).astype(np.float32, copy=False)
 
-    idx = topk_similarities(qvec, vectors, k)
+    # Fetch more chunks if deduping, since multiple chunks per doc will be collapsed
+    fetch_k = k * 5 if dedup_docs else k
+    idx = topk_similarities(qvec, vectors, fetch_k)
     scores = (vectors[idx] @ qvec).astype(float)
+
+    # Pseudo-Relevance Feedback (PRF): expand the query with high-frequency terms
+    # from the top semantic candidates to improve recall/precision.
+    try:
+        # gather top chunk texts
+        top_texts = []
+        for i in idx.tolist()[: min(5, len(idx))]:
+            row_meta = meta_rows[i]
+            top_texts.append(str(row_meta.get("chunk_text") or row_meta.get("text") or ""))
+
+        # simple tokenization and stopword filtering
+        stopwords = {
+            "the", "and", "is", "in", "to", "of", "a", "for", "with", "on", "that", "as", "are",
+            "be", "by", "an", "or", "from", "this", "we", "it", "which", "these", "have", "has",
+        }
+        term_counts: Dict[str, int] = {}
+        for txt in top_texts:
+            for tok in [t.strip(".,;:()[]\"'`") .lower() for t in txt.split()]:
+                if not tok or len(tok) < 3 or tok in stopwords:
+                    continue
+                term_counts[tok] = term_counts.get(tok, 0) + 1
+
+        # pick top 4 expansion terms not already in query
+        q_tokens = set(query.lower().split())
+        expansion = []
+        for term, _ in sorted(term_counts.items(), key=lambda x: x[1], reverse=True):
+            if term in q_tokens:
+                continue
+            expansion.append(term)
+            if len(expansion) >= 4:
+                break
+
+        if expansion:
+            expanded_query = query + " " + " ".join(expansion)
+            qvec2 = backend.embed_query(expanded_query).astype(np.float32, copy=False)
+            idx = topk_similarities(qvec2, vectors, fetch_k)
+            scores = (vectors[idx] @ qvec2).astype(float)
+    except Exception:
+        # On any failure, continue with original query results
+        pass
 
     results: List[Dict[str, Any]] = []
     for rank, (i, s) in enumerate(zip(idx.tolist(), scores.tolist()), start=1):
@@ -107,7 +218,60 @@ def search_top_k(
         row["score"] = s
         row["rank"] = rank
         results.append(row)
-    return results
+
+    # If deduping, aggregate to document level
+    if dedup_docs:
+        results = aggregate_chunks_to_docs(results, agg_method=agg_method)
+    
+    # Lightweight lexical reranking + metadata/title boost: combine semantic score with
+    # a lexical (TF-IDF or overlap) score and a small metadata/title match boost.
+    try:
+        from sklearn.feature_extraction.text import TfidfVectorizer
+        from sklearn.metrics.pairwise import cosine_similarity
+
+        texts = [ (r.get("chunk_text") or r.get("text") or "") for r in results ]
+        # Fit TF-IDF on candidate texts and transform query
+        vec = TfidfVectorizer(stop_words="english").fit(texts + [query])
+        qv = vec.transform([query])
+        tv = vec.transform(texts)
+        lex_scores = cosine_similarity(tv, qv).reshape(-1).astype(float)
+    except Exception:
+        # Fallback: simple token-overlap score
+        def tok_overlap(a: str, b: str) -> float:
+            a_tok = set((a or "").lower().split())
+            b_tok = set((b or "").lower().split())
+            if not a_tok or not b_tok:
+                return 0.0
+            return len(a_tok & b_tok) / max(1, (len(a_tok) + len(b_tok)) / 2)
+
+        lex_scores = []
+        for r in results:
+            text = (r.get("chunk_text") or r.get("text") or "")
+            lex_scores.append(float(tok_overlap(text, query)))
+
+    # Compute a simple metadata/title match score
+    def meta_match_score(row: Dict[str, Any], q: str) -> float:
+        q_tokens = set(q.lower().split())
+        score = 0.0
+        fields = [row.get("title") or "", " ".join(row.get("creators") or []), row.get("collection_names") or ""]
+        text = " ".join([str(f) for f in fields])
+        if not text:
+            return 0.0
+        tks = set(str(text).lower().split())
+        inter = q_tokens & tks
+        return float(len(inter)) / max(1.0, len(q_tokens))
+
+    # Combine scores (weighted) using provided weights
+    for r, lscore in zip(results, lex_scores):
+        sem = float(r.get("score", 0.0))
+        mscore = meta_match_score(r, query)
+        r["lex_score"] = float(lscore)
+        r["meta_score"] = float(mscore)
+        r["combined_score"] = float(alpha * sem + lex_weight * float(lscore) + meta_weight * float(mscore))
+
+    # Return results sorted by combined_score (descending)
+    results = sorted(results, key=lambda x: x.get("combined_score", x.get("score", 0.0)), reverse=True)
+    return results[:k]
 
 
 def format_result(rank: int, score: float, row: Dict[str, Any]) -> str:

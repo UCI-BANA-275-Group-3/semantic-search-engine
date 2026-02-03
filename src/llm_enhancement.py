@@ -1,6 +1,3 @@
-# src/llm_enhancement.py
-
-import os
 from typing import List, Dict
 
 
@@ -18,7 +15,6 @@ def _build_context(results: List[Dict], max_chars_per_chunk: int = 400) -> str:
             or "source"
         )
 
-        # IMPORTANT: support multiple possible keys
         text = (
             r.get("chunk_text")
             or r.get("text")
@@ -39,88 +35,106 @@ def _build_context(results: List[Dict], max_chars_per_chunk: int = 400) -> str:
     return "\n\n".join(lines)
 
 
-
 def summarize_top_k(query: str, results: List[Dict]) -> str:
-    """
-    Option A: Summarize top-K results.
-
-    If OPENAI_API_KEY is set, it will call an LLM.
-    If not, it returns a pseudo-summary constructed from the chunks.
-    """
+    """Deterministic top-K summarizer (no external LLMs)."""
     if not results:
-        return "No results were retrieved, so there is nothing to summarize."
+        return "No results were retrieved for your query."
 
-    context_str = _build_context(results)
-    api_key = os.getenv("OPENAI_API_KEY")
+    # Enhanced: Order sentences by relevance, filter boilerplate, add connective text
+    import re
+    seen = set()
+    summary_sentences = []
+    query_lc = query.lower()
+    boilerplate_patterns = [
+        r"copyright",
+        r"all rights reserved",
+        r"u\.s\. copyright law",
+        r"for helpful comments",
+        r"responsibility for all errors",
+        r"thank[s]? to",
+        r"see http",
+        r"this pdf is a selection",
+        r"no results were retrieved",
+        r"no content found",
+    ]
+    def is_boilerplate(s: str) -> bool:
+        s_lc = s.lower()
+        return any(re.search(pat, s_lc) for pat in boilerplate_patterns)
 
-    if not api_key:
-        # No key: deterministic summary
-        bullets = []
-        for i, r in enumerate(results[:5], start=1):
-            text = (r.get("chunk_text") or r.get("text") or r.get("preview") or r.get("snippet") or "").strip()
-            if len(text) > 160:
-                text = text[:160] + "..."
-            bullets.append(f"- Result {i}: {text}")
-        bullet_str = "\n".join(bullets)
-        return (
-            "LLM API key is not configured, so this is an auto-generated summary "
-            "constructed from the top-K chunks:\n\n"
-            f"Query: {query}\n\n"
-            f"{bullet_str}"
+    def sent_score(s: str, sents: list) -> int:
+        # Higher score for query overlap, length, and position (topic sentence)
+        score = 0
+        s_lc = s.lower()
+        if query_lc in s_lc:
+            score += 3
+        score += min(len(s.split()), 25) // 5  # up to +5 for length
+        if s == sents[0]:
+            score += 2  # topic sentence
+        return score
+
+    # Collect candidate sentences from top chunks, score them, then pick top 3-5
+    candidates: List[tuple] = []  # (score, sentence)
+    for r in results[:8]:
+        text = (
+            r.get("chunk_text")
+            or r.get("text")
+            or r.get("preview")
+            or r.get("snippet")
+            or ""
         )
+        text = str(text).strip()
+        if not text:
+            continue
+        sents = re.split(r'(?<=[.!?])\s+', text)
+        for pos, s in enumerate(sents):
+            s_str = s.strip()
+            if not s_str:
+                continue
+            s_lc = s_str.lower()
+            if s_lc in seen:
+                continue
+            if is_boilerplate(s_str):
+                continue
+            if len(s_str) < 20 and query_lc not in s_lc:
+                continue
+            # normalize
+            s_clean = re.sub(r"^[\\W\\d]+", "", s_str).replace("\n", " ").strip()
+            if not s_clean:
+                continue
+            score = sent_score(s_clean, sents)
+            # small bonus for earlier sentences in chunk
+            score += max(0, 2 - pos)
+            candidates.append((score, s_clean))
+            seen.add(s_lc)
 
-    # If later your team gets a key, this block will use a real LLM
-    try:
-        from openai import OpenAI  # type: ignore
+    if not candidates:
+        return "No content found in the retrieved results."
 
-        client = OpenAI(api_key=api_key)
-        model_name = os.getenv("OPENAI_MODEL", "gpt-4.1-mini")
+    # Pick top candidates, dedupe by lowercase, limit to 3-5 sentences
+    candidates = sorted(candidates, key=lambda x: x[0], reverse=True)
+    selected: List[str] = []
+    sel_set = set()
+    for score, sent in candidates:
+        key = sent.lower()
+        if key in sel_set:
+            continue
+        selected.append(sent)
+        sel_set.add(key)
+        if len(selected) >= 4:
+            break
 
-        prompt = f"""
-You are helping a student understand search results from an academic semantic search engine.
+    # Ensure sentences end with proper punctuation
+    def ensure_punct(s: str) -> str:
+        s = s.strip()
+        if not s:
+            return s
+        if s[-1] not in '.!?':
+            return s + '.'
+        return s
 
-User query:
-{query}
+    selected = [ensure_punct(s) for s in selected]
+    paragraph = ' '.join(selected)
+    return f"Based on your query '{query}', {paragraph}"
 
-Below are the top-K relevant text chunks retrieved for this query.
-Each chunk may come from a different paper or page.
 
-TASK:
-1. Read the chunks.
-2. Write a concise summary (4–6 sentences) capturing the main ideas that answer the query.
-3. If the sources disagree, briefly mention the disagreement.
-4. Use simple, clear language.
-
-Top-K retrieved chunks:
-{context_str}
-"""
-
-        response = client.chat.completions.create(
-            model=model_name,
-            messages=[
-                {
-                    "role": "system",
-                    "content": "You summarize semantic search results for an academic research assistant.",
-                },
-                {"role": "user", "content": prompt},
-            ],
-            temperature=0.3,
-            max_tokens=400,
-        )
-        return response.choices[0].message.content.strip()
-    except Exception as e:
-        bullets = []
-        for i, r in enumerate(results[:5], start=1):
-            text = (r.get("text") or r.get("preview") or "").strip()
-            if len(text) > 160:
-                text = text[:160] + "..."
-            bullets.append(f"- Result {i}: {text}")
-        bullet_str = "\n".join(bullets)
-        return (
-            "Error calling the LLM backend; returning an auto-generated summary "
-            "constructed from the top-K chunks instead.\n\n"
-            f"Query: {query}\n\n"
-            f"{bullet_str}\n\n"
-            f"(Internal error: {e})"
-        )
-# TODO: Implement LLM enhancement (summarize/QA/compare) over top-K results.
+# Future: add LLM-based enhancements (QA, compare, aggregate) as optional modules.

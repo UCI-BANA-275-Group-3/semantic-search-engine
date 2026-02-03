@@ -1,0 +1,31 @@
+{
+  "backend": "st::sentence-transformers/all-MiniLM-L6-v2",
+  "model": "sentence-transformers/all-MiniLM-L6-v2",
+  "normalize": true,
+  "device": null,
+  "batch_size": 128,
+  "input": {
+    "chunks_path": "corpus\\derived\\text\\chunks.jsonl",
+    "input_records": 9807,
+    "kept_records": 9807,
+    "dropped_records": 0,
+    "drop_reasons": {}
+  },
+  "output": {
+    "out_dir": "corpus\\derived\\embeddings",
+    "vectors_path": "corpus\\derived\\embeddings\\vectors.npy",
+    "meta_path": "corpus\\derived\\embeddings\\meta.jsonl",
+    "num_vectors": 9807,
+    "dim": 384,
+    "dtype": "float32"
+  },
+  "timing_seconds": {
+    "load": 0.1311,
+    "embed": 326.5253,
+    "total": 326.6564
+  },
+  "sanity_checks": {
+    "vectors_rows_equal_meta_rows": true,
+    "vectors_rows_equal_texts": true
+  }
+}

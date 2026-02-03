@@ -1,0 +1,31 @@
+{
+  "start_time": "2026-02-02T11:12:59.745149",
+  "end_time": "2026-02-02T11:33:01.494918",
+  "elapsed_seconds": 1201.74977,
+  "stages": {
+    "manifest": {
+      "status": "success",
+      "return_code": 0
+    },
+    "validate": {
+      "status": "success",
+      "return_code": 0
+    },
+    "extract": {
+      "status": "success",
+      "return_code": 0
+    },
+    "clean": {
+      "status": "success",
+      "return_code": 0
+    },
+    "chunk": {
+      "status": "success",
+      "return_code": 0
+    },
+    "embed": {
+      "status": "success",
+      "return_code": 0
+    }
+  }
+}

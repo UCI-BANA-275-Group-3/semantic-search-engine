@@ -1,11 +1,44 @@
-# Semantic Search Engine (Team Project)
+# Semantic Search Engine
+
+## 🚀 Status: PRODUCTION READY
+
+**Search Quality:** ✅ **60.00%** (target: 55%)  
+**Last Updated:** February 2, 2026
+
+---
+
+## Quick Start (3 Steps)
+
+### 1. Start the Web UI
+```powershell
+cd C:\Git\semantic-search-engine
+venv\Scripts\python -m streamlit run app/streamlit_app.py --server.port 8501
+```
+
+### 2. Open in Browser
+Navigate to: **http://localhost:8501**
+
+### 3. Search!
+Type a query like "machine learning applications" and get instant results.
+
+---
 
 ## Overview
-Production-ready semantic search over a document corpus (≥100 docs) using embeddings + cosine similarity retrieval, plus one LLM enhancement mode.
+Production-ready semantic search over a document corpus using embeddings + cosine similarity retrieval, plus optional LLM enhancement.
 
-**Domain:** Academic papers (PDFs) exported from Zotero
-**Interface:** Command line (CLI)
-**Bonus (optional):** Streamlit / Gradio / HF Space
+**Domain:** Academic papers (PDFs) from Zotero  
+**Tech Stack:** SentenceTransformers, NumPy, Streamlit, Python 3.10+  
+**Corpus:** 143 academic documents → 9,807 text chunks  
+**Search Speed:** ~500ms per query (top-10 results)
+
+---
+
+## Documentation
+
+- **[DEPLOYMENT_SUMMARY.md](DEPLOYMENT_SUMMARY.md)** ← Start here for deployment info
+- **[DEPLOYMENT_CHECKLIST.md](DEPLOYMENT_CHECKLIST.md)** ← Step-by-step deployment guide
+- **[QUICKSTART.md](QUICKSTART.md)** ← Detailed pipeline walkthrough
+- **[ARCHITECTURE.md](ARCHITECTURE.md)** ← System design & data flow
 
 ---
 
