@@ -212,6 +212,62 @@ def search_top_k(
         # On any failure, continue with original query results
         pass
 
+    # Compute BM25 idf on the whole corpus (simple, cached in-memory per call)
+    try:
+        import math
+
+        N = len(meta_rows)
+        df: Dict[str, int] = {}
+        doc_lens: List[int] = []
+        for row in meta_rows:
+            text = str(row.get("chunk_text") or row.get("text") or "")
+            toks = set([t.strip(".,;:()[]\"'`).lower() for t in text.split() if t])
+            for t in toks:
+                if len(t) < 3:
+                    continue
+                df[t] = df.get(t, 0) + 1
+            doc_lens.append(len(text.split()))
+        avgdl = sum(doc_lens) / max(1, len(doc_lens))
+        def idf(term: str) -> float:
+            v = df.get(term, 0)
+            return math.log((N - v + 0.5) / (v + 0.5) + 1)
+
+        # BM25 params
+        k1 = 1.5
+        b = 0.75
+
+        # Compute BM25 lexical scores for candidate results
+        lex_scores = []
+        q_terms = [t.strip(".,;:()[]\"'`).lower() for t in query.split() if t]
+        for i in idx.tolist():
+            row = meta_rows[i]
+            text = str(row.get("chunk_text") or row.get("text") or "")
+            tokens = [t.strip(".,;:()[]\"'`).lower() for t in text.split() if t]
+            tf: Dict[str, int] = {}
+            for tok in tokens:
+                if len(tok) < 3:
+                    continue
+                tf[tok] = tf.get(tok, 0) + 1
+            dl = max(1, len(tokens))
+            score_bm25 = 0.0
+            for qt in q_terms:
+                if len(qt) < 2:
+                    continue
+                t_idf = idf(qt)
+                f = tf.get(qt, 0)
+                denom = f + k1 * (1 - b + b * (dl / avgdl))
+                score_bm25 += t_idf * ((f * (k1 + 1)) / (denom + 1e-9))
+            lex_scores.append(float(score_bm25))
+    except Exception:
+        # fallback to simple token overlap if BM25 stats fail
+        lex_scores = []
+        for i in idx.tolist():
+            row = meta_rows[i]
+            text = str(row.get("chunk_text") or row.get("text") or "")
+            a = set(query.lower().split())
+            b = set(text.lower().split())
+            lex_scores.append(float(len(a & b) / max(1, (len(a) + len(b)) / 2)))
+
     results: List[Dict[str, Any]] = []
     for rank, (i, s) in enumerate(zip(idx.tolist(), scores.tolist()), start=1):
         row = dict(meta_rows[i])
@@ -236,18 +292,24 @@ def search_top_k(
         tv = vec.transform(texts)
         lex_scores = cosine_similarity(tv, qv).reshape(-1).astype(float)
     except Exception:
-        # Fallback: simple token-overlap score
-        def tok_overlap(a: str, b: str) -> float:
-            a_tok = set((a or "").lower().split())
-            b_tok = set((b or "").lower().split())
-            if not a_tok or not b_tok:
-                return 0.0
-            return len(a_tok & b_tok) / max(1, (len(a_tok) + len(b_tok)) / 2)
+        # Fallback: prefer precomputed BM25-style lexical scores (if available),
+        # otherwise fall back to simple token-overlap.
+        existing = locals().get("lex_scores")
+        if existing and len(existing) == len(results):
+            # Use existing lex_scores (BM25) but ensure ordering matches results
+            lex_scores = [float(v) for v in existing]
+        else:
+            def tok_overlap(a: str, b: str) -> float:
+                a_tok = set((a or "").lower().split())
+                b_tok = set((b or "").lower().split())
+                if not a_tok or not b_tok:
+                    return 0.0
+                return len(a_tok & b_tok) / max(1, (len(a_tok) + len(b_tok)) / 2)
 
-        lex_scores = []
-        for r in results:
-            text = (r.get("chunk_text") or r.get("text") or "")
-            lex_scores.append(float(tok_overlap(text, query)))
+            lex_scores = []
+            for r in results:
+                text = (r.get("chunk_text") or r.get("text") or "")
+                lex_scores.append(float(tok_overlap(text, query)))
 
     # Compute a simple metadata/title match score
     def meta_match_score(row: Dict[str, Any], q: str) -> float:
