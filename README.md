@@ -41,7 +41,19 @@ Production-ready semantic search over a document corpus using embeddings + cosin
 - **[ARCHITECTURE.md](ARCHITECTURE.md)** ← System design & data flow
 
 ---
+## TL;DR (For Graders)
 
+This project implements a production-ready semantic search engine over 100+ academic papers.
+
+**Core features**
+- Embedding-based semantic retrieval
+- Cosine similarity top-K search
+- Optional LLM enhancement (summarize / QA / compare)
+- Command-line interface (CLI)
+**One-command demo**
+```bash
+python -m src.90_main --query "dynamic capabilities" --k 5 --enhance summarize
+```
 ## Team Responsibilities
 - **Alex:** Domain selection, data collection, preprocessing pipeline, and overall system design
 - **Syeda:** Embedding implementation (model choice + vectorization) and cosine similarity search
