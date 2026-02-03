@@ -98,7 +98,7 @@ def summarize_top_k(query: str, results: List[Dict]) -> str:
             if len(s_str) < 20 and query_lc not in s_lc:
                 continue
             # normalize
-            s_clean = re.sub(r"^[\\W\\d]+", "", s_str).replace("\n", " ").strip()
+            s_clean = re.sub(r"^[\W\d]+", "", s_str).replace("\n", " ").strip()
             if not s_clean:
                 continue
             score = sent_score(s_clean, sents)

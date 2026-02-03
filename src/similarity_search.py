@@ -221,7 +221,7 @@ def search_top_k(
         doc_lens: List[int] = []
         for row in meta_rows:
             text = str(row.get("chunk_text") or row.get("text") or "")
-            toks = set([t.strip(".,;:()[]\"'`).lower() for t in text.split() if t])
+            toks = set([t.strip(".,;:()[]'`").lower() for t in text.split() if t])
             for t in toks:
                 if len(t) < 3:
                     continue
@@ -238,11 +238,11 @@ def search_top_k(
 
         # Compute BM25 lexical scores for candidate results
         lex_scores = []
-        q_terms = [t.strip(".,;:()[]\"'`).lower() for t in query.split() if t]
+        q_terms = [t.strip(".,;:()[]'`").lower() for t in query.split() if t]
         for i in idx.tolist():
             row = meta_rows[i]
             text = str(row.get("chunk_text") or row.get("text") or "")
-            tokens = [t.strip(".,;:()[]\"'`).lower() for t in text.split() if t]
+            tokens = [t.strip(".,;:()[]'`").lower() for t in text.split() if t]
             tf: Dict[str, int] = {}
             for tok in tokens:
                 if len(tok) < 3:

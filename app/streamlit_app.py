@@ -1,5 +1,13 @@
 import streamlit as st
 from typing import List, Dict
+import sys
+import os
+
+# Ensure the repository root is on sys.path so `src` imports work when
+# running `streamlit run app/streamlit_app.py` (Streamlit may change CWD).
+ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
+if ROOT not in sys.path:
+    sys.path.insert(0, ROOT)
 
 from src.similarity_search import search_top_k
 from src.llm_enhancement import summarize_top_k
