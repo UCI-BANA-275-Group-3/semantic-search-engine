@@ -338,12 +338,5 @@ This keeps the app fast and avoids recomputing embeddings for every query.
 | Command-line interface | ✅ `src.90_main` |
 | Documentation | ✅ README + ARCHITECTURE |
 | Demo video | ✅ Provided |
-## Deliverables
-- `README.md` (project overview, setup, examples)
-- `ARCHITECTURE.md` (technical details)
-- `TEAM_CONTRIBUTIONS.md` (who did what + peer-eval support)
-- `requirements.txt`
-- Source code under `src/`
-- 2–3 minute demo video
-- Peer assessment form (each member)
+
   
