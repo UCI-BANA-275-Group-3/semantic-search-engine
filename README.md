@@ -326,7 +326,18 @@ You do **not** need to run the full pipeline every time you search. Use a two-st
 This keeps the app fast and avoids recomputing embeddings for every query.
 
 ---
+## Assignment Requirements Checklist
 
+| Requirement | Status |
+|-----------|--------|
+| ≥100 documents | ✅ Academic papers from Zotero |
+| Embeddings | ✅ SentenceTransformers |
+| Cosine similarity search | ✅ Implemented |
+| Top-K retrieval | ✅ CLI-supported |
+| LLM enhancement | ✅ Summarization mode |
+| Command-line interface | ✅ `src.90_main` |
+| Documentation | ✅ README + ARCHITECTURE |
+| Demo video | ✅ Provided |
 ## Deliverables
 - `README.md` (project overview, setup, examples)
 - `ARCHITECTURE.md` (technical details)
@@ -335,3 +346,4 @@ This keeps the app fast and avoids recomputing embeddings for every query.
 - Source code under `src/`
 - 2–3 minute demo video
 - Peer assessment form (each member)
+  
