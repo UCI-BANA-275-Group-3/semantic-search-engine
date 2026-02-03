@@ -96,18 +96,18 @@ semantic-search/
       embeddings/
         embeddings.npy
         index.jsonl
-
+Note: Earlier pipeline stages were numbered during development; final implementation uses descriptive filenames while preserving stage order.
   src/
-    00_build_manifest.py
-    10_validate_corpus.py
-    20_extract_text.py
-    30_clean_text.py
-    40_chunk_text.py
-    50_embedding_backends.py
-    60_embed_corpus.py
-    70_similarity_search.py
-    80_llm_enhancement.py
-    90_main.py
+     00_build_manifest.py
+  10_validate_corpus.py
+  20_extract_text.py
+  30_clean_text.py
+  chunk_text.py
+  embedding_backends.py
+  embed_corpus.py
+  similarity_search.py
+  llm_enhancement.py
+  90_main.py
 ```
 
 **Notes**
